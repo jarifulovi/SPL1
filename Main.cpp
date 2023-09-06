@@ -25,15 +25,11 @@ int main() {
 
         // Load words from "input.text"
         if (myWords.loadFromFile()) {
-            const std::vector<Word>& wordList = myWords.getWordList();
+            //const std::vector<Word>& wordList = myWords.getWordList();
 
             // Display attributes of each word
-            for (const Word& word : wordList) {
-                std::cout << "Word: " << word.getWord() << std::endl;
-                std::cout << "Meaning: " << word.getMeaning() << std::endl;
-                std::cout << "Part of Speech: " << word.getPartOfSpeech() << std::endl;
-                std::cout << std::endl;
-            }
+            myWords.vocabularyTest();
+
         } else {
             std::cerr << "Error: Could not open 'input.txt'." << std::endl;
             return 1;

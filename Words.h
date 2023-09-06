@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <string>
+#include<ctime>
 using namespace std;
 
 class Word {
@@ -35,6 +36,12 @@ public:
 
     // Function to get the list of words
     const vector<Word>& getWordList() const;
+
+    // Generating random numbers
+    const Word& generateRandomWord() const;
+
+    // Vocabulary test
+    void vocabularyTest() const;
 };
 
 #endif
