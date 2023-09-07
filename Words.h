@@ -42,6 +42,19 @@ public:
 
     // Vocabulary test
     void vocabularyTest() const;
-};
 
+};
+class Profile {
+private:
+    string name;
+    string password;
+
+public:
+    Profile();
+
+    string getName() const;
+    string getPassword() const;
+    bool isFileEmpty();
+    void promptAndStore();
+};
 #endif

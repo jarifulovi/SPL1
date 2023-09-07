@@ -2,8 +2,17 @@
 #include <string>
 #include <cstdlib> // For system("cls") on Windows or system("clear") on Linux/Mac
 #include"Words.h"
+#ifdef _WIN32
+#define CLEAR_SCREEN "cls"
+#else
+#define CLEAR_SCREEN "clear"
+#endif
 
 using namespace std;
+void clearMainScreen(){
+    system(CLEAR_SCREEN);
+}
+
 int main() {
     string input;
 
@@ -12,23 +21,23 @@ int main() {
     cin >> input;
 
     if (input == "start") {
-        #ifdef _WIN32
-        // Clear screen on Windows
-        system("cls");
-        #else
-        // Clear screen on Linux/Mac
-        system("clear");
-        #endif
+        clearMainScreen();
 
         cout << "Application starting..." << endl;
         Words myWords;
+        Profile myprofile;
 
+        myprofile.promptAndStore();
+        clearMainScreen();
         // Load words from "input.text"
         if (myWords.loadFromFile()) {
             //const std::vector<Word>& wordList = myWords.getWordList();
-
+            cout << "1.Vocabulary Test"<<endl;
+            cout << "q to quit"<< endl;
+            cin >> input;
             // Display attributes of each word
-            myWords.vocabularyTest();
+            if(input=="1")  myWords.vocabularyTest();
+            else{}
 
         } else {
             std::cerr << "Error: Could not open 'input.txt'." << std::endl;
@@ -36,13 +45,7 @@ int main() {
         }
     } 
     else if(input=="close"){
-        #ifdef _WIN32
-        // Clear screen on Windows
-        system("cls");
-        #else
-        // Clear screen on Linux/Mac
-        system("clear");
-        #endif
+        clearMainScreen();
         cout << "Thank you for using this app" << endl;
         exit(0);
     }
