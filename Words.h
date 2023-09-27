@@ -40,14 +40,19 @@ public:
     // Generating random numbers
     const Word& generateRandomWord() const;
 
+    void fisherYatesShuffle(vector<Word>& vec) const;
+
+    vector<Word> getUniqueWordlist(vector<Word> templist,short int num) const;
     // Vocabulary test
     void vocabularyTest() const;
+    void flashcard() const;
 
 };
 class Profile {
 private:
     string name;
     string password;
+    string id;
 
 public:
     Profile();
@@ -56,5 +61,7 @@ public:
     string getPassword() const;
     bool isFileEmpty();
     void promptAndStore();
+    string generateID();
+    
 };
 #endif
