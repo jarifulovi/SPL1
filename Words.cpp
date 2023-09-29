@@ -6,6 +6,7 @@
 #include<unistd.h>
 #include<chrono>
 #include<random>
+#include<map>
 
 #ifdef _WIN32
 #define CLEAR_SCREEN "cls"
@@ -17,6 +18,13 @@ using namespace std;
 
 void clearScreen() {
     system(CLEAR_SCREEN);
+}
+void display_card(string eng,string ban){
+    cout << "            " << eng << "         " << ban << "\n";
+    cout << "..........................................\n";
+    cout << "..........................................\n";
+    cout << "when match press enter\n";
+    cout << "press e/E for next eng card or b/B for next ban card\n";
 }
    
 Words::Words() {} // Constructor
@@ -68,8 +76,8 @@ const Word& Words::generateRandomWord() const {
     // Return the random word at the generated index
     return wordList[randomIndex];
 }
-
-void Words::fisherYatesShuffle(vector<Word> &vec) const
+template<typename T>
+void Words::fisherYatesShuffle(vector<T> &vec) const
 {
     mt19937 rng(chrono::high_resolution_clock::now().time_since_epoch().count());
 
@@ -78,7 +86,7 @@ void Words::fisherYatesShuffle(vector<Word> &vec) const
         int j = distribution(rng);
 
         // Swap elements at positions i and j
-        Word temp = vec[i];
+        T temp = vec[i];
         vec[i] = vec[j];
         vec[j] = temp;
     }
@@ -162,10 +170,63 @@ void Words::vocabularyTest() const {
         
     } while (userInput != 'q'&& iteration--);
 }
-void Words:: flashcard() const {
+void Words:: flashcard() const {    
+    bool result = true; 
     vector<Word> templist(wordList);
-
+    string input;
     fisherYatesShuffle(templist);
     vector<Word> cards = getUniqueWordlist(templist,5);
-    
+    vector<string> engWord,banWord;
+    map<string,string> matching;
+
+    for (const Word& card : cards) {
+        engWord.push_back(card.getWord());
+        banWord.push_back(card.getMeaning());
+        matching[card.getWord()] = card.getMeaning();
+    }
+    fisherYatesShuffle(banWord);        //  fisherYates doesn't need specific type of vector
+    short int curr_eng = 0,curr_ban = 0;
+
+    while(!engWord.empty() && !banWord.empty()){
+        display_card(engWord[curr_eng],banWord[curr_ban]);    // doesn't need now
+        cout << "curr indices : " << curr_eng << "  " << curr_ban << endl;
+        cout << "cards        : " << engWord.size() << "  " << banWord.size() << endl;
+        cout << matching[engWord[curr_eng]] << "  " << banWord[curr_ban] << endl;
+        cin >> input;
+
+        if(input=="e"||input=="E"){
+            // go to next eng string from the eng vector
+            curr_eng++;
+        }
+        else if(input=="b"||input=="B"){
+            // go to next ban string from the vector
+            curr_ban++;
+        }
+        else if(input=="s"){                           // if pressed enter
+            if(matching[engWord[curr_eng]]==banWord[curr_ban]){
+                // remove eng and ban from the string vector
+                engWord.erase(engWord.begin() + curr_eng);
+                banWord.erase(banWord.begin() + curr_ban);
+
+                if(curr_eng==engWord.size()) curr_eng--;
+                if(curr_ban==banWord.size()) curr_ban--;
+            }
+         //   cout << "The first : " << matching[curr_ban].second << " and second : " << banWord[curr_ban]
+            else{ 
+                cout << "Wrong ans you lost!\n";
+                result = false;
+                break;
+            }
+        }
+       
+        else{
+            cout << "Invalid input please enter e/E or b/B or enter\n";
+        }
+        if(curr_eng>engWord.size()-1||curr_ban>engWord.size()-1){
+            cout << "you lost no cards on the deck\n";
+            result = false;
+            break;
+        }
+    }
+    if(result) cout << "congrats you won!\n";
 }

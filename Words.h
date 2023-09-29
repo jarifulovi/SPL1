@@ -40,7 +40,8 @@ public:
     // Generating random numbers
     const Word& generateRandomWord() const;
 
-    void fisherYatesShuffle(vector<Word>& vec) const;
+    template<typename T>
+    void fisherYatesShuffle(vector<T>& vec) const;
 
     vector<Word> getUniqueWordlist(vector<Word> templist,short int num) const;
     // Vocabulary test

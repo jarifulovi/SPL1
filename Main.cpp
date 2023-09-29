@@ -37,10 +37,11 @@ int main() {
             cin >> input;
             // Display attributes of each word
             if(input=="1")  myWords.vocabularyTest();
+            else if(input=="2") myWords.flashcard();
             else{}
 
         } else {
-            std::cerr << "Error: Could not open 'input.txt'." << std::endl;
+            cerr << "Error: Could not open 'input.txt'." << endl;
             return 1;
         }
     } 
