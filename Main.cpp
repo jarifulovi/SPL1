@@ -38,8 +38,8 @@ int main() {
             // Display attributes of each word
             if(input=="1")  myWords.vocabularyTest();
             else if(input=="2") myWords.flashcard();
+            else if(input=="3")   myWords.wordpuzzle();
             else{}
-
         } else {
             cerr << "Error: Could not open 'input.txt'." << endl;
             return 1;
