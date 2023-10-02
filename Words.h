@@ -52,9 +52,9 @@ public:
     /// @param isSafe findWordUtil doesWordExist is all part of wordpuzzle
     /// @return found or not by boolean variable
     bool isWordList(const string& targetWord) const;
-    bool isSafe(int i, int j, int row, int col, vector<vector<bool>>& visited);
-    bool findWordUtil(vector<vector<char>>& boggle, vector<vector<bool>>& visited, int i, int j, string& str, const string& target, int row, int col);
-    bool doesWordExist(vector<vector<char>>& boggle, string target, int row, int col);
+    bool isSafe(int i, int j, int row, int col, vector<vector<bool>>& visited) const ;
+    bool findWordUtil(vector<vector<char>>& boggle, vector<vector<bool>>& visited, int i, int j, string& str, const string& target, int row, int col) const;
+    bool doesWordExist(vector<vector<char>>& boggle, string target, int row, int col) const ;
 
 };
 class Profile {

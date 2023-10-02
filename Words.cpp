@@ -15,6 +15,8 @@
 #define CLEAR_SCREEN "clear"
 #endif
 
+const short int row = 10;
+const short int col = 10;
 using namespace std;
 
 void clearScreen() {
@@ -36,6 +38,18 @@ void sleep(int milliseconds) {
         // Do nothing (just wait)
     }
 }
+vector<vector<char>> convertCharArrayToVector(char grid[row][col]) {
+    vector<vector<char>> vec(row, vector<char>(col));
+
+    for (int i = 0; i < row; i++) {
+        for (int j = 0; j < col; j++) {
+            vec[i][j] = grid[i][j];
+        }
+    }
+
+    return vec;
+}
+
    
 Words::Words() {} // Constructor
 
@@ -243,18 +257,21 @@ bool Words:: flashcard() const {
 }
 bool Words::isWordList(const string& targetWord) const {
     // WordList is sorted alphabetically by word
-
+    string modified_target = targetWord;
     int left = 0;
     int right = wordList.size() - 1;
+    if (!modified_target.empty()) {
+        modified_target[0] = toupper(modified_target[0]);  //  change the string according to dictionay strings
+    }
 
     while (left <= right) {
         int mid = left + (right - left) / 2;
-        const std::string& currentWord = wordList[mid].getWord();
+        const string& currentWord = wordList[mid].getWord();
 
-        if (currentWord == targetWord) {
+        if (currentWord == modified_target) {
             // Word with the given word found
             return true;
-        } else if (currentWord < targetWord) {
+        } else if (currentWord < modified_target) {
             left = mid + 1;  // Search in the right half
         } else {
             right = mid - 1;  // Search in the left half
@@ -263,11 +280,11 @@ bool Words::isWordList(const string& targetWord) const {
     return false;
 }
 // boggle algorithm part for checking if a string can be found in the grid or not
-bool Words::isSafe(int i, int j, int row, int col, vector<vector<bool>>& visited) {
+bool Words::isSafe(int i, int j, int row, int col, vector<vector<bool>>& visited) const {
     return (i >= 0 && i < row && j >= 0 && j < col && !visited[i][j]);
 }
 
-bool Words::findWordUtil(vector<vector<char>>& boggle, vector<vector<bool>>& visited, int i, int j, string& str, const string& target, int row, int col) {
+bool Words::findWordUtil(vector<vector<char>>& boggle, vector<vector<bool>>& visited, int i, int j, string& str, const string& target, int row, int col)  const {
     visited[i][j] = true;
     str += boggle[i][j];
 
@@ -301,7 +318,7 @@ bool Words::findWordUtil(vector<vector<char>>& boggle, vector<vector<bool>>& vis
     return false;
 }
 
-bool Words::doesWordExist(vector<vector<char>>& boggle, string target, int row, int col) {
+bool Words::doesWordExist(vector<vector<char>>& boggle, string target, int row, int col) const {
    
     vector<vector<bool>> visited(row, vector<bool>(col, false));
     string str = "";
@@ -329,7 +346,6 @@ bool Words::wordpuzzle() const{
         placed_word = generateRandomWord();
     }
     string ans = placed_word.getWord();
-    short row=10,col=10;
     char puzzle[row][col];
     for(int i=0;i<row;i++)
     {
@@ -360,7 +376,7 @@ bool Words::wordpuzzle() const{
         for(int j=0;j<10;j++)
         {
           cout<<" "<<puzzle[i][j];
-          sleep(100);
+          sleep(50);
         }
         cout<<endl;
     }
@@ -373,12 +389,12 @@ bool Words::wordpuzzle() const{
         cout << "Wow! you found the word\n";
     }
     else if(isWordList(input)){
-        vector<vector<char>> vec = convertCharArrayToVector(puzzle, row, col);
+        vector<vector<char>> vec = convertCharArrayToVector(puzzle);
         if(doesWordExist(vec,input,row,col)){
             cout << "Wow! you found the word\n";
         }
         else{
-            cout << "Sorry wrong answer\n";
+            cout << "Sorry wrong answer with valid word\n";
             result = false;
         }
     }
