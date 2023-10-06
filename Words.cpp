@@ -8,6 +8,7 @@
 #include<random>
 #include<map>
 #include<vector>
+#include<tuple>
 
 #ifdef _WIN32
 #define CLEAR_SCREEN "cls"
@@ -22,12 +23,29 @@ using namespace std;
 void clearScreen() {
     system(CLEAR_SCREEN);
 }
-void display_card(string eng,string ban){
+void display_card(const string& eng,const string& ban){
+    clearScreen();
     cout << "            " << eng << "         " << ban << "\n";
     cout << "..........................................\n";
     cout << "..........................................\n";
     cout << "when match press enter\n";
     cout << "press e/E for next eng card or b/B for next ban card\n";
+}
+void display_card3(const string& eng,const string& ban,const string& pot){
+    clearScreen();
+    int ban_len = ban.size();
+    int eng_len = eng.size();
+    int pot_len = pot.size();
+    cout << " _________________";
+    cout << "|                 |";
+    cout << "|     CARD A      |";
+    cout << "|                 |";
+    cout << "|                 |";
+    cout << "|                 |";
+    cout << "|   "<< eng;
+    for(int i=0;i<17-eng_len;i++) cout << " "; cout << "|";
+    cout << "|                 |";
+    cout << "|_________________|";
 }
 // Custom sleep function that sleeps for the specified milliseconds
 void sleep(int milliseconds) {
@@ -195,7 +213,7 @@ void Words::vocabularyTest() const {
     } while (userInput != 'q'&& iteration--);
 }
 bool Words:: flashcard() const {
-    bool result = true; 
+    bool result = true;
     vector<Word> templist(wordList);
     string input;
     fisherYatesShuffle(templist);
@@ -244,7 +262,7 @@ bool Words:: flashcard() const {
         }
        
         else{
-            cout << "Invalid input please enter e/E or b/B or enter\n";
+            cout << "Invalid input please enter e/E or b/B or s\n";
         }
         if(curr_eng>engWord.size()-1||curr_ban>engWord.size()-1){
             cout << "you lost no cards on the deck\n";
@@ -254,6 +272,69 @@ bool Words:: flashcard() const {
     }
     if(result) cout << "congrats you won!\n";
     return result;
+}
+bool Words::flashcard3() const {
+    bool result = true;
+    vector<Word> templist(wordList);  
+    string input;
+    fisherYatesShuffle(templist);
+    vector<Word> cards = getUniqueWordlist(templist,5);
+    vector<string> engWord,banWord,part_of_speech;
+    vector<tuple<string,string,string>> mappedlist;
+    for(const Word& card : cards){
+        engWord.push_back(card.getWord());
+        banWord.push_back(card.getMeaning());
+        part_of_speech.push_back(card.getPartOfSpeech());
+        mappedlist.emplace_back(engWord,banWord,part_of_speech);
+    }
+    fisherYatesShuffle(banWord);
+    fisherYatesShuffle(part_of_speech);
+    short int curr_eng=0,curr_ban=0,curr_pot=0,ind=0;
+
+    while(!engWord.empty() && !banWord.empty() && !part_of_speech.empty()){
+        //  displayCard3(engWord,banWord,part_of_speech);
+        cin >> input;
+         if(input=="e"||input=="E"){
+            // go to next eng string from the eng vector
+            curr_eng++;
+        }
+        else if(input=="b"||input=="B"){
+            // go to next ban string from the vector
+            curr_ban++;
+        }
+        else if(input=="p"||input=="P"){
+            // go to next pot string from the vector
+            curr_pot++;
+        }
+        else if(input=="s"||input=="S"){
+            if(get<1>(mappedlist[curr_eng])==banWord[curr_ban] && get<2>(mappedlist[curr_eng])==part_of_speech[curr_pot]){
+                // remove eng and ban from the string vector
+                engWord.erase(engWord.begin() + curr_eng);
+                banWord.erase(banWord.begin() + curr_ban);
+                part_of_speech.erase(part_of_speech.begin() + curr_pot);
+
+                if(curr_eng==engWord.size()) curr_eng--;
+                if(curr_ban==banWord.size()) curr_ban--;
+                if(curr_pot==part_of_speech.size()) curr_pot--;
+            }
+            else{ 
+                cout << "Wrong ans you lost!\n";
+                result = false;
+                break;
+            }
+        }
+        else{
+            cout << "Invalid input please enter e/E or b/B or or p/P or s\n";
+        }
+        if(curr_eng>engWord.size()-1||curr_ban>engWord.size()-1||curr_pot>part_of_speech.size()){
+            cout << "you lost no cards on the deck\n";
+            result = false;
+            break;
+        }
+    }
+    if(result) cout << "congrats you won!\n";
+    return result;
+
 }
 bool Words::isWordList(const string& targetWord) const {
     // WordList is sorted alphabetically by word
@@ -319,7 +400,9 @@ bool Words::findWordUtil(vector<vector<char>>& boggle, vector<vector<bool>>& vis
 }
 
 bool Words::doesWordExist(vector<vector<char>>& boggle, string target, int row, int col) const {
-   
+    
+    if(target[0]>='A'&&target[0]<='Z') target[0] += 32;
+
     vector<vector<bool>> visited(row, vector<bool>(col, false));
     string str = "";
 
@@ -345,7 +428,7 @@ bool Words::wordpuzzle() const{
         if(placed_word.getWord().size()<=7) break;
         placed_word = generateRandomWord();
     }
-    string ans = placed_word.getWord();
+    string ans = placed_word.getSmallLetter();
     char puzzle[row][col];
     for(int i=0;i<row;i++)
     {
@@ -371,6 +454,9 @@ bool Words::wordpuzzle() const{
         else if(placement==2)
         puzzle[startRow + i][startCol + i] = ans[i];  // Place diagonally
     }
+    cout << "---------------------------------------------\n";
+    cout << "------------------PUZZLE---------------------\n";
+    cout << "---------------------------------------------\n\n";
     for(int i=0;i<10;i++)
     {
         for(int j=0;j<10;j++)
@@ -382,8 +468,9 @@ bool Words::wordpuzzle() const{
     }
     cout << "*******************************************\n";
     cout << "The meaning : " << placed_word.getMeaning() << "\n";
-    cout << "Find the word in the puzzle(word length should be more than 2)\n";
+    cout << "Find the word in the puzzle(word length should be more than 2)\n\n";
     string input;
+    cout << "Enter you answer : ";
     cin >> input;
     if(input==ans){
         cout << "Wow! you found the word\n";
@@ -391,7 +478,7 @@ bool Words::wordpuzzle() const{
     else if(isWordList(input)){
         vector<vector<char>> vec = convertCharArrayToVector(puzzle);
         if(doesWordExist(vec,input,row,col)){
-            cout << "Wow! you found the word\n";
+            cout << "Wow! you found the other word\n";
         }
         else{
             cout << "Sorry wrong answer with valid word\n";

@@ -17,6 +17,7 @@ public:
 
     // Getter methods
     string getWord() const;
+    string getSmallLetter() const;
     string getMeaning() const;
     string getPartOfSpeech() const;
 };
@@ -55,7 +56,7 @@ public:
     bool isSafe(int i, int j, int row, int col, vector<vector<bool>>& visited) const ;
     bool findWordUtil(vector<vector<char>>& boggle, vector<vector<bool>>& visited, int i, int j, string& str, const string& target, int row, int col) const;
     bool doesWordExist(vector<vector<char>>& boggle, string target, int row, int col) const ;
-
+    bool flashcard3() const;
 };
 class Profile {
 private:

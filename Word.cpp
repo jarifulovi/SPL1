@@ -15,3 +15,10 @@ string Word::getMeaning() const {
 string Word::getPartOfSpeech() const {
     return partOfSpeech;
 }
+string Word::getSmallLetter() const {
+    string smallLetter = word;
+    if(word[0]>= 'A'&& word[0]<= 'Z'){
+        smallLetter[0] += 32;  // change the first char big letter to small one
+    }
+    return smallLetter;
+}
