@@ -20,7 +20,7 @@ int main() {
     cout << "Enter 'close' to exit\n";
     cin >> input;
 
-    if (input == "start") {
+    if (input == "start") {     //  starting point of application
         clearMainScreen();
 
         cout << "Application starting..." << endl;
@@ -30,17 +30,23 @@ int main() {
         myprofile.promptAndStore();
         clearMainScreen();
         // Load words from "input.text"
-        if (myWords.loadFromFile()) {
-            //const std::vector<Word>& wordList = myWords.getWordList();
-            cout << "1.Vocabulary Test"<<endl;
-            cout << "q to quit"<< endl;
+        if (myWords.loadFromFile()) {      // ready to execute application
+            
+            cout << "1.Multiple choice question\n";
+            cout << "2.flashcard game\n";
+            cout << "3.word puzzle\n";
+            cout << "4.flashcard 3 cards\n";
+            cout << "q to quit\n";
             cin >> input;
             // Display attributes of each word
-            if(input=="1")  myWords.vocabularyTest();
-            else if(input=="2") myWords.flashcard();
-            else if(input=="3")   myWords.wordpuzzle();
+            if(input=="1")  myWords.vocabularyTest(myprofile);
+            else if(input=="2") myWords.flashcard(myprofile);
+            else if(input=="3")   myWords.wordpuzzle(myprofile);
+            else if(input=="4") myWords.flashcard3(myprofile);
             else{}
-        } else {
+            myprofile.updateAndStore();
+        } 
+        else {
             cerr << "Error: Could not open 'input.txt'." << endl;
             return 1;
         }

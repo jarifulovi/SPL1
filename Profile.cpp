@@ -23,7 +23,7 @@ bool Profile::isFileEmpty() {
     ifstream inputFile("profile.text");
     return inputFile.peek() == ifstream::traits_type::eof();
 }
-string Profile::generateID() {
+string Profile::generateID() const {
     const string alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     const int idLength = 6;  // Adjust as needed
 
@@ -77,4 +77,28 @@ void Profile::promptAndStore() {
     cout << "Press Enter to continue...";
     cin.ignore(); // Ignore any previous newline character
     cin.get();    // Wait for Enter key
+}
+void Profile::updateAndStore() {
+    std::ifstream inFile("profile.text");
+        
+    // Check if the file is empty
+    if (isFileEmpty()) {
+        std::cout << "File is empty. Nothing to update." << std::endl;
+        return;
+    }
+
+    inFile.close();  // Close the file
+
+    // Open the file in truncate mode (clear contents)
+    std::ofstream outFile("profile.text", std::ios::trunc);
+
+    // Write the class variables to the file separated by commas
+    if (outFile.is_open()) {
+        outFile << name << "," << password << "," << id << std::endl;
+        std::cout << "Profile information updated and saved to profile.txt." << std::endl;
+        outFile.close();
+    } 
+    else {
+        std::cerr << "Error opening the file." << std::endl;
+    }
 }

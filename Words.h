@@ -6,6 +6,24 @@
 #include<ctime>
 using namespace std;
 
+class Profile {
+private:
+    string name;
+    string password;
+    string id;
+
+public:
+    Profile();
+
+    string getName() const;
+    string getPassword() const;
+    bool isFileEmpty();
+    void promptAndStore();
+    string generateID() const;
+    void updateAndStore();
+    
+};
+
 class Word {
 private:
     string word;
@@ -43,35 +61,30 @@ public:
 
     template<typename T>
     void fisherYatesShuffle(vector<T>& vec) const;
-
     vector<Word> getUniqueWordlist(vector<Word> templist,short int num) const;
     // Vocabulary test
-    void vocabularyTest() const;
-    bool flashcard() const;
-    bool wordpuzzle() const;
-    /// @brief use binary search to find a word in the list
-    /// @param isSafe findWordUtil doesWordExist is all part of wordpuzzle
-    /// @return found or not by boolean variable
+    void vocabularyTest(Profile& myprofile) const;
+    // Flashcard
+    bool flashcard(Profile& myprofile) const;
+    // WordPuzzle
+    bool wordpuzzle(Profile& myprofile) const;
     bool isWordList(const string& targetWord) const;
     bool isSafe(int i, int j, int row, int col, vector<vector<bool>>& visited) const ;
     bool findWordUtil(vector<vector<char>>& boggle, vector<vector<bool>>& visited, int i, int j, string& str, const string& target, int row, int col) const;
     bool doesWordExist(vector<vector<char>>& boggle, string target, int row, int col) const ;
-    bool flashcard3() const;
+    // Flashcard 3 Cards
+    bool flashcard3(Profile& myprofile) const;
 };
-class Profile {
-private:
-    string name;
-    string password;
-    string id;
 
+class tri {
 public:
-    Profile();
+    string a, b, c;
 
-    string getName() const;
-    string getPassword() const;
-    bool isFileEmpty();
-    void promptAndStore();
-    string generateID();
-    
+    // Default constructor
+    tri() : a(""), b(""), c("") {}
+
+    // Constructor with parameters
+    tri(const string& a_val, const string& b_val, const string& c_val)
+        : a(a_val), b(b_val), c(c_val) {}
 };
 #endif
