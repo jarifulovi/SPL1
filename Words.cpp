@@ -8,7 +8,7 @@
 #include<random>
 #include<map>
 #include<vector>
-
+#include<queue>
 #ifdef _WIN32
 #define CLEAR_SCREEN "cls"
 #else
@@ -347,7 +347,8 @@ bool Words::flashcard3(Profile& myprofile) const {
     return result;
 
 }
-bool Words::isWordList(const string& targetWord) const {
+bool Words::isWordList(const string &targetWord) const
+{
     // WordList is sorted alphabetically by word
     string modified_target = targetWord;
     int left = 0;
@@ -502,4 +503,89 @@ bool Words::wordpuzzle(Profile& myprofile) const{
     }
     return result;
 }
+// word ladder game part
 
+bool Words::isAdjacent(const std::string& word1, const std::string& word2) const {
+    int diffCount = 0;
+    for (size_t i = 0; i < word1.length(); ++i) {
+        if (word1[i] != word2[i])
+            diffCount++;
+        if (diffCount > 1)
+            return false;
+    }
+    return diffCount == 1;
+}
+std::vector<std::string> Words::findPathWords(const std::string& start_word, const std::string& end_word, const std::vector<Word>& wordList) const {
+    std::vector<std::string> path_words;
+    std::queue<std::vector<std::string>> q;
+    q.push({start_word});
+
+    while (!q.empty()) {
+        std::vector<std::string> current_path = q.front();
+        q.pop();
+
+        std::string current_word = current_path.back();
+        if (current_word == end_word) {
+            path_words = current_path;
+            break;
+        }
+
+        for (const Word& word : wordList) {
+            if (isAdjacent(current_word, word.getWord()) && isWordList(wordList, word.getWord())) {
+                std::vector<std::string> new_path = current_path;
+                new_path.push_back(word.getWord());
+                q.push(new_path);
+            }
+        }
+    }
+
+    return path_words;
+}
+bool Words::wordLadder(Profile& myprofile) const {
+    clearScreen();
+    vector<Word> wordlist(wordList);
+    string start_word,end_word;  
+    vector<string> path;
+    char character;
+    short int position;
+    path = findPathWords(start_word,end_word,wordlist);  
+    cout << "********Word Ladder********\n";
+    cout << "***************************\n";
+    cout << "***************************\n\n";
+    cout << "Change " << start_word << "to " << end_word << "\n";
+    do {
+        clearScreen();
+        std::cout << "Current word: " << start_word << "  Target word : " << end_word;
+        std::cout << "Enter character: ";
+        std::cin >> character;
+        std::cout << "Enter position (1 to " << start_word.length() << "): ";
+        std::cin >> position;
+
+        if (position < 1 || position > start_word.length()) {
+            std::cout << "Invalid position!\n";
+        }
+
+        // Update the word based on user input
+        start_word[position - 1] = character;
+
+        // Check if the updated word matches any word in the path
+        bool matched = false;
+        for (const std::string& path_word : path) {
+            if (start_word == path_word) {
+                matched = true;
+                break;
+            }
+        }
+
+        if (!matched) {
+            std::cout << "Invalid word. You lost!\n";
+            return false;
+        }
+
+        if (start_word == end_word) {
+            std::cout << "You won!\n";
+            return true;
+        }
+    } while (true);
+    return true;
+}
