@@ -11,18 +11,32 @@ private:
     string name;
     string password;
     string id;
+    short int time1;
+    short int correct1;
+    short int time2;
+    short int time3;
+    short int time4;
+    short int time5;
 
 public:
     Profile();
-
+    // getter and setter
     string getName() const;
     string getPassword() const;
+    short int getTime1() const;
+    short int getCorrect1() const;
+    void setTime1(short int time);
+    void setCorrect1(short int correct);
+    short int getTime2() const;
+    void setTime2(short int time);
+    // file modification part
     bool isFileEmpty();
     void promptAndStore();
-    string generateID() const;
+    string generateID();
     void updateAndStore();
-    
-};
+    // achievement part
+    void achievement1(short int correct,short int time) const ;
+}; 
 
 class Word {
 private:

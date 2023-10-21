@@ -167,8 +167,9 @@ vector<Word> Words::getUniqueWordlist(vector<Word> templist,short int num) const
 
 void Words::vocabularyTest(Profile& myprofile) const {
     char userInput;
-    short int iteration = 20;
+    short int iteration = 10,correct_ans=0;
     vector<Word> temp(wordList);
+    auto start = std::chrono::high_resolution_clock::now();
     do {
         if(!iteration){
             clearScreen();
@@ -204,6 +205,7 @@ void Words::vocabularyTest(Profile& myprofile) const {
         if (userChoice >= 1 && userChoice <= 4) {
             if (userChoice == correctAnswerIndex + 1) {
                 cout << "Correct! The meaning of \"" << correctAnswer.getWord() << "\" is \"" << correctAnswer.getMeaning() << "\"." << endl;
+                correct_ans++;
             } else {
                 cout << "Incorrect. The correct meaning of \"" << correctAnswer.getWord() << "\" is \"" << correctAnswer.getMeaning() << "\"." << endl;
             }
@@ -217,6 +219,17 @@ void Words::vocabularyTest(Profile& myprofile) const {
         cin.get();    // Wait for Enter key
         
     } while (userInput != 'q'&& iteration--);
+
+    if(iteration<1){ 
+        auto stop = std::chrono::high_resolution_clock::now();
+        auto duration = std::chrono::duration_cast<std::chrono::seconds>(stop - start);
+        if(myprofile.getTime1()==0||correct_ans>=myprofile.getCorrect1()){
+            if(myprofile.getTime1()>(static_cast<short int>(duration.count()))){
+                myprofile.setTime1(static_cast<short int>(duration.count()));
+            }
+            myprofile.setCorrect1(correct_ans);
+        }
+    }
 }
 bool Words:: flashcard(Profile& myprofile) const {
     bool result = true;
@@ -234,7 +247,7 @@ bool Words:: flashcard(Profile& myprofile) const {
     }
     fisherYatesShuffle(banWord);        //  fisherYates doesn't need specific type of vector
     short int curr_eng = 0,curr_ban = 0;
-
+    auto start = std::chrono::high_resolution_clock::now();
     while(!engWord.empty() && !banWord.empty()){
         display_card(engWord[curr_eng],banWord[curr_ban]);    // doesn't need now
         cout << "curr indices : " << curr_eng << "  " << curr_ban << endl;
@@ -277,6 +290,11 @@ bool Words:: flashcard(Profile& myprofile) const {
         }
     }
     if(result) cout << "congrats you won!\n";
+    auto stop = std::chrono::high_resolution_clock::now();
+    auto duration = std::chrono::duration_cast<std::chrono::seconds>(stop - start);
+    if(myprofile.getTime2()==0 || myprofile.getTime2()>(static_cast<short int>(duration.count()))){
+        myprofile.setTime2(static_cast<short int>(duration.count()));
+    }
     return result;
 }
 bool Words::flashcard3(Profile& myprofile) const {
