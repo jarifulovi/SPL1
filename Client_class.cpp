@@ -1,7 +1,8 @@
 #include <iostream>
 #include <winsock2.h>
-
-#define SERVER_IP "127.0.0.1"
+#include<fstream>
+#include<thread>
+#define SERVER_IP "192.168.0.107"
 #define PORT 9999
 
 class Client {
@@ -49,9 +50,30 @@ public:
     }
 
     // Placeholder for sending data (to be implemented)
-    void sendData(const char* data, int dataSize) {
-        // Implement data sending here
-        // This is currently left empty as a placeholder
+   // Modify your Client class
+
+    void sendData() {
+        // Open the file for reading
+        std::ifstream file("profile.txt", std::ios::binary);
+        
+        if (!file.is_open()) {
+            std::cerr << "Error opening file." << std::endl;
+            return;
+        }
+
+        // Read the file into a buffer
+        std::string buffer((std::istreambuf_iterator<char>(file)), std::istreambuf_iterator<char>());
+        
+        // Send the data to the server
+        int bytesSent = send(clientSocket, buffer.c_str(), buffer.size(), 0);
+        
+        if (bytesSent == SOCKET_ERROR) {
+            std::cerr << "Error sending data: " << WSAGetLastError() << std::endl;
+        } else {
+            std::cout << "Sent " << bytesSent << " bytes to the server." << std::endl;
+        }
+        
+        file.close();
     }
 
     // Add more methods to receive data or perform other operations as needed

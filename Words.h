@@ -75,8 +75,9 @@ public:
     // Flashcard 3 Cards
     bool flashcard3(Profile& myprofile) const;
     // Word ladder game
+    vector<std::pair<std::string, std::string>> readWordPairsFromFile() const;
     bool isAdjacent(const std::string& word1, const std::string& word2) const;
-    std::vector<std::string> findPathWords(const std::string& start_word, const std::string& end_word, const std::vector<Word>& wordList) const;
+    std::vector<std::string> findPathWords(const std::string& start_word, const std::string& end_word) const;
     bool wordLadder(Profile& myprofile) const;
 };
 

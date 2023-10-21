@@ -36,6 +36,7 @@ int main() {
             cout << "2.flashcard game\n";
             cout << "3.word puzzle\n";
             cout << "4.flashcard 3 cards\n";
+            cout << "5.Word Ladder\n";
             cout << "q to quit\n";
             cin >> input;
             // Display attributes of each word
@@ -43,6 +44,7 @@ int main() {
             else if(input=="2") myWords.flashcard(myprofile);
             else if(input=="3")   myWords.wordpuzzle(myprofile);
             else if(input=="4") myWords.flashcard3(myprofile);
+            else if(input=="5") myWords.wordLadder(myprofile);
             else{}
             myprofile.updateAndStore();
         } 

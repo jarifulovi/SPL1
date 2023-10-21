@@ -304,6 +304,7 @@ bool Words::flashcard3(Profile& myprofile) const {
 
     while(!engWord.empty() && !banWord.empty() && !part_of_speech.empty()){
         display_card3(engWord,banWord,part_of_speech,curr_eng,curr_ban,curr_pot);
+	cout << "\neng : " << mappedlist[curr_eng].a << " ban : " << mappedlist[curr_eng].b << " pot : " << mappedlist[curr_eng].c << "\n";
         cin >> input;
          if(input=="A"||input=="a"){
             // go to next eng string from the eng vector
@@ -317,13 +318,14 @@ bool Words::flashcard3(Profile& myprofile) const {
             // go to next pot string from the vector
             curr_pot++;
         }
+	
         else if(input=="s"||input=="S"){
             if(mappedlist[curr_eng].b==banWord[curr_ban] && mappedlist[curr_eng].c==part_of_speech[curr_pot]){
                 // remove eng and ban from the string vector
                 engWord.erase(engWord.begin() + curr_eng);
                 banWord.erase(banWord.begin() + curr_ban);
                 part_of_speech.erase(part_of_speech.begin() + curr_pot);
-
+                mappedlist.erase(mappedlist.begin() + curr_eng);
                 if(curr_eng==engWord.size()) curr_eng--;
                 if(curr_ban==banWord.size()) curr_ban--;
                 if(curr_pot==part_of_speech.size()) curr_pot--;
@@ -338,9 +340,9 @@ bool Words::flashcard3(Profile& myprofile) const {
             cout << "Invalid input please enter A/a or B/b or or C/c or s\n";
         }
         if(curr_eng>engWord.size()-1||curr_ban>engWord.size()-1||curr_pot>part_of_speech.size()-1){
-            cout << "you lost no cards on the deck\n";
-            result = false;
-            break;
+            curr_eng = 0;
+            curr_ban = 0;
+            curr_pot = 0;
         }
     }
     if(result) cout << "congrats you won!\n";
@@ -505,6 +507,26 @@ bool Words::wordpuzzle(Profile& myprofile) const{
 }
 // word ladder game part
 
+vector<std::pair<std::string, std::string>> Words::readWordPairsFromFile() const {
+    std::vector<std::pair<std::string, std::string>> wordPairs;
+    std::ifstream file("wordpair.txt");
+
+    std::string line;
+    while (std::getline(file, line)) {
+        std::istringstream iss(line);
+        std::string word1, word2;
+
+        if (std::getline(iss, word1, ',') && std::getline(iss, word2)) {
+            wordPairs.emplace_back(word1, word2);
+        } else {
+            std::cerr << "Invalid line format in the file: " << line << std::endl;
+        }
+    }
+
+    file.close();
+    return wordPairs;
+}
+
 bool Words::isAdjacent(const std::string& word1, const std::string& word2) const {
     int diffCount = 0;
     for (size_t i = 0; i < word1.length(); ++i) {
@@ -515,7 +537,8 @@ bool Words::isAdjacent(const std::string& word1, const std::string& word2) const
     }
     return diffCount == 1;
 }
-std::vector<std::string> Words::findPathWords(const std::string& start_word, const std::string& end_word, const std::vector<Word>& wordList) const {
+
+std::vector<std::string> Words::findPathWords(const std::string& start_word, const std::string& end_word) const {
     std::vector<std::string> path_words;
     std::queue<std::vector<std::string>> q;
     q.push({start_word});
@@ -531,32 +554,40 @@ std::vector<std::string> Words::findPathWords(const std::string& start_word, con
         }
 
         for (const Word& word : wordList) {
-            if (isAdjacent(current_word, word.getWord()) && isWordList(wordList, word.getWord())) {
+            if (isAdjacent(current_word, word.getSmallLetter()) && isWordList(word.getSmallLetter())) {
                 std::vector<std::string> new_path = current_path;
-                new_path.push_back(word.getWord());
+                new_path.push_back(word.getSmallLetter());
                 q.push(new_path);
             }
         }
     }
-
     return path_words;
 }
+
 bool Words::wordLadder(Profile& myprofile) const {
-    clearScreen();
-    vector<Word> wordlist(wordList);
-    string start_word,end_word;  
+    //clearScreen();
+    //vector<Word> wordlist(wordList);
+    string start_word,end_word;
     vector<string> path;
+    vector<pair<string,string>> wordPair = readWordPairsFromFile();
+    fisherYatesShuffle(wordPair);
+    start_word = wordPair[0].first;
+    end_word = wordPair[0].second;
+    cout << "Start word : " << start_word << "\n";
+    cout << "End word : " << end_word << "\n";
     char character;
     short int position;
-    path = findPathWords(start_word,end_word,wordlist);  
+
+    path = findPathWords(start_word,end_word);  
     cout << "********Word Ladder********\n";
     cout << "***************************\n";
     cout << "***************************\n\n";
-    cout << "Change " << start_word << "to " << end_word << "\n";
+//    cout << "Change " << start_word << " to " << end_word << "\n";
+    sleep(1000);
     do {
         clearScreen();
-        std::cout << "Current word: " << start_word << "  Target word : " << end_word;
-        std::cout << "Enter character: ";
+        std::cout << "Current word: " << start_word << "-->  Target word : " << end_word;
+        std::cout << "\n\nEnter character: ";
         std::cin >> character;
         std::cout << "Enter position (1 to " << start_word.length() << "): ";
         std::cin >> position;
