@@ -35,7 +35,24 @@ short int Profile::getTime2() const {
 void Profile::setTime2(short int time) {
     Profile::time2 = time;
 }
-
+short int Profile::getTime3() const {
+    return Profile::time3;
+}
+void Profile::setTime3(short int time) {
+    Profile::time3 = time;
+}
+short int Profile::getTime4() const {
+    return Profile::time4;
+}
+void Profile::setTime4(short int time) {
+    Profile::time4 = time;
+}
+short int Profile::getLoop4() const {
+    return Profile::loop4;
+}
+void Profile::setLoop4(short int loop) {
+    Profile::loop4 = loop;
+}
 // Check if the profile data file is empty
 bool Profile::isFileEmpty() {
     ifstream inputFile("profile.txt");
@@ -77,6 +94,9 @@ void Profile::promptAndStore() {
                 time1 = stoi(tokens[3]);
                 correct1 = stoi(tokens[4]);
                 time2 = stoi(tokens[5]);
+                time3 = stoi(tokens[6]);
+                time4 = stoi(tokens[7]);
+                loop4 = stoi(tokens[8]);
             }
 
             inFile.close();
@@ -87,6 +107,9 @@ void Profile::promptAndStore() {
     time1 = 0;
     correct1 = 0;
     time2 = 0;
+    time3 = 0;
+    time4 = 0;
+    loop4 = 2;
     while (true) {
         cout << "Enter your name: ";
         cin.ignore(); // Clear buffer before getline
@@ -115,7 +138,8 @@ void Profile::promptAndStore() {
     // Store the input in the file
     ofstream outputFile("profile.txt");
     outputFile << name << "," << password << "," << id << "," << time1 << "," << correct1 
-                       << "," << time2 << std::endl;
+                       << "," << time2 << "," << time3 << "," << time4 << "," << loop4 
+                       << std::endl;
     cout << "Profile created and stored successfully." << endl;
     cout << "Press Enter to continue...";
     cin.ignore(); // Ignore any previous newline character
@@ -137,7 +161,7 @@ void Profile::updateAndStore() {
     // Write the class variables to the file separated by commas
     if (outFile.is_open()) {
         outFile << name << "," << password << "," << id << "," << time1 << "," << correct1 
-            << "," << time2 << std::endl;
+                << "," << time2 << "," <<time3 << "," << time4 << "," << loop4 << std::endl;
         std::cout << "Profile information updated and saved to profile.txt." << std::endl;
         outFile.close();
     } 
@@ -177,4 +201,20 @@ void Profile::achievement1(short int correct,short int time) const {
         else if(time>=10 && time<20) cout << "RANK : Legend III\n";  
         else cout << "RANK : Speed Legend\n";
     }
+}
+void Profile::achievement2(short int time) const {
+    if(time==0) cout << "RANK : NULL\n";
+    if(time>=20)    cout << "RANK : Bronze\n";
+    else if(time>=15 && time<20)    cout << "RANK : Silver\n";
+    else if(time>=10 && time<15)    cout << "RANK : Platinum\n";
+    else if(time>=5 && time<10)     cout << "RANK : Diamond\n";
+    else                            cout << "RANK : Legend\n";
+}
+void Profile::achievement3(short int time) const {
+    if(time==0) cout << "RANK : NULL\n";
+
+}
+void Profile::achievement4(short int time,short int loop) const {
+    if(time==0) cout << "RANK : NULL\n";
+    
 }

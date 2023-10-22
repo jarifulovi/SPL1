@@ -26,7 +26,6 @@ int main() {
         cout << "Application starting..." << endl;
         Words myWords;
         Profile myprofile;
-
         myprofile.promptAndStore();
         clearMainScreen();
         // Load words from "input.text"

@@ -16,6 +16,7 @@ private:
     short int time2;
     short int time3;
     short int time4;
+    short int loop4;
     short int time5;
 
 public:
@@ -29,6 +30,12 @@ public:
     void setCorrect1(short int correct);
     short int getTime2() const;
     void setTime2(short int time);
+    short int getTime3() const;
+    void setTime3(short int time);
+    short int getTime4() const;
+    void setTime4(short int time);
+    short int getLoop4() const;
+    void setLoop4(short int loop);
     // file modification part
     bool isFileEmpty();
     void promptAndStore();
@@ -36,6 +43,9 @@ public:
     void updateAndStore();
     // achievement part
     void achievement1(short int correct,short int time) const ;
+    void achievement2(short int time) const;
+    void achievement3(short int time) const;
+    void achievement4(short int time,short int loop) const;
 }; 
 
 class Word {

@@ -22,13 +22,27 @@ using namespace std;
 void clearScreen() {
     system(CLEAR_SCREEN);
 }
-void display_card(const string& eng,const string& ban){
+void display_card(const vector<string>& eng,const vector<string>& ban,const int& curr_eng,const int& curr_ban){
     clearScreen();
-    cout << "            " << eng << "         " << ban << "\n";
+    int ban_len = ban[curr_ban].size();
+    int eng_len = eng[curr_eng].size();
+    cout << " _________________     _________________\n";
+    cout << "|                 |   |                 |\n";
+    cout << "|     CARD A      |   |     CARD B      |\n";
+    cout << "|                 |   |                 |\n";
+    cout << "|                 |   |                 |\n";
+    cout << "|                 |   |                 |\n";
+    cout << "|   "<< eng[curr_eng];
+    for(int i=0;i<14-eng_len;i++) cout << " "; cout << "|   ";
+    cout << "|   "<< ban[curr_ban];
+    for(int i=0;i<14-ban_len;i++) cout << " "; cout << "|\n";
+    cout << "|                 |   |                 |\n";
+    cout << "|_________________|   |_________________|\n";
     cout << "..........................................\n";
-    cout << "..........................................\n";
-    cout << "when match press enter\n";
-    cout << "press e/E for next eng card or b/B for next ban card\n";
+    cout << "curr indices : " << curr_eng+1 << "  " << curr_ban+1 << endl;
+    cout << "cards        : " << eng.size() << "  " << ban.size() << endl;
+    cout << "when match press s\n";
+    cout << "press A/a for next eng card or B/b for next ban card\n";
 }
 void display_card3(const vector<string>& eng,const vector<string>& ban,const vector<string>& pot,const int& curr_eng,const int& curr_ban,const int& curr_pot){
     clearScreen();
@@ -249,13 +263,10 @@ bool Words:: flashcard(Profile& myprofile) const {
     short int curr_eng = 0,curr_ban = 0;
     auto start = std::chrono::high_resolution_clock::now();
     while(!engWord.empty() && !banWord.empty()){
-        display_card(engWord[curr_eng],banWord[curr_ban]);    // doesn't need now
-        cout << "curr indices : " << curr_eng << "  " << curr_ban << endl;
-        cout << "cards        : " << engWord.size() << "  " << banWord.size() << endl;
-        cout << matching[engWord[curr_eng]] << "  " << banWord[curr_ban] << endl;
+        display_card(engWord,banWord,curr_eng,curr_ban);    // doesn't need now
         cin >> input;
 
-        if(input=="e"||input=="E"){
+        if(input=="A"||input=="a"){
             // go to next eng string from the eng vector
             curr_eng++;
         }
@@ -289,11 +300,12 @@ bool Words:: flashcard(Profile& myprofile) const {
             break;
         }
     }
-    if(result) cout << "congrats you won!\n";
-    auto stop = std::chrono::high_resolution_clock::now();
-    auto duration = std::chrono::duration_cast<std::chrono::seconds>(stop - start);
-    if(myprofile.getTime2()==0 || myprofile.getTime2()>(static_cast<short int>(duration.count()))){
-        myprofile.setTime2(static_cast<short int>(duration.count()));
+    if(result){ cout << "congrats you won!\n";
+        auto stop = std::chrono::high_resolution_clock::now();
+        auto duration = std::chrono::duration_cast<std::chrono::seconds>(stop - start);
+        if(myprofile.getTime2()==0 || myprofile.getTime2()>(static_cast<short int>(duration.count()))){
+            myprofile.setTime2(static_cast<short int>(duration.count()));
+        }
     }
     return result;
 }
@@ -319,12 +331,13 @@ bool Words::flashcard3(Profile& myprofile) const {
     fisherYatesShuffle(banWord);
     fisherYatesShuffle(part_of_speech);
     short int curr_eng=0,curr_ban=0,curr_pot=0,ind=0;
-
+    short int loop = 0;
+    auto start = std::chrono::high_resolution_clock::now();
     while(!engWord.empty() && !banWord.empty() && !part_of_speech.empty()){
         display_card3(engWord,banWord,part_of_speech,curr_eng,curr_ban,curr_pot);
 	cout << "\neng : " << mappedlist[curr_eng].a << " ban : " << mappedlist[curr_eng].b << " pot : " << mappedlist[curr_eng].c << "\n";
         cin >> input;
-         if(input=="A"||input=="a"){
+        if(input=="A"||input=="a"){
             // go to next eng string from the eng vector
             curr_eng++;
         }
@@ -361,9 +374,22 @@ bool Words::flashcard3(Profile& myprofile) const {
             curr_eng = 0;
             curr_ban = 0;
             curr_pot = 0;
+            loop++;
+        }
+        if(loop>2){
+            cout << "No loop left\n";
+            return false;
         }
     }
-    if(result) cout << "congrats you won!\n";
+    if(result){
+        cout << "congrats you won!\n";
+        auto stop = std::chrono::high_resolution_clock::now();
+        auto duration = std::chrono::duration_cast<std::chrono::seconds>(stop - start);
+        if(myprofile.getTime4()==0 || myprofile.getTime4()>(static_cast<short int>(duration.count()))){
+            myprofile.setTime4(static_cast<short int>(duration.count()));
+            myprofile.setLoop4(loop);
+        }
+    }
     return result;
 
 }
@@ -502,6 +528,7 @@ bool Words::wordpuzzle(Profile& myprofile) const{
     cout << "The meaning : " << placed_word.getMeaning() << "\n";
     cout << "Find the word in the puzzle(word length should be more than 2)\n\n";
     string input;
+    auto start = std::chrono::high_resolution_clock::now();
     cout << "Enter you answer : ";
     cin >> input;
     if(input==ans){
@@ -520,6 +547,13 @@ bool Words::wordpuzzle(Profile& myprofile) const{
     else {
         cout << "Sorry wrong answer\n";
         result = false;
+    }
+    if(result){
+        auto stop = std::chrono::high_resolution_clock::now();
+        auto duration = std::chrono::duration_cast<std::chrono::seconds>(stop - start);
+        if(myprofile.getTime3()==0 || myprofile.getTime3()>(static_cast<short int>(duration.count()))){
+            myprofile.setTime3(static_cast<short int>(duration.count()));
+        }
     }
     return result;
 }
