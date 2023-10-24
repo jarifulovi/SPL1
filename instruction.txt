@@ -1,0 +1,47 @@
+            Multiple Choice Question :
+            *************************
+
+    ->  User will be asked to tell the meaning of a word.Also there
+        will be four option to choose.
+    ->  There will be total 20 Questions to answer.The rank will set
+        according to the total correct answer and time.|
+            FlashCard Game :
+            ***************
+
+    ->  There will be two cards A and B. A will contain the English 
+        and B will contain the Bangla word.
+    ->  But the sequence will be random and user have to press s 
+        when the English and Bangla card match their meaning.
+    ->  There will be 5 cards to match and there is a loop option 
+        so that user can loop through card A or B only once. Also
+        the card will move forward but cannot move backward.
+    ->  Rank will be set according to time and loop option.|
+            Word Puzzle : 
+            ************
+
+    ->  There will be a grid of letters and user has to find a valid
+        word on that grid.There is a hint option to show the meaning
+        of a valid word.
+    ->  Rank will be set according to the time taken to guess the
+        word or any valid word.|
+            FlashCard 3 Cards :
+            ******************
+
+    ->  There will be 3 cards A, B and C which contain English, Bangla
+        and Parts of speech.
+    ->  When the three cards will match their validity user has to 
+        press s.
+    ->  There is a loop option and there will be 2 loop trial. The
+        user can loop through total 2 times in any cards. Also the 
+        cards will move forward but not backward.  
+    ->  Rank will set according to time taken and loop used to match
+        all five cards.|
+            Word Ladder :
+            ************
+
+    ->  There will be two words given and user has to make the first
+        word to the second one by changing it's one character at a 
+        time.
+    ->  But the user has to make sure that in every step it has to be 
+        a valid word.
+    ->  Rank will be set according to time taken by the user.

@@ -46,6 +46,9 @@ public:
     void updateAndStore();
     void loginProfile();
     void changePassword();
+    // display part
+    void displayProfile() const;
+    void howToPlay() const;
     // achievement part
     void achievement1(short int correct,short int time) const ;
     void achievement2(short int time) const;

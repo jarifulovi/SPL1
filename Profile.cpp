@@ -18,7 +18,7 @@ void clearProfileScreen(){
 }
 
 void enterPressedProfile() {
-    cout << "\nPress Enter to continue...";
+    cout << "\n\nPress Enter to continue...";
     cin.ignore(); // Ignore any previous newline character
     cin.get();    // Wait for Enter key
 }
@@ -228,6 +228,53 @@ void Profile::changePassword() {
     cout << "Password updated successfully\n";
     enterPressedProfile();
 }
+// display part
+void Profile::displayProfile() const {
+
+}
+void Profile::howToPlay() const {
+    std::ifstream file("instruction.txt");
+    if (!file.is_open()) {
+        std::cerr << "Failed to open file: " << "instruction.txt" << std::endl;
+        return;
+    }
+    std::string fileContents;    // hold all the file data
+    std::string line;
+
+    while (std::getline(file, line)) {
+        fileContents += line + '\n';
+    }
+    file.close();
+    std::vector<std::string> game;
+    std::istringstream iss(fileContents);
+    std::string portion;
+
+    while (std::getline(iss, portion, '|')) {
+        game.push_back(portion);
+    }
+    while(true) {
+        clearProfileScreen();
+        cout << "Select the game instructions\n";
+        cout << "1.Multiple choice question\n";
+        cout << "2.flashcard game\n";
+        cout << "3.word puzzle\n";
+        cout << "4.flashcard 3 cards\n";
+        cout << "5.Word Ladder\n";
+        cout << "q to back\n";
+        string input;
+        cin >> input;
+        clearProfileScreen();
+        if(input=="1") cout << game[0];
+        else if(input=="2") cout << game[1];
+        else if(input=="3") cout << game[2];
+        else if(input=="4") cout << game[3];
+        else if(input=="5") cout << game[4];
+        else if(input=="q") break;
+        else                cout << "Invalid input.Please try numbers(1-5) or q to back\n";
+        enterPressedProfile();
+    }
+}
+// achievement part
 void Profile::achievement1(short int correct,short int time) const {
     if(correct==0) cout << "RANK : " << "NULL";
     if(correct>0 && correct<=10){

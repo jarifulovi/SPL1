@@ -76,7 +76,7 @@ int main() {
                 continue;
             }
             else if(input=="5"){
-                // how to play
+                myprofile.howToPlay();
                 continue;
             }
             else if(input=="6"){
