@@ -22,36 +22,74 @@ int main() {
 
     if (input == "start") {     //  starting point of application
         clearMainScreen();
-
         cout << "Application starting..." << endl;
         Words myWords;
         Profile myprofile;
         myprofile.promptAndStore();
-        clearMainScreen();
-        // Load words from "input.text"
-        if (myWords.loadFromFile()) {      // ready to execute application
-            
-            cout << "1.Multiple choice question\n";
-            cout << "2.flashcard game\n";
-            cout << "3.word puzzle\n";
-            cout << "4.flashcard 3 cards\n";
-            cout << "5.Word Ladder\n";
-            cout << "q to quit\n";
+        while(true){
+            clearMainScreen();
+            // first menu
+            cout << "1.Word Games\n";
+            cout << "2.Display Profile\n";
+            cout << "3.Change Password\n";
+            cout << "4.Connect Server\n";
+            cout << "5.How to play\n";
+            cout << "6.Exit\n";
             cin >> input;
-            // Display attributes of each word
-            if(input=="1")  myWords.vocabularyTest(myprofile);
-            else if(input=="2") myWords.flashcard(myprofile);
-            else if(input=="3")   myWords.wordpuzzle(myprofile);
-            else if(input=="4") myWords.flashcard3(myprofile);
-            else if(input=="5") myWords.wordLadder(myprofile);
-            else{}
-            myprofile.updateAndStore();
-        } 
-        else {
-            cerr << "Error: Could not open 'input.txt'." << endl;
-            return 1;
+            // second menu
+            if (input=="1" && myWords.loadFromFile()) {
+                while(true){
+                    clearMainScreen();
+                    cout << "1.Multiple choice question\n";
+                    cout << "2.flashcard game\n";
+                    cout << "3.word puzzle\n";
+                    cout << "4.flashcard 3 cards\n";
+                    cout << "5.Word Ladder\n";
+                    cout << "q to back\n";
+                    cin >> input;
+                    // Display attributes of each word
+                    if(input=="1")  myWords.vocabularyTest(myprofile);
+                    else if(input=="2") myWords.flashcard(myprofile);
+                    else if(input=="3")   myWords.wordpuzzle(myprofile);
+                    else if(input=="4") myWords.flashcard3(myprofile);
+                    else if(input=="5") myWords.wordLadder(myprofile);
+                    else if(input=="q") break;
+                    else{
+                        cout << "Invalid input.Please use numbers (1-5) or q to back\n";
+                        cout << "\nPress Enter to continue...";
+                        cin.ignore(); // Ignore any previous newline character
+                        cin.get();    // Wait for Enter key
+                    }
+                    myprofile.updateAndStore();
+                }
+            } 
+            else if(input=="2"){
+                // display profile
+                continue;
+            }
+            else if(input=="3"){
+                myprofile.changePassword();
+                continue;
+            }
+            else if(input=="4"){
+                // connect server
+                continue;
+            }
+            else if(input=="5"){
+                // how to play
+                continue;
+            }
+            else if(input=="6"){
+                break;
+            }
+            else{
+                cout << "Invaild input.Try numbers(1-6)\n";
+                cout << "\nPress Enter to continue...";
+                cin.ignore(); // Ignore any previous newline character
+                cin.get();    // Wait for Enter key
+            }
         }
-    } 
+    }
     else if(input=="close"){
         clearMainScreen();
         cout << "Thank you for using this app" << endl;

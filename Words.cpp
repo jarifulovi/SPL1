@@ -22,6 +22,11 @@ using namespace std;
 void clearScreen() {
     system(CLEAR_SCREEN);
 }
+void enterPress() {
+    cout << "\nPress Enter to continue..." << endl;
+    cin.ignore(); // Ignore any previous newline character
+    cin.get();    // Wait for Enter key
+}
 void display_card(const vector<string>& eng,const vector<string>& ban,const int& curr_eng,const int& curr_ban){
     clearScreen();
     int ban_len = ban[curr_ban].size();
@@ -187,7 +192,8 @@ void Words::vocabularyTest(Profile& myprofile) const {
     do {
         if(!iteration){
             clearScreen();
-            cout << "Congratulation you passed the first stage" << endl;
+            cout << "Congratulation you won!\n";
+            enterPress();
             break;
         }
         clearScreen();
@@ -223,14 +229,13 @@ void Words::vocabularyTest(Profile& myprofile) const {
             } else {
                 cout << "Incorrect. The correct meaning of \"" << correctAnswer.getWord() << "\" is \"" << correctAnswer.getMeaning() << "\"." << endl;
             }
-        } else {
+        } 
+        else {
             cout << "Invalid input. Please enter 1, 2, 3, 4, or 'q' to quit." << endl;
         }
        
         // Prompt for the next question
-        cout << "Press Enter to continue..." << endl;
-        cin.ignore(); // Ignore any previous newline character
-        cin.get();    // Wait for Enter key
+        enterPress();
         
     } while (userInput != 'q'&& iteration--);
 
@@ -238,10 +243,14 @@ void Words::vocabularyTest(Profile& myprofile) const {
         auto stop = std::chrono::high_resolution_clock::now();
         auto duration = std::chrono::duration_cast<std::chrono::seconds>(stop - start);
         if(myprofile.getTime1()==0||correct_ans>=myprofile.getCorrect1()){
-            if(myprofile.getTime1()>(static_cast<short int>(duration.count()))){
+            if(correct_ans==myprofile.getCorrect1()){
+                if(myprofile.getTime1()>(static_cast<short int>(duration.count())))
+                    myprofile.setTime1(static_cast<short int>(duration.count()));
+            }
+            else{
+                myprofile.setCorrect1(correct_ans);
                 myprofile.setTime1(static_cast<short int>(duration.count()));
             }
-            myprofile.setCorrect1(correct_ans);
         }
     }
 }
@@ -263,6 +272,7 @@ bool Words:: flashcard(Profile& myprofile) const {
     short int curr_eng = 0,curr_ban = 0;
     auto start = std::chrono::high_resolution_clock::now();
     while(!engWord.empty() && !banWord.empty()){
+        clearScreen();
         display_card(engWord,banWord,curr_eng,curr_ban);    // doesn't need now
         cin >> input;
 
@@ -287,12 +297,14 @@ bool Words:: flashcard(Profile& myprofile) const {
             else{ 
                 cout << "Wrong ans you lost!\n";
                 result = false;
+                enterPress();
                 break;
             }
         }
        
         else{
             cout << "Invalid input please enter e/E or b/B or s\n";
+            enterPress();
         }
         if(curr_eng>engWord.size()-1||curr_ban>engWord.size()-1){
             cout << "you lost no cards on the deck\n";
@@ -300,12 +312,15 @@ bool Words:: flashcard(Profile& myprofile) const {
             break;
         }
     }
-    if(result){ cout << "congrats you won!\n";
+    if(result){ 
+        clearScreen();
+        cout << "congrats you won!\n";
         auto stop = std::chrono::high_resolution_clock::now();
         auto duration = std::chrono::duration_cast<std::chrono::seconds>(stop - start);
         if(myprofile.getTime2()==0 || myprofile.getTime2()>(static_cast<short int>(duration.count()))){
             myprofile.setTime2(static_cast<short int>(duration.count()));
         }
+        enterPress();
     }
     return result;
 }
@@ -334,8 +349,10 @@ bool Words::flashcard3(Profile& myprofile) const {
     short int loop = 0;
     auto start = std::chrono::high_resolution_clock::now();
     while(!engWord.empty() && !banWord.empty() && !part_of_speech.empty()){
+        clearScreen();
         display_card3(engWord,banWord,part_of_speech,curr_eng,curr_ban,curr_pot);
 	cout << "\neng : " << mappedlist[curr_eng].a << " ban : " << mappedlist[curr_eng].b << " pot : " << mappedlist[curr_eng].c << "\n";
+        cout << "Enter your answer : ";
         cin >> input;
         if(input=="A"||input=="a"){
             // go to next eng string from the eng vector
@@ -364,11 +381,13 @@ bool Words::flashcard3(Profile& myprofile) const {
             else{ 
                 cout << "Wrong ans you lost!\n";
                 result = false;
+                enterPress();
                 break;
             }
         }
         else{
             cout << "Invalid input please enter A/a or B/b or or C/c or s\n";
+            enterPress();
         }
         if(curr_eng>engWord.size()-1||curr_ban>engWord.size()-1||curr_pot>part_of_speech.size()-1){
             curr_eng = 0;
@@ -378,6 +397,7 @@ bool Words::flashcard3(Profile& myprofile) const {
         }
         if(loop>2){
             cout << "No loop left\n";
+            enterPress();
             return false;
         }
     }
@@ -389,7 +409,9 @@ bool Words::flashcard3(Profile& myprofile) const {
             myprofile.setTime4(static_cast<short int>(duration.count()));
             myprofile.setLoop4(loop);
         }
+        enterPress();
     }
+
     return result;
 
 }
@@ -482,8 +504,7 @@ bool Words::wordpuzzle(Profile& myprofile) const{
     bool result = true;
     Word placed_word = generateRandomWord();
     while(true){
-       
-        if(placed_word.getWord().size()<=7) break;
+        if(placed_word.getWord().size()<8||placed_word.getWord().size()>2) break;
         placed_word = generateRandomWord();
     }
     string ans = placed_word.getSmallLetter();
@@ -533,20 +554,24 @@ bool Words::wordpuzzle(Profile& myprofile) const{
     cin >> input;
     if(input==ans){
         cout << "Wow! you found the word\n";
+        enterPress();
     }
     else if(isWordList(input)){
         vector<vector<char>> vec = convertCharArrayToVector(puzzle);
         if(doesWordExist(vec,input,row,col)){
             cout << "Wow! you found the other word\n";
+            enterPress();
         }
         else{
             cout << "Sorry wrong answer with valid word\n";
             result = false;
+            enterPress();
         }
     }
     else {
         cout << "Sorry wrong answer\n";
         result = false;
+        enterPress();
     }
     if(result){
         auto stop = std::chrono::high_resolution_clock::now();
@@ -635,10 +660,11 @@ bool Words::wordLadder(Profile& myprofile) const {
     cout << "***************************\n";
     cout << "***************************\n\n";
 //    cout << "Change " << start_word << " to " << end_word << "\n";
-    sleep(1000);
+    enterPress();
+    auto start = std::chrono::high_resolution_clock::now();
     do {
         clearScreen();
-        std::cout << "Current word: " << start_word << "-->  Target word : " << end_word;
+        std::cout << "Current word: " << start_word << "  -->  Target word : " << end_word;
         std::cout << "\n\nEnter character: ";
         std::cin >> character;
         std::cout << "Enter position (1 to " << start_word.length() << "): ";
@@ -646,6 +672,8 @@ bool Words::wordLadder(Profile& myprofile) const {
 
         if (position < 1 || position > start_word.length()) {
             std::cout << "Invalid position!\n";
+            enterPress();
+            continue;
         }
 
         // Update the word based on user input
@@ -662,11 +690,18 @@ bool Words::wordLadder(Profile& myprofile) const {
 
         if (!matched) {
             std::cout << "Invalid word. You lost!\n";
+            enterPress();
             return false;
         }
 
         if (start_word == end_word) {
             std::cout << "You won!\n";
+            auto stop = std::chrono::high_resolution_clock::now();
+            auto duration = std::chrono::duration_cast<std::chrono::seconds>(stop - start);
+            if(myprofile.getTime5()==0 || myprofile.getTime5()>(static_cast<short int>(duration.count()))){
+                myprofile.setTime5(static_cast<short int>(duration.count()));
+            }
+            enterPress();
             return true;
         }
     } while (true);

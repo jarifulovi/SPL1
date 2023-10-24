@@ -24,6 +24,7 @@ public:
     // getter and setter
     string getName() const;
     string getPassword() const;
+    void setPassword(string pass);
     short int getTime1() const;
     short int getCorrect1() const;
     void setTime1(short int time);
@@ -36,16 +37,21 @@ public:
     void setTime4(short int time);
     short int getLoop4() const;
     void setLoop4(short int loop);
+    short int getTime5() const;
+    void setTime5(short int time);
     // file modification part
     bool isFileEmpty();
     void promptAndStore();
     string generateID();
     void updateAndStore();
+    void loginProfile();
+    void changePassword();
     // achievement part
     void achievement1(short int correct,short int time) const ;
     void achievement2(short int time) const;
     void achievement3(short int time) const;
     void achievement4(short int time,short int loop) const;
+    void achievement5(short int time) const;
 }; 
 
 class Word {
