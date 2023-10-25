@@ -34,7 +34,7 @@ int main() {
             cout << "3.Change Password\n";
             cout << "4.Connect Server\n";
             cout << "5.How to play\n";
-            cout << "6.Exit\n";
+            cout << "q to Exit\n";
             cin >> input;
             // second menu
             if (input=="1" && myWords.loadFromFile()) {
@@ -64,7 +64,7 @@ int main() {
                 }
             } 
             else if(input=="2"){
-                // display profile
+                myprofile.displayProfile();
                 continue;
             }
             else if(input=="3"){
@@ -79,11 +79,11 @@ int main() {
                 myprofile.howToPlay();
                 continue;
             }
-            else if(input=="6"){
+            else if(input=="q"){
                 break;
             }
             else{
-                cout << "Invaild input.Try numbers(1-6)\n";
+                cout << "Invaild input.Try numbers(1-5) or q to exit\n";
                 cout << "\nPress Enter to continue...";
                 cin.ignore(); // Ignore any previous newline character
                 cin.get();    // Wait for Enter key

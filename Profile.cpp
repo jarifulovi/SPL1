@@ -230,7 +230,28 @@ void Profile::changePassword() {
 }
 // display part
 void Profile::displayProfile() const {
-
+    clearProfileScreen();
+    cout << "User Profile : \n";
+    cout << "*************\n\n";
+    cout << "Name : " << getName() << "\n\n";
+    cout << "Achievements :\n";
+    cout << "*************\n";
+    cout << "\nMultiple choice question :\n";
+    achievement1(getCorrect1(),getTime1());
+    cout << "Best score : Time : " << getTime1() << " | Correct : " << getCorrect1() << "\n";
+    cout << "\nFlashCard :\n";
+    achievement2(getTime2());
+    cout << "Best score : Time : " << getTime2() << "\n";
+    cout << "\nWord Puzzle :\n";
+    achievement3(getTime3());
+    cout << "Best score : Time : " << getTime3() << "\n";
+    cout << "\nFlashCard 3 cards :\n";
+    achievement4(getTime4(),getLoop4());
+    cout << "Best score : Time : " << getTime4() << " | Loop trial : " << getLoop4() << "\n";
+    cout << "\nWord Ladder : \n";
+    achievement5(getTime5());
+    cout << "Best score : Time : " << getTime5() << "\n";
+    enterPressedProfile();
 }
 void Profile::howToPlay() const {
     std::ifstream file("instruction.txt");
@@ -314,22 +335,35 @@ void Profile::achievement2(short int time) const {
     else if(time>=15 && time<20)    cout << "RANK : Silver\n";
     else if(time>=10 && time<15)    cout << "RANK : Platinum\n";
     else if(time>=5 && time<10)     cout << "RANK : Diamond\n";
-    else                            cout << "RANK : Legend\n";
+    else if(time>=1 && time<5)      cout << "RANK : Legend\n";
 }
 void Profile::achievement3(short int time) const {
     if(time==0) cout << "RANK : NULL\n";
-    
+    if(time>30) cout << "RANK : Bronze\n";
+    else if(time>=20 && time<30) cout << "RANK : Silver\n";
+    else if(time>=10 && time<20) cout << "RANK : Platinum\n";
+    else if(time>=5 && time<10)  cout << "RANK : Diamond\n";
+    else if(time>=1 && time<5)   cout << "RANK : Legend\n";
 }
 void Profile::achievement4(short int time,short int loop) const {
-    if(time==0) cout << "RANK : NULL\n";
+    if(time==0){ 
+        cout << "RANK : NULL\n";
+        return;
+    }
     if(time>=20)                    cout << "RANK : Bronze ";
     else if(time>=15 && time<20)    cout << "RANK : Silver ";
     else if(time>=10 && time<15)    cout << "RANK : Platinum ";
     else if(time>=5 && time<10)     cout << "RANK : Diamond ";
-    else                            cout << "RANK : Legend ";
-    while(3-loop++) cout << "I";
+    else if(time>=1 && time<5)      cout << "RANK : Legend ";
+    int i=0;
+    while(i++ < 3 - loop) cout << "I";
     cout << "\n";
 }
 void Profile::achievement5(short int time) const {
     if(time==0) cout << "RANK : NULL\n";
+    if(time>=20) cout << "RANK : Bronze\n";
+    else if(time>=10 && time<20) cout << "RANK : Silver\n";
+    else if(time>=8 && time<10)  cout << "RANK : Platinum\n";
+    else if(time>=5 && time<8)   cout << "RANK : Diamond\n";
+    else if(time>=1 && time<5)   cout << "RANK : Legend\n";
 }
