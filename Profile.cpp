@@ -53,6 +53,12 @@ short int Profile::getTime2() const {
 void Profile::setTime2(short int time) {
     Profile::time2 = time;
 }
+short int Profile::getLoop2() const {
+    return Profile:: loop2;
+}
+void Profile::setLoop2(short int loop) {
+    Profile::loop2 = loop;
+}
 short int Profile::getTime3() const {
     return Profile::time3;
 }
@@ -118,10 +124,11 @@ void Profile::promptAndStore() {
                 time1 = stoi(tokens[3]);
                 correct1 = stoi(tokens[4]);
                 time2 = stoi(tokens[5]);
-                time3 = stoi(tokens[6]);
-                time4 = stoi(tokens[7]);
-                loop4 = stoi(tokens[8]);
-                time5 = stoi(tokens[9]);
+                loop2 = stoi(tokens[6]);
+                time3 = stoi(tokens[7]);
+                time4 = stoi(tokens[8]);
+                loop4 = stoi(tokens[9]);
+                time5 = stoi(tokens[10]);
             }
 
             inFile.close();
@@ -132,6 +139,7 @@ void Profile::promptAndStore() {
     time1 = 0;
     correct1 = 0;
     time2 = 0;
+    loop2 = 1;
     time3 = 0;
     time4 = 0;
     loop4 = 2;
@@ -164,8 +172,8 @@ void Profile::promptAndStore() {
     // Store the input in the file
     ofstream outputFile("profile.txt");
     outputFile << name << "," << password << "," << id << "," << time1 << "," << correct1 
-                       << "," << time2 << "," << time3 << "," << time4 << "," << loop4 
-                       << "," << time5 << std::endl;
+                       << "," << time2 << "," << loop2 << "," << time3 << "," << time4 
+                       << "," << loop4 << "," << time5 << std::endl;
     cout << "Profile created and stored successfully." << endl;
     enterPressedProfile();
 }
@@ -185,8 +193,8 @@ void Profile::updateAndStore() {
     // Write the class variables to the file separated by commas
     if (outFile.is_open()) {
         outFile << name << "," << password << "," << id << "," << time1 << "," << correct1 
-                << "," << time2 << "," <<time3 << "," << time4 << "," << loop4 << "," 
-                << time5 << std::endl;
+                << "," << time2 << "," << loop2 << "," << time3 << "," << time4 << "," << loop4 
+                << "," << time5 << std::endl;
         //std::cout << "Profile information updated and saved to profile.txt." << std::endl;
         outFile.close();
     } 
@@ -240,8 +248,8 @@ void Profile::displayProfile() const {
     achievement1(getCorrect1(),getTime1());
     cout << "Best score : Time : " << getTime1() << " | Correct : " << getCorrect1() << "\n";
     cout << "\nFlashCard :\n";
-    achievement2(getTime2());
-    cout << "Best score : Time : " << getTime2() << "\n";
+    achievement2(getTime2(),getLoop2());
+    cout << "Best score : Time : " << getTime2() << " | Loop trial : " << getLoop2() << "\n";
     cout << "\nWord Puzzle :\n";
     achievement3(getTime3());
     cout << "Best score : Time : " << getTime3() << "\n";
@@ -297,7 +305,7 @@ void Profile::howToPlay() const {
 }
 // achievement part
 void Profile::achievement1(short int correct,short int time) const {
-    if(correct==0) cout << "RANK : " << "NULL";
+    if(correct==0) cout << "RANK : " << "NULL\n";
     if(correct>0 && correct<=10){
         if(time>=30) cout << "RANK : Bronze I\n";
         else if(time>=20 && time<30) cout << "RANK : Bronze II\n";
@@ -329,13 +337,16 @@ void Profile::achievement1(short int correct,short int time) const {
         else cout << "RANK : Speed Legend\n";
     }
 }
-void Profile::achievement2(short int time) const {
+void Profile::achievement2(short int time,short int loop) const {
     if(time==0) cout << "RANK : NULL\n";
     if(time>=20)    cout << "RANK : Bronze\n";
-    else if(time>=15 && time<20)    cout << "RANK : Silver\n";
-    else if(time>=10 && time<15)    cout << "RANK : Platinum\n";
-    else if(time>=5 && time<10)     cout << "RANK : Diamond\n";
-    else if(time>=1 && time<5)      cout << "RANK : Legend\n";
+    else if(time>=15 && time<20)    cout << "RANK : Silver ";
+    else if(time>=10 && time<15)    cout << "RANK : Platinum ";
+    else if(time>=5 && time<10)     cout << "RANK : Diamond ";
+    else if(time>=1 && time<5)      cout << "RANK : Legend ";
+    if(loop==0) cout << "II\n";
+    else        cout << "I\n";
+
 }
 void Profile::achievement3(short int time) const {
     if(time==0) cout << "RANK : NULL\n";
@@ -344,6 +355,7 @@ void Profile::achievement3(short int time) const {
     else if(time>=10 && time<20) cout << "RANK : Platinum\n";
     else if(time>=5 && time<10)  cout << "RANK : Diamond\n";
     else if(time>=1 && time<5)   cout << "RANK : Legend\n";
+    
 }
 void Profile::achievement4(short int time,short int loop) const {
     if(time==0){ 

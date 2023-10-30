@@ -3,7 +3,7 @@
 #include <winsock2.h>
 #include <fstream>
 
-#define PORT 9999
+#define PORT 12345
 #define MAX_CLIENTS 5
 
 class Server {

@@ -77,9 +77,5 @@ int main() {
     Client client;
     client.connectToServerAndSendData();
 
-    // Example: Sending data (will be handled in sendData method)
-    //const char* message = "Hello, server!";
-    //client.sendData(message, strlen(message));
-
     return 0;
 }

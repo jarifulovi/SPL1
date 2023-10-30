@@ -14,6 +14,7 @@ private:
     short int time1;
     short int correct1;
     short int time2;
+    short int loop2;
     short int time3;
     short int time4;
     short int loop4;
@@ -31,6 +32,8 @@ public:
     void setCorrect1(short int correct);
     short int getTime2() const;
     void setTime2(short int time);
+    void setLoop2(short int loop);
+    short int getLoop2() const;
     short int getTime3() const;
     void setTime3(short int time);
     short int getTime4() const;
@@ -51,7 +54,7 @@ public:
     void howToPlay() const;
     // achievement part
     void achievement1(short int correct,short int time) const ;
-    void achievement2(short int time) const;
+    void achievement2(short int time,short int loop) const;
     void achievement3(short int time) const;
     void achievement4(short int time,short int loop) const;
     void achievement5(short int time) const;
@@ -95,13 +98,13 @@ public:
     template<typename T>
     void fisherYatesShuffle(vector<T>& vec) const;
     vector<Word> getUniqueWordlist(vector<Word> templist,short int num) const;
+    bool isWordList(const string& targetWord) const;
     // Vocabulary test
     void vocabularyTest(Profile& myprofile) const;
     // Flashcard
     bool flashcard(Profile& myprofile) const;
     // WordPuzzle
     bool wordpuzzle(Profile& myprofile) const;
-    bool isWordList(const string& targetWord) const;
     bool isSafe(int i, int j, int row, int col, vector<vector<bool>>& visited) const ;
     bool findWordUtil(vector<vector<char>>& boggle, vector<vector<bool>>& visited, int i, int j, string& str, const string& target, int row, int col) const;
     bool doesWordExist(vector<vector<char>>& boggle, string target, int row, int col) const ;
@@ -112,6 +115,8 @@ public:
     bool isAdjacent(const std::string& word1, const std::string& word2) const;
     std::vector<std::string> findPathWords(const std::string& start_word, const std::string& end_word) const;
     bool wordLadder(Profile& myprofile) const;
+    // hangman part
+    bool hangman(Profile& myprofile) const;
 };
 
 class tri {

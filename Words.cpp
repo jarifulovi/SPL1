@@ -256,6 +256,7 @@ void Words::vocabularyTest(Profile& myprofile) const {
 }
 bool Words:: flashcard(Profile& myprofile) const {
     bool result = true;
+    short int loop = 0;
     vector<Word> templist(wordList);
     string input;
     fisherYatesShuffle(templist);
@@ -307,9 +308,14 @@ bool Words:: flashcard(Profile& myprofile) const {
             enterPress();
         }
         if(curr_eng>engWord.size()-1||curr_ban>engWord.size()-1){
-            cout << "you lost no cards on the deck\n";
-            result = false;
-            break;
+            curr_eng = 0;
+            curr_ban = 0;
+            loop++;
+        }
+        if(loop>1) {
+            cout << "No loop left\n";
+            enterPress();
+            return false;
         }
     }
     if(result){ 
@@ -319,6 +325,7 @@ bool Words:: flashcard(Profile& myprofile) const {
         auto duration = std::chrono::duration_cast<std::chrono::seconds>(stop - start);
         if(myprofile.getTime2()==0 || myprofile.getTime2()>(static_cast<short int>(duration.count()))){
             myprofile.setTime2(static_cast<short int>(duration.count()));
+            myprofile.setLoop2(loop);
         }
         enterPress();
     }
@@ -706,4 +713,19 @@ bool Words::wordLadder(Profile& myprofile) const {
         }
     } while (true);
     return true;
+}
+// hangman game part
+bool Words::hangman(Profile& myprofile) const {
+    bool result;
+    vector<Word> temp(wordList);
+    vector<Word> selectedWords;
+    fisherYatesShuffle(temp);
+    selectedWords = getUniqueWordlist(temp,5);
+
+    //display_hangman();
+    for(int i=0;i<5;i++){
+        // display_hangman_steps(i);
+        
+    }
+
 }

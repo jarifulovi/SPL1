@@ -16,6 +16,8 @@ private:
     int nClient[MAX_CLIENTS] = {0};
     int numConnectedClients;  // Number of connected clients
     bool clientConnected;  // Flag to track client connection
+    // Vector to store data received from clients
+    std::vector<std::string> dataFromClients;
 
 public:
     Server() : nListener(0), nMaxFd(0), numConnectedClients(0), clientConnected(false) {
@@ -54,34 +56,38 @@ public:
         }
 
         nMaxFd = nListener + 1;
+
+        // Initialize dataFromClients vector for each client
+        for (int i = 0; i < MAX_CLIENTS; i++) {
+            dataFromClients.push_back("");
+        }
     }
 
-void handleConnections() {
-    struct timeval tv;
-    tv.tv_sec = 1; // Set the timeout to 1 second
-    tv.tv_usec = 0;
+    void handleConnections() {
+        struct timeval tv;
+        tv.tv_sec = 10;  // Set the timeout to 10 seconds
+        tv.tv_usec = 0;
 
-    // Vector to store data received from clients
-    std::vector<std::string> dataFromClients(MAX_CLIENTS);
+        time_t startTime = time(nullptr);  // Get the current time
 
-    time_t startTime = time(nullptr); // Get the current time
-
-    while (true) {
-        FD_ZERO(&fr);
-        FD_SET(nListener, &fr);
-        for (int nIndex = 0; nIndex < MAX_CLIENTS; nIndex++) {
-            if (nClient[nIndex] != 0) {
-                FD_SET(nClient[nIndex], &fr);
+        while (true) {
+            FD_ZERO(&fr);
+            FD_SET(nListener, &fr);
+            for (int nIndex = 0; nIndex < MAX_CLIENTS; nIndex++) {
+                if (nClient[nIndex] != 0) {
+                    FD_SET(nClient[nIndex], &fr);
+                }
             }
-        }
 
-        int err = select(nMaxFd, &fr, NULL, NULL, &tv);
-        if (err < 0) {
-            std::cerr << "Select failed.." << std::endl;
-            exit(EXIT_FAILURE);
-        } else if (err == 0) {
-            std::cout << "No client available to connect/message" << std::endl;
-        } else {
+            int err = select(nMaxFd, &fr, NULL, NULL, &tv);
+            if (err < 0) {
+                std::cerr << "Select failed.." << std::endl;
+                exit(EXIT_FAILURE);
+            } else if (err == 0) {
+                std::cout << "No client available to connect/message for 10 seconds." << std::endl;
+                break;  // Exit the loop after 10 seconds of inactivity
+            }
+
             if (!clientConnected) {
                 clientConnected = true;
                 // Print the initial number of connected clients
@@ -102,21 +108,34 @@ void handleConnections() {
 
             if (connectedCount != numConnectedClients) {
                 numConnectedClients = connectedCount;
-                std::cout << "Number of clients connected: " << numConnectedClients+1 << std::endl;
+                std::cout << "Number of clients connected: " << numConnectedClients << std::endl;
             }
 
             // Check if the timeout has been reached
             time_t currentTime = time(nullptr);
-            if (currentTime - startTime >= 5) {
+            if (currentTime - startTime >= 10) {
                 std::cout << "Timeout reached. Stopping the server." << std::endl;
                 break;
+            }
+
+            // Accept new client connections
+            if (FD_ISSET(nListener, &fr)) {
+                for (int i = 0; i < MAX_CLIENTS; i++) {
+                    if (nClient[i] == 0) {
+                        nClient[i] = accept(nListener, NULL, NULL);
+                        if (nClient[i] != INVALID_SOCKET) {
+                            std::cout << "New client connected: " << i + 1 << std::endl;
+                        }
+                        break;  // Accept one client at a time
+                    }
+                }
             }
 
             // Rest of the processing to connect/recv the req
             for (int i = 0; i < MAX_CLIENTS; i++) {
                 if (nClient[i] != 0 && FD_ISSET(nClient[i], &fr)) {
                     // Handle data received from client i
-                    char buffer[1024]; // Adjust the buffer size as needed
+                    char buffer[1024];  // Adjust the buffer size as needed
                     int bytesRead = recv(nClient[i], buffer, sizeof(buffer), 0);
                     if (bytesRead <= 0) {
                         // Handle disconnection or error
@@ -131,6 +150,37 @@ void handleConnections() {
             }
         }
     }
+
+
+void displayClients() {
+    std::cout << "Connected Clients:" << std::endl;
+    for (int i = 0; i < MAX_CLIENTS; i++) {
+        if (nClient[i] != 0) {
+            std::cout << i + 1 << ". Client " << i + 1 << std::endl;
+        }
+    }
+
+    if (numConnectedClients == 0) {
+        std::cout << "No clients connected." << std::endl;
+        return;
+    }
+
+    int clientNumber;
+    std::cout << "Enter the client number to display data (1-" << numConnectedClients << "): ";
+    std::cin >> clientNumber;
+
+    if (clientNumber < 1 || clientNumber > numConnectedClients) {
+        std::cout << "Invalid client number." << std::endl;
+        return;
+    }
+
+    int clientIndex = clientNumber - 1;
+
+    if (nClient[clientIndex] == 0) {
+        std::cout << "Client " << clientNumber << " is not connected." << std::endl;
+    } else {
+        std::cout << "Data received from Client " << clientNumber << ": " << dataFromClients[clientIndex] << std::endl;
+    }
 }
 
 };
@@ -138,6 +188,6 @@ void handleConnections() {
 int main() {
     Server server;
     server.handleConnections();
-
+    server.displayClients();
     return 0;
 }
