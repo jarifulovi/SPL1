@@ -83,6 +83,46 @@ void sleep(int milliseconds) {
         // Do nothing (just wait)
     }
 }
+void display_puzzle(char puzzle[row][col]) {
+    cout << "   ---------------------------------------------\n";
+    cout << "   ------------------PUZZLE---------------------\n";
+    cout << "   ---------------------------------------------\n\n";
+    cout << " **************************************************\n";
+    for(int i=0;i<10;i++)
+    {
+        cout << "|";
+        for(int j=0;j<10;j++)
+        {
+          cout<<" ["<<puzzle[i][j] << "] ";
+          sleep(50);
+        }
+        cout << "|\n";
+    }
+    cout << " **************************************************\n";
+}
+void display_hangman_steps(Word selectedWord,short int i,string& dash,short int trial) {
+    string answer = selectedWord.getWord();
+    cout << "Hint for step " << i+1 << " :\n";
+    if(i==0){
+        cout << "Meaning : " << selectedWord.getMeaning() << "\n";
+        cout << "Parts of speech : " << selectedWord.getPartOfSpeech() << "\n";
+    }
+    else if(i==1){
+        short int pos1=0,pos2;
+        srand(time(0));
+        short int length = answer.size();
+        pos2 = rand()%(length-1) + 1;
+        dash[pos1] = answer[pos1];
+        dash[pos2] = answer[pos2];
+    }
+    else if(i==2) {
+        cout << "Parts of speech : " << selectedWord.getPartOfSpeech() << "\n";
+    }
+    cout << "The hidden word : " << dash << "\n";
+    cout << "Trial remaining : " << trial+1 << "\n";
+    cout << "\nThe hidden word is : " << answer << "\n";
+}
+
 vector<vector<char>> convertCharArrayToVector(char grid[row][col]) {
     vector<vector<char>> vec(row, vector<char>(col));
 
@@ -123,7 +163,7 @@ void Words::addWord(const Word& word) {
 const vector<Word>& Words::getWordList() const {
     return wordList;
 }
-const Word& Words::generateRandomWord() const {
+Word Words::generateRandomWord() const {
     // Check if wordList is empty
     if (wordList.empty()) {
         throw runtime_error("Word list is empty. Cannot generate a random word.");
@@ -540,19 +580,7 @@ bool Words::wordpuzzle(Profile& myprofile) const{
         else if(placement==2)
         puzzle[startRow + i][startCol + i] = ans[i];  // Place diagonally
     }
-    cout << "---------------------------------------------\n";
-    cout << "------------------PUZZLE---------------------\n";
-    cout << "---------------------------------------------\n\n";
-    for(int i=0;i<10;i++)
-    {
-        for(int j=0;j<10;j++)
-        {
-          cout<<" "<<puzzle[i][j];
-          sleep(50);
-        }
-        cout<<endl;
-    }
-    cout << "*******************************************\n";
+    display_puzzle(puzzle);
     cout << "The meaning : " << placed_word.getMeaning() << "\n";
     cout << "Find the word in the puzzle(word length should be more than 2)\n\n";
     string input;
@@ -716,16 +744,59 @@ bool Words::wordLadder(Profile& myprofile) const {
 }
 // hangman game part
 bool Words::hangman(Profile& myprofile) const {
-    bool result;
     vector<Word> temp(wordList);
     vector<Word> selectedWords;
     fisherYatesShuffle(temp);
     selectedWords = getUniqueWordlist(temp,5);
-
+    short int trial = 10;
     //display_hangman();
-    for(int i=0;i<5;i++){
-        // display_hangman_steps(i);
-        
+    cout << "Welcome to hangman.\n";
+    sleep(2000);
+    for(int i=0;i<3;i++){
+        string input,dash = "";
+        for(int j=0;j<selectedWords[i].getWordLength();j++) dash += std::to_string(1+i);
+        while(trial--) {
+            bool inValidInput = false;
+            clearScreen();
+            display_hangman_steps(selectedWords[i],i,dash,trial);
+            cout << "Guess the word(use small letters) : ";
+            cin >> input;
+            if(input.size()>selectedWords[i].getWordLength()){
+                cout << "\nInput size is larger than word size.\nTry again.\n";
+                inValidInput = true;
+            }
+            for(char c : input){
+                if (!(c >= 'a' && c <= 'z')){
+                    cout << "Only use small letters.\n";
+                    inValidInput = true;
+                }
+            }
+            if(inValidInput){
+                enterPress();
+                trial++;
+                continue;
+            }
+            for(int k=0;k<selectedWords[i].getWordLength()&&k<input.size();k++){
+                if(selectedWords[i].getSmallLetter()[k]==input[k]){
+                    dash[k] = input[k];
+                }
+            }
+            if(selectedWords[i].getSmallLetter()==dash){
+                cout << "Guessed the word.\n";
+                enterPress();
+                break;
+            }
+        }
+        if(trial<1){
+            cout << "Sorry no more trial\nYou lose!\n";
+            enterPress();
+            break;
+        }
     }
-
+    if(trial>0){
+        clearScreen();
+        cout << "Congrats You won!\n";
+        enterPress();
+    }
+    return true;
 }

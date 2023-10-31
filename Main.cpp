@@ -45,6 +45,7 @@ int main() {
                     cout << "3.word puzzle\n";
                     cout << "4.flashcard 3 cards\n";
                     cout << "5.Word Ladder\n";
+                    cout << "6.Hangman\n";
                     cout << "q to back\n";
                     cin >> input;
                     // Display attributes of each word
@@ -53,6 +54,7 @@ int main() {
                     else if(input=="3")   myWords.wordpuzzle(myprofile);
                     else if(input=="4") myWords.flashcard3(myprofile);
                     else if(input=="5") myWords.wordLadder(myprofile);
+                    else if(input=="6") myWords.hangman(myprofile);
                     else if(input=="q") break;
                     else{
                         cout << "Invalid input.Please use numbers (1-5) or q to back\n";

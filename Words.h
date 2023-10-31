@@ -74,6 +74,7 @@ public:
     string getSmallLetter() const;
     string getMeaning() const;
     string getPartOfSpeech() const;
+    short int getWordLength() const;
 };
 
 class Words {
@@ -93,18 +94,19 @@ public:
     const vector<Word>& getWordList() const;
 
     // Generating random numbers
-    const Word& generateRandomWord() const;
+    Word generateRandomWord() const;
 
     template<typename T>
     void fisherYatesShuffle(vector<T>& vec) const;
     vector<Word> getUniqueWordlist(vector<Word> templist,short int num) const;
-    bool isWordList(const string& targetWord) const;
+  
     // Vocabulary test
     void vocabularyTest(Profile& myprofile) const;
     // Flashcard
     bool flashcard(Profile& myprofile) const;
     // WordPuzzle
     bool wordpuzzle(Profile& myprofile) const;
+    bool isWordList(const string& targetWord) const;
     bool isSafe(int i, int j, int row, int col, vector<vector<bool>>& visited) const ;
     bool findWordUtil(vector<vector<char>>& boggle, vector<vector<bool>>& visited, int i, int j, string& str, const string& target, int row, int col) const;
     bool doesWordExist(vector<vector<char>>& boggle, string target, int row, int col) const ;

@@ -44,4 +44,18 @@
         time.
     ->  But the user has to make sure that in every step it has to be 
         a valid word.
-    ->  Rank will be set according to time taken by the user.
+    ->  Rank will be set according to time taken by the user.|
+            Hangman :
+            ********
+
+    ->  The prime goal is to guess a word which will be hidden. There
+        will be numbers instead of characters of that word.
+    ->  There will be 3 step and in each step the player has to guess 
+        a word with different hint system.
+    ->  In step -1 : the hint will be the meaning and the parts of 
+        speech of that word.
+        In step -2 : the hint will be showing two characters of that 
+        word.
+        In step -3 : the hint will show only the parts of speech.
+    ->  There will be 10 trials to guess all the words.
+    ->  The ranking will be determined by time and trial left to use.

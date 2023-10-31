@@ -289,6 +289,7 @@ void Profile::howToPlay() const {
         cout << "3.word puzzle\n";
         cout << "4.flashcard 3 cards\n";
         cout << "5.Word Ladder\n";
+        cout << "6.Hangman\n";
         cout << "q to back\n";
         string input;
         cin >> input;
@@ -298,8 +299,9 @@ void Profile::howToPlay() const {
         else if(input=="3") cout << game[2];
         else if(input=="4") cout << game[3];
         else if(input=="5") cout << game[4];
+        else if(input=="6") cout << game[5];
         else if(input=="q") break;
-        else                cout << "Invalid input.Please try numbers(1-5) or q to back\n";
+        else                cout << "Invalid input.Please try numbers(1-6) or q to back\n";
         enterPressedProfile();
     }
 }
