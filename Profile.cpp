@@ -83,6 +83,18 @@ short int Profile::getTime5() const {
 void Profile::setTime5(short int time) {
     Profile::time5 = time;
 }
+short int Profile::getTime6() const {
+    return Profile::time6;
+}
+void Profile::setTime6(short int time) {
+    Profile::time6 = time;
+}
+short int Profile::getTrial6() const {
+    return Profile::trial6;
+}
+void Profile::setTrial6(short int trial) {
+    Profile::trial6 = trial;
+}
 // Check if the profile data file is empty
 bool Profile::isFileEmpty() {
     ifstream inputFile("profile.txt");
@@ -129,6 +141,8 @@ void Profile::promptAndStore() {
                 time4 = stoi(tokens[8]);
                 loop4 = stoi(tokens[9]);
                 time5 = stoi(tokens[10]);
+                time6 = stoi(tokens[11]);
+                trial6 = stoi(tokens[12]);
             }
 
             inFile.close();
@@ -144,6 +158,8 @@ void Profile::promptAndStore() {
     time4 = 0;
     loop4 = 2;
     time5 = 0;
+    time6 = 0;
+    trial6 = 0;
     while (true) {
         cout << "Enter your name: ";
         cin.ignore(); // Clear buffer before getline
@@ -173,7 +189,8 @@ void Profile::promptAndStore() {
     ofstream outputFile("profile.txt");
     outputFile << name << "," << password << "," << id << "," << time1 << "," << correct1 
                        << "," << time2 << "," << loop2 << "," << time3 << "," << time4 
-                       << "," << loop4 << "," << time5 << std::endl;
+                       << "," << loop4 << "," << time5 <<  "," << time6 << "," << trial6
+                       << std::endl;
     cout << "Profile created and stored successfully." << endl;
     enterPressedProfile();
 }
@@ -194,7 +211,7 @@ void Profile::updateAndStore() {
     if (outFile.is_open()) {
         outFile << name << "," << password << "," << id << "," << time1 << "," << correct1 
                 << "," << time2 << "," << loop2 << "," << time3 << "," << time4 << "," << loop4 
-                << "," << time5 << std::endl;
+                << "," << time5 << "," << time6 << "," << trial6 << std::endl;
         //std::cout << "Profile information updated and saved to profile.txt." << std::endl;
         outFile.close();
     } 
@@ -260,6 +277,9 @@ void Profile::displayProfile() const {
     achievement5(getTime5());
     cout << "Best score : Time : " << getTime5() << "\n";
     enterPressedProfile();
+    cout << "\nHangman : \n";
+    achievement6(getTrial6(),getTime6());
+    cout << "Best score : Trial : " << getTrial6() << " | Time : " << getTime6() << "\n";
 }
 void Profile::howToPlay() const {
     std::ifstream file("instruction.txt");
@@ -307,37 +327,25 @@ void Profile::howToPlay() const {
 }
 // achievement part
 void Profile::achievement1(short int correct,short int time) const {
-    if(correct==0) cout << "RANK : " << "NULL\n";
+    if(time==0){
+        cout << "RANK : " << "NULL\n";
+        return;
+    }
     if(correct>0 && correct<=10){
-        if(time>=30) cout << "RANK : Bronze I\n";
-        else if(time>=20 && time<30) cout << "RANK : Bronze II\n";
-        else if(time>=10 && time<20) cout << "RANK : Bronze III\n";
-        else cout << "RANK : Speed Bronze\n";
+        cout << "RANK : Bronze ";
     }
     else if(correct>10 && correct <=15){
-        if(time>30) cout << "RANK : Silver I\n";
-        else if(time>=20 && time<30) cout << "RANK : Silver II\n";
-        else if(time>=10 && time<20) cout << "RANK : Silver III\n";
-        else cout << "RANK : Speed Silver\n";
+        cout << "RANK : Silver ";
     }
     else if(correct>15 && correct<19){
-        if(time>=30) cout << "RANK : Gold I\n";
-        else if(time>=20 && time<30) cout << "RANK : Gold II\n";
-        else if(time>=10 && time<20) cout << "RANK : Gold III\n";
-        else cout << "RANK : Speed Gold\n";
+        cout << "RANK : Diamond ";
     }
-    else if(correct==19){
-        if(time>=30) cout << "RANK : Platinum I\n";
-        else if(time>=20 && time<30) cout << "RANK : Platinum II\n";
-        else if(time>=10 && time<20) cout << "RANK : Platinum III\n"; 
-        else cout << "RANK : Speed Platinum\n";  
+    else if(correct>=19 && correct<=20){
+        cout << "RANK : Platinum ";
     }
-    else if(correct==20){
-        if(time>=30) cout << "RANK : Legend I\n";
-        else if(time>=20 && time<30) cout << "RANK : Legend II\n";
-        else if(time>=10 && time<20) cout << "RANK : Legend III\n";  
-        else cout << "RANK : Speed Legend\n";
-    }
+    if(time>=30) cout << "I\n";
+    else if(time>=15 && time<30) cout << "II\n";
+    else if(time>0 && time<15) cout << "III\n"; 
 }
 void Profile::achievement2(short int time,short int loop) const {
     if(time==0) cout << "RANK : NULL\n";
@@ -380,4 +388,18 @@ void Profile::achievement5(short int time) const {
     else if(time>=8 && time<10)  cout << "RANK : Platinum\n";
     else if(time>=5 && time<8)   cout << "RANK : Diamond\n";
     else if(time>=1 && time<5)   cout << "RANK : Legend\n";
+}
+void Profile::achievement6(short int trial,short int time) const {
+    if(time==0){
+        cout << "RANK : NULL\n";
+        return;
+    }
+    if(trial==1) cout << "RANK : Bronze ";
+    else if(trial>=2 && trial<=3) cout << "RANK : Silver ";
+    else if(trial>=4 && trial<=5) cout << "RANK : Platinum ";
+    else if(trial>=6 && trial<=8) cout << "RANK : Diamond ";
+    else if(trial>=9 && trial<=10) cout << "RANK : Legend ";
+    if(time>30) cout << "I\n";
+    else if(time>=10 && time<=30) cout << "II\n";
+    else cout << "III\n";
 }

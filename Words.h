@@ -19,6 +19,8 @@ private:
     short int time4;
     short int loop4;
     short int time5;
+    short int time6;
+    short int trial6;
 
 public:
     Profile();
@@ -42,6 +44,10 @@ public:
     void setLoop4(short int loop);
     short int getTime5() const;
     void setTime5(short int time);
+    short int getTime6() const;
+    void setTime6(short int time);
+    short int getTrial6() const;
+    void setTrial6(short int trial);
     // file modification part
     bool isFileEmpty();
     void promptAndStore();
@@ -58,6 +64,7 @@ public:
     void achievement3(short int time) const;
     void achievement4(short int time,short int loop) const;
     void achievement5(short int time) const;
+    void achievement6(short int trial,short int time) const;
 }; 
 
 class Word {

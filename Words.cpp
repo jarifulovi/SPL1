@@ -363,9 +363,15 @@ bool Words:: flashcard(Profile& myprofile) const {
         cout << "congrats you won!\n";
         auto stop = std::chrono::high_resolution_clock::now();
         auto duration = std::chrono::duration_cast<std::chrono::seconds>(stop - start);
-        if(myprofile.getTime2()==0 || myprofile.getTime2()>(static_cast<short int>(duration.count()))){
-            myprofile.setTime2(static_cast<short int>(duration.count()));
-            myprofile.setLoop2(loop);
+        if(myprofile.getTime2()==0 || myprofile.getTime2()>=(static_cast<short int>(duration.count()))){
+            if(myprofile.getTime2()==(static_cast<short int>(duration.count()))){
+                if(myprofile.getLoop2()>loop)
+                    myprofile.setLoop2(loop);
+            }
+            else {
+                myprofile.setTime2(static_cast<short int>(duration.count()));
+                myprofile.setLoop2(loop);
+            }
         }
         enterPress();
     }
@@ -453,8 +459,14 @@ bool Words::flashcard3(Profile& myprofile) const {
         auto stop = std::chrono::high_resolution_clock::now();
         auto duration = std::chrono::duration_cast<std::chrono::seconds>(stop - start);
         if(myprofile.getTime4()==0 || myprofile.getTime4()>(static_cast<short int>(duration.count()))){
-            myprofile.setTime4(static_cast<short int>(duration.count()));
-            myprofile.setLoop4(loop);
+            if(myprofile.getTime4()==(static_cast<short int>(duration.count()))){
+                if(myprofile.getLoop4()>loop)
+                    myprofile.setLoop4(loop);
+            }
+            else {
+                myprofile.setTime4(static_cast<short int>(duration.count()));
+                myprofile.setLoop4(loop);
+            }
         }
         enterPress();
     }
@@ -752,6 +764,7 @@ bool Words::hangman(Profile& myprofile) const {
     //display_hangman();
     cout << "Welcome to hangman.\n";
     sleep(2000);
+    auto start = std::chrono::high_resolution_clock::now();
     for(int i=0;i<3;i++){
         string input,dash = "";
         for(int j=0;j<selectedWords[i].getWordLength();j++) dash += std::to_string(1+i);
@@ -784,6 +797,7 @@ bool Words::hangman(Profile& myprofile) const {
             if(selectedWords[i].getSmallLetter()==dash){
                 cout << "Guessed the word.\n";
                 enterPress();
+                trial++;
                 break;
             }
         }
@@ -796,6 +810,18 @@ bool Words::hangman(Profile& myprofile) const {
     if(trial>0){
         clearScreen();
         cout << "Congrats You won!\n";
+        auto stop = std::chrono::high_resolution_clock::now();
+        auto duration = std::chrono::duration_cast<std::chrono::seconds>(stop - start);
+        if(myprofile.getTime6()==0 || trial >= myprofile.getTrial6()){
+            if(myprofile.getTrial6() == trial){
+                if(myprofile.getTime6()>(static_cast<short int>(duration.count())))
+                    myprofile.setTime6((static_cast<short int>(duration.count())));
+            }
+            else {
+                myprofile.setTrial6(trial);
+                myprofile.setTime6((static_cast<short int>(duration.count())));
+            }
+        }
         enterPress();
     }
     return true;
