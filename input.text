@@ -1,31 +1,3010 @@
-Ability,ক্ষমতা ,noun
-Able,সক্ষম ,adjective
-About,সম্পর্কে ,preposition
-Abroad,প্রবাসনগরে ,adverb
-Absence,অস্তিত্বে নেই ,noun
-Absolute,পূর্ণ ,adjective
-Accept,গ্রহণ করা ,verb
-Accident,দুর্ঘটনা ,noun
-According,অনুযায়ী ,preposition
-Account,হিসাব ,noun
-Accuse,দোষী করা ,verb
-Acknowledge,প্রাপ্য করা ,verb
-Acquire,অর্জন করা ,verb
-Action,ক্রিয়া ,noun
-Active,সক্রিয় ,adjective
-Actor,অভিনেতা ,noun
-Actress,অভিনেত্রী ,noun
-Actually,আসলে ,adverb
-Adapt,অধিক্ষোভ করা ,verb
-Addition,যোগ ,noun
-Adequate,যথেষ্ট ,adjective
-Admire,প্রশংসা করা ,verb
-Adolescent,কৌমার ,adjective
-Bog,মৌকামচা ,noun
-Cat,বিড়াল ,noun
-Cog,চাকার দান্ত ,noun
-Cot,খাট ,noun
-Dog,কুকুর ,noun
-Fog,আবছা ,noun
-Gat,গ্যাট ,noun
-Got,পেয়েছি ,verb
+Abandon,পরিত্যাগ করা,verb
+Ability,ক্ষমতা,noun
+Able,সক্ষম,adjective
+About,সম্পর্কিত,preposition adverb
+Above,উপরে,preposition adverb
+Abroad,বিদেশে,adverb
+Absolute,পরম,adjective
+Absolutely,একেবারে,adverb
+Academic,একাডেমিক,adjective noun
+Accept,গ্রহণ করা,verb
+Acceptable,গ্রহণযোগ্য,adjective
+Access,প্রবেশ,noun verb
+Accident,দুর্ঘটনা,noun
+Accommodation,বাসস্থান,noun
+Accompany,সহগমন করা,verb
+According to,অনুসারে,preposition
+Account,হিসাব,noun verb
+Accurate,সঠিক,adjective
+Accuse,অভিযুক্ত করা,verb
+Achieve,অর্জন করা,verb
+Achievement,কৃতিত্঵,noun
+Acknowledge,স্বীকৃতি,verb
+Acquire,অর্জন,verb
+Across,দিয়ে,preposition adverb
+Act,আইন,verb noun
+Action,কর্ম,noun
+Active,সক্রিয়,adjective
+Activity,কার্যকলাপ,noun
+Actor,অভিনেতা,noun
+Actress,অভিনেত্রী,noun
+Actual,আসল,adjective
+Actually,প্রকৃতপক্ষে,adverb
+Ad,বিজ্ঞাপন,noun
+Adapt,খাপ খাওয়ানো,verb
+Add,যোগ,verb
+Addition,যোগ,noun
+Additional,অতিরিক্ত,adjective
+Address,ঠিকানা,noun verb
+Administration,প্রশাসন,noun
+Admit,সত্য বলিয়া স্বীকার করা,verb
+Adopt,অবলম্বন করা,verb
+Adult,প্রাপ্তবয়স্ক,noun adjective
+Advance,অগ্রিম,noun verb adjective
+Advanced,অগ্রসর,adjective
+Advantage,সুবিধা,noun
+Adventure,দু: সাহসিক কাজ,noun
+Advertise,বিজ্ঞাপিত করা,verb
+Advertisement,বিজ্ঞাপন,noun
+Advertising,বিজ্ঞাপন,noun
+Advice,পরামর্শ,noun verb
+Affair,ব্যাপার,noun
+Affect,প্রভাবিত,verb
+Afford,সামর্থ্য,verb
+Afraid,ভীত,adjective
+After,পরে,prep. conj. adverb
+Afternoon,বিকেল,noun
+Afterwards,পরে,adverb
+Again,আবার,adverb
+Against,বিরুদ্ধে,prep
+Age,বয়স,noun verb
+Aged,বুড়া,adjective
+Agency,সংস্থা,noun
+Agenda,আলোচ্যসূচি,noun
+Agent,প্রতিনিধি,noun
+Aggressive,আক্রমনাত্মক,adjective
+Ago,পূর্বে,adverb
+Agree,একমত,verb
+Agreement,চুক্তি,noun
+Ah,অই,exclamation
+Ahead,এগিয়ে,adverb
+Aid,সাহায্য,noun verb
+Aim,লক্ষ্য,verb noun
+Air,বায়ু,noun
+Aircraft,বিমান,noun
+Airline,এয়ারলাইন,noun
+Airport,বিমানবন্দর,noun
+Alarm,বিপদাশঙ্কা,noun verb
+Album,অ্যালবাম,noun
+Alcohol,এলকোহল,noun
+Alcoholic,মদ্যপ,adjective
+Alive,জীবিত,adjective
+All,সব,det. pronoun adverb
+All right,ঠিক আছে,adjective
+Allow,অনুমতি,verb
+Almost,প্রায়,adverb
+Alone,একা,adjective adverb
+Along,বরাবর,prep. adverb
+Already,ইতিমধ্যে,adverb
+Also,এছাড়াও,adverb
+Alter,দ্বিতীয়,verb
+Alternative,বিকল্প,noun adjective
+Although,যদিও,conj
+Always,সর্বদা,adverb
+Amazed,বিস্মিত,adjective
+Amazing,আশ্চর্যজনক,adjective
+Ambition,উচ্চাকাঙ্ক্ষা,noun
+Ambitious,উচ্চাকাঙ্ক্ষী,adjective
+Among,মধ্যে,prep.
+Amount,পরিমাণ,noun verb
+Analyse,বিশ্লেষণ করা,verb
+Analysis,বিশ্লেষণ,noun
+Ancient,প্রাচীন,adjective
+And,এবং,conj
+Anger,রাগ,noun
+Angle,কোণ,noun
+Angry,ক্রুদ্ধ,adjective
+Animal,পশু,noun
+Ankle,গোড়ালি,noun
+Anniversary,বার্ষিকী,noun
+Announce,ঘোষণা করা,verb
+Announcement,ঘোষণা,noun
+Annoy,বিরক্ত করা,verb
+Annoyed,উত্ত্যক্ত,adjective
+Annoying,বিরক্তিকর,adjective
+Annual,বার্ষিক,adjective
+Another,অন্য,det pronoun
+Answer,উত্তর,noun verb
+Anxious,উদ্বিগ্ন,adjective
+Any,কোন,det pronoun adverb
+Anybody,কেহ,pronoun
+Any more,কোন,adverb
+Anyone,যে কেউ,pronoun
+Anything,কিছু,pronoun
+Anyway,যাহাই হউক না কেন,adverb
+Anywhere,কোথাও,adverb pronoun
+Apart,পৃথক্,adverb
+Apartment,কামরা,noun
+Apologize,ক্ষমাপ্রার্থী,verb
+App,অ্যাপ্লিকেশন,noun
+Apparent,আপাত,adjective
+Apparently,স্পষ্টতই,adverb
+Appeal,আবেদন,noun verb
+Appear,প্রদর্শিত,verb
+Appearance,চেহারা,noun
+Apple,আপেল,noun
+Application,আবেদন,noun
+Apply,প্রয়োগ করা,verb
+Appointment,এপয়েন্টমেন্ট,noun
+Appreciate,তারিফ করা,verb
+Approach,অভিগমন,noun verb
+Appropriate,যথাযথ,adjective
+Approval,অনুমোদন,noun
+Approve,অনুমোদন করা,verb
+Approximately,আন্দাজ,adverb
+April,এপ্রিল,noun
+Architect,স্থপতি,noun
+Architecture,স্থাপত্য,noun
+Area,এলাকায়,noun
+Argue,তর্ক করা,verb
+Argument,যুক্তি,noun
+Arise,উঠা,verb
+Arm,হাত,noun
+Armed,সশস্ত্র,adjective
+Arms,অস্ত্র,noun
+Army,সেনা,noun
+Around,কাছাকাছি,prep adverb
+Arrange,ব্যবস্থা করা,verb
+Arrangement,ব্যবস্থা,noun
+Arrest,গ্রেফতার,verb noun
+Arrival,আগমন,noun
+Arrive,পৌঁছা,verb
+Art,শিল্প,noun
+Article,প্রবন্ধ,noun
+Artificial,কৃত্রিম,adjective
+Artist,শিল্পী,noun
+Artistic,শিল্পিসুলভ,adjective
+As,যেমন,prep adverb conj
+Ashamed,লজ্জিত,adjective
+Asleep,ঘুমন্ত,adjective
+Ask,জিজ্ঞাসা করা,verb
+Aspect,দৃষ্টিভঙ্গি,noun
+Assess,পরিমাপ করা,verb
+Assessment,মূল্যায়ন,noun
+Assignment,নিয়োগ,noun
+Assist,সাহায্য,verb
+Assistant,সহায়ক,noun adjective
+Associate,সহযোগী,verb
+Associated,সংযুক্ত,adjective
+Association,সংঘ,noun
+Assume,অনুমান,verb
+At,এ,prep
+Athlete,ক্রীড়াবিদ,noun
+Atmosphere,বায়ুমণ্ডল,noun
+Attach,জোড়া,verb
+Attack,আক্রমণ,noun verb
+Attempt,প্রচেষ্টা,noun verb
+Attend,স্বাগতম,verb
+Attention,মনোযোগ,noun exclamation
+Attitude,মনোভাব,noun
+Attract,আকর্ষণ,verb
+Attraction,আকর্ষণ,noun
+Attractive,আকর্ষণীয়,adjective
+Audience,শ্রোতা,noun
+August,অগাস্ট,noun
+Aunt,মাসি,noun
+Author,লেখক,noun
+Authority,কর্তৃত্ব,noun
+Autumn,শরৎ,noun
+Available,সহজলভ্য,adjective
+Average,গড়,adjective
+Avoid,এড়াতে,verb
+Award,পুরস্কার,noun verb
+Aware,সচেতন,adjective
+Away,দূরে,adverb
+Awful,ভয়াবহ, আতঙ্কজনক,adjective
+Baby,বাচ্চা,noun
+Back,পেছনে,noun adverb adjective
+Background,পটভূমি,noun
+Backwards,ফিরিয়া,adverb
+Bacteria,ব্যাকটেরিয়া,noun
+Bad,খারাপ,adjective
+Badly,খারাপভাবে,adverb
+Bag,থলে,noun
+Bake,সেকা,verb
+Balance,ভারসাম্য,noun verb
+Ball,বল,noun
+Ban,নিষেধাজ্ঞা,verb noun
+Banana,কলা,noun
+Band,দল,noun
+Bank (money),ব্যাংক (অর্থ),noun
+Bank (river),ব্যাঙ্ক (নদী),noun
+Bar,বার,noun verb
+Barrier,বাধা,noun
+Base,ভিত্তি,noun verb
+Baseball,বেসবল,noun
+Based,ভিত্তি,adjective
+Basketball,বাস্কেটবল,noun
+Basic,মৌলিক,adjective
+Basically,মূলত,adverb
+Basis,ভিত্তি,noun
+Bath,স্নান,noun
+Bathroom,পায়খানা,noun
+Battery,ব্যাটারি,noun
+Battle,যুদ্ধ,noun verb
+Be,থাকা,verb auxiliary verb
+Beach,সৈকত,noun
+Bean,শিম,noun
+Bear (deal with),ভালুক (সঙ্গে চুক্তি),verb
+Bear (animal),ভাল্লুক (জন্তু),noun
+Beat,বীট,verb noun
+Beautiful,সুন্দর,adjective
+Beauty,সৌন্দর্য,noun
+Because,কারণ,conj
+Become,পরিণত,verb
+Bed,বিছানা,noun
+Bedroom,শয়নকক্ষ,noun
+Bee,মৌমাছি,noun
+Beef,গরুর মাংস,noun
+Beer,বিয়ার,noun
+Before,আগে,prep.
+Beg,প্রার্থনা করা,verb
+Begin,শুরু করা,verb
+Beginning,শুরুতে,noun
+Behave,আচরণ,verb
+Behaviour,আচরণ,noun
+Behind,পিছনে,prep., adverb
+Being,হচ্ছে,noun
+Belief,বিশ্বাস,noun
+Believe,বিশ্বাস করা,verb
+Bell,ঘণ্টা,noun
+Belong,অন্তর্গত,verb
+Below,নিচে,adverb prep.
+Belt,বেল্ট,noun
+Bend,মোড়,verb noun
+Benefit,সুবিধা,verb noun
+Bent,নমিত,adjective
+Best,সেরা,adjective, adverb, noun
+Bet,বাজি,verb noun
+Better,উত্তম,adjective , adverb , noun
+Between,মধ্যে,prep., adverb
+Beyond,তার পরেও,prep., adverb
+Bicycle,সাইকেল,noun
+Big,মস্ত,adjective
+Bike,সাইকেল,noun
+Bill,বিল,noun verb
+Billion,বিলিয়ন,sumber
+Bin,বিন,noun
+Biology,জীববিদ্যা,noun
+Bird,পাখি,noun
+Birth,জন্ম,noun
+Birthday,জন্মদিন,noun
+Biscuit,বিসকুট,noun
+Bit,বিট,noun
+Bite,দান্ত দিয়া ফুটা করা,verb noun
+Bitter,তিক্ত,adjective
+Black,কালো,adjective, noun
+Blame,দোষ,verb noun
+Blank,ফাঁকা,adjective, noun
+Blind,অন্ধ,adjective
+Block,বাধা,noun verb
+Blog,ব্লগ,noun
+Blonde,স্বর্ণকেশী,adjective
+Blood,রক্ত,noun
+Blow,ঘা,verb
+Blue,নীল,adjective, noun
+Boar, শূকর, noun
+Board,তক্তা,noun verb
+Boat,নৌকা,noun
+Body,শরীর,noun
+Boil, ফুটান, verb
+Bold, সাহসিক, adjective
+Boll, বল, noun
+Bomb, বোমা, noun/verb
+Bond, বন্ধন, noun
+Bone, হাড়, noun
+Book, বই, noun/verb
+Boot, বুট, noun
+Border, সীমান্ত, noun/verb
+Bored, উদাস, adjective
+Boring, বিরক্তিকর, adjective
+Born, জন্ম, verb
+Borrow, ধার, verb
+Boss, মনিব, noun
+Both, উভয়, determiner/pronoun
+Bother, মাথা ঘামান, verb
+Bottle, বোতল, noun
+Bottom, পাদ, noun/adjective
+Bowl, বাটি, noun
+Box, বক্স, noun
+Boy, ছেলে, noun
+Boyfriend, প্রেমিক, noun
+Brain, মস্তিষ্ক, noun
+Branch, শাখা, noun
+Brand, তরবার, noun/verb
+Brave, সাহসী, adjective
+Bread, রুটি, noun
+Break, বিরতি, verb/noun
+Breakfast, ব্রেকফাস্ট, noun
+Breast, স্তন, noun
+Breath, শ্বাস, noun
+Breathe, শ্বাস ফেলা, verb
+Breathing, শ্বাসক্রিয়া, noun
+Bride, নববধূ, noun
+Bridge, সেতু, noun
+Brief, সংক্ষিপ্ত, adjective
+Bright, উজ্জ্বল, adjective
+Brilliant, উজ্জ্বল, adjective
+Bring, আনা, verb
+Broad, প্রশস্ত, adjective
+Broadcast, ব্রডকাস্ট, verb
+Broken, ভাঙ্গা, adjective
+Brother, ভাই, noun
+Brown, বাদামী, adjective/noun
+Brush, ব্রাশ, verb/noun
+Bubble, বুদ্বুদ, noun
+Budget, বাজেট, noun
+Build, বিল্ড, verb
+Building, ভবন, noun
+Bullet, গুলি, noun
+Bunch, গুচ্ছ, noun
+Burn, পোড়া, verb/noun
+Bury, সমাহিত করা, verb
+Bus, বাস, noun
+Bush, গুল্ম, noun
+Business, ব্যবসায়, noun
+Businessman, ব্যবসায়ী, noun
+Busy, ব্যস্ত, adjective
+But, কিন্তু, conj./prep.
+Butter, মাখন, noun
+Button, বোতাম, noun
+Buy, কেনা, verb
+By, দ্বারা, prep./adverb
+Bye, বিদায়, exclam.
+Cable, তারের, noun
+Cafe, ক্যাফে, noun
+Cake, পিষ্টক, noun
+Calculate, ক্যালকুলেট, verb
+Call, কল, verb/noun
+Calm, শান্ত, adjective/verb/noun
+Camera, ক্যামেরা, noun
+Camp, শিবির, noun/verb
+Campaign, প্রচারণা, noun/verb
+Camping, ক্যাম্পিং, noun
+Campus, বিদ্যায়তন, noun
+Can1, can1, modal verb
+Can2, can2, noun
+Cancel, বাতিল, verb
+Cancer, ক্যান্সার, noun
+Candidate, প্রার্থী, noun
+Cannot, না পারেন, verb
+Cap, টুপি, noun
+Capable, সক্ষম, adjective
+Capacity, ধারণক্ষমতা, noun
+Capital, রাজধানী, noun/adjective
+Captain, অধিনায়ক, noun
+Capture, গ্রেপ্তার, verb/noun
+Car, গাড়ী, noun
+Card, কার্ড, noun
+Care, যত্ন, noun/verb
+Career, পেশা, noun
+Careful, সাবধান, adjective
+Carefully, সাবধানে, adverb
+Careless, উদ্বেগহীন, adjective
+Carpet, গালিচা, noun
+Carrot, গাজর, noun
+Carry, বহন, verb
+Cartoon, কার্টুন, noun
+Case, কেস, noun
+Cash, নগদ, noun
+Cast, ঢালাই, noun/verb
+Castle, দুর্গ, noun
+Cat,বিড়াল,noun
+Catch,ধরা,verb noun
+Category,বিভাগ,noun
+Cause,কারণ,noun verb
+Ceiling,ছাদ,noun
+Celebrate,উদযাপন,verb
+Celebration,অনুষ্ঠান,noun
+Celebrity,কীর্তি,noun
+Cell,কোষ,noun
+Cent,শতাংশ,noun
+Central,মধ্য,adjective
+Centre,কেন্দ্র,noun verb
+Century,শতাব্দী,noun
+Ceremony,অনুষ্ঠান,noun
+Certain,নির্দিষ্ট,adjective
+Certainly,অবশ্যই,adverb
+Chain,শৃঙ্খল,noun verb
+Chair,চেয়ার,noun verb
+Chairman,চেয়ারম্যান,noun
+Challenge,চ্যালেঞ্জ,noun verb
+Champion,রক্ষক,noun
+Chance,সুযোগ,noun
+Change,পরিবর্তন,noun verb
+Channel,চ্যানেল,noun
+Chapter,অধ্যায়,noun
+Character,চরিত্র,noun
+Characteristic,চরিত্রগত,noun adjective
+Charge,চার্জ,noun verb
+Charity,দানশীলতা,noun
+Chart,তালিকা,noun verb
+Chat,চ্যাট,verb noun
+Cheap,সস্তা,adjective adverb
+Cheat,প্রতারণা,verb noun
+Check,চেক,verb noun
+Chef,পাচক,noun
+Cheerful,আনন্দিত,adjective
+Cheese,পনির,noun
+Chemical,রাসায়নিক,adjective noun
+Chemistry,রসায়ন,noun
+Chest,বুক,noun
+Chicken,মুরগির মাংস,noun
+Chief,নেতা,adjective noun
+Child,শিশু,noun
+Childhood,শৈশব,noun
+Chip,চিপ,noun
+Chocolate,চকলেট,noun
+Choice,পছন্দ,noun
+Choose,পছন্দ করা,verb
+Church,গির্জা,noun
+Cigarette,সিগারেট,noun
+Cinema,সিনেমা,noun
+Circle,বৃত্ত,noun verb
+Circumstance,পরিস্থিতিতে,noun
+Cite,উদ্ধৃত করা,verb
+Citizen,নাগরিক,noun
+City,শহর,noun
+Civil,বেসামরিক,adjective
+Claim,দাবি,verb noun
+Class,শ্রেণী,noun
+Classic,সর্বোত্তম,adjective noun
+Classical,ক্লাসিক্যাল,adjective
+Classroom,শ্রেণীকক্ষ,noun
+Clause,দফা,noun
+Clean,পরিষ্কার,adjective verb
+Clear,স্পষ্ট,adjective verb
+Clearly,পরিষ্কারভাবে,adverb
+Clever,চালাক,adjective
+Click,ক্লিক,verb noun
+Client,মক্কেল,noun
+Climate,জলবায়ু,noun
+Climb,আরোহণ,verb noun
+Clock,ঘড়ি,noun
+Close1,close1,verb noun
+Close2,বন্ধ,adjective adverb
+Closed,বদ্ধ,adjective
+Closely,ঘনিষ্ঠভাবে,adverb
+Cloth,কাপড়,noun
+Clothes,বস্ত্র,noun
+Clothing,বস্ত্র,noun
+Cloud,মেঘ,noun
+Club,ক্লাব,noun
+Clue,খেই,noun
+Coach,কোচ,noun verb
+Coal,কয়লা,noun
+Coast,উপকূল,noun
+Coat,কোট,noun
+Code,কোড,noun
+Coffee,কফি,noun
+Cog,সীসা, noun
+Coin,মুদ্রা,noun
+Cold,ঠান্ডা,adjective noun
+Collapse,পতন,verb noun
+Colleague,সহকর্মী,noun
+Collect,সংগ্রহ,verb
+Collection,সংগ্রহ,noun
+College,কলেজ,noun
+Colour,রঙ,noun
+Coloured,রঙ্গিন,adjective
+Column,স্তম্ভ,noun
+Combination,সমাহার,noun
+Combine,মেশা,verb
+Come,আসা,verb
+Comedy,কমেডি,noun
+Comfort,সান্ত্বনা,noun verb
+Comfortable,আরামপ্রদ,adjective
+Command,হুকুম,noun verb
+Comment,মন্তব্য,noun verb
+Commercial,ব্যবসায়িক,adjective noun
+Commission,কমিশন,noun verb
+Commit,সমর্পণ করা,verb
+Commitment,প্রতিশ্রুতি,noun
+Committee,কমিটি,noun
+Common,সাধারণ,adjective noun
+Commonly,সাধারণভাবে,adverb
+Communicate,যোগাযোগ,verb
+Communication,যোগাযোগ,noun
+Community,সম্প্রদায়,noun
+Company,প্রতিষ্ঠান,noun
+Compare,তুলনা করা,verb
+Comparison,তুলনা,noun
+Compete,প্রতিদ্বন্দ্বিতা করা,verb
+Competition,প্রতিযোগিতা,noun
+Competitor,প্রতিদ্বন্দ্বী,noun
+Competitive,প্রতিযোগিতামূলক,adjective
+Complain,নালিশ করা,verb
+Complaint,অভিযোগ,noun
+Complete,সম্পূর্ণ,adjective verb
+Completely,সম্পূর্ণরূপে,adverb
+Complex,জটিল,adjective noun
+Complicated,জটিল,adjective
+Component,উপাদান,noun
+Computer,কম্পিউটার,noun
+Concentrate,মনোনিবেশ,verb
+Concentration,একাগ্রতা,noun
+Concept,ধারণা,noun
+Concern,উদ্বেগ,noun verb
+Concerned,সংশ্লিষ্ট,adjective
+Concert,সঙ্গীতানুষ্ঠান,noun
+Conclude,শেষ করা,verb
+Conclusion,উপসংহার,noun
+Condition,শর্ত,noun
+Conduct,পরিচালনা,verb noun
+Conference,সম্মেলন,noun
+Confidence,বিশ্বাস,noun
+Confident,আত্মবিশ্বাসী,adjective
+Confirm,নিশ্চিত,verb
+Conflict,দ্বন্দ্ব,noun verb
+Confuse,দ্বিধায় পরে,verb
+Confused,বিভ্রান্ত,adjective
+Confusing,বিভ্রান্তিকর,adjective
+Connect,কানেক্ট,verb
+Connected,সংযুক্ত,adjective
+Connection,সংযোগ,noun
+Conscious,সচেতন,adjective
+Consequence,ফল,noun
+Conservative,রক্ষণশীল,adjective noun
+Consider,বিবেচনা,verb
+Consideration,বিবেচনা,noun
+Consist,গঠিত,verb
+Consistent,সঙ্গত,adjective
+Constant,ধ্রুব,adjective
+Constantly,প্রতিনিয়ত,adverb
+Construct,কনস্ট্রাক্ট,verb
+Construction,নির্মাণ,noun
+Consume,গ্রাস করা,verb
+Consumer,ভোক্তা,noun
+Contact,যোগাযোগ,noun verb
+Contain,ধারণ করা,verb
+Container,আধার,noun
+Contemporary,সমসাময়িক,adjective
+Content,সন্তুষ্ট,noun
+Contest,প্রতিযোগিতা,noun verb
+Context,প্রসঙ্গ,noun
+Continent,মহাদেশ,noun
+Continue,অবিরত,verb
+Continuous,একটানা,adjective
+Contract,চুক্তি,noun verb
+Contrast,বিপরীতে,noun verb
+Contribute,অবদান,verb
+Contribution,অবদান,noun
+Control,নিয়ন্ত্রণ,noun verb
+Convenient,সুবিধাজনক,adjective
+Conversation,কথোপকথন,noun
+Convert,ধর্মান্তরিত,verb
+Convince,সন্তুষ্ট,verb
+Convinced,প্রতীত,adjective
+Cook,রাঁধুনি,verb noun
+Cooker,পাত্র,noun
+Cooking,রান্না করা,noun
+Cool,শীতল,adjective verb
+Copy,কপি,noun verb
+Core,মূল,noun adjective
+Corner,কোণ,noun
+Corporate,কর্পোরেট,adjective
+Correct,ঠিক,adjective verb
+Correctly,সঠিকভাবে,adverb
+Cost,মূল্য,noun verb
+Costume,পরিচ্ছদ,noun
+Cot,খাট, noun
+Cottage,কুটির,noun
+Cotton,কার্পাস,noun
+Could,পারা,verb
+Council,পরিষদ,noun
+Count,গণনা,verb noun
+Country,দেশ,noun
+Countryside,গ্রামাঞ্চলের,noun
+County,বিভাগ,noun
+Couple,দম্পতি,noun
+Courage,সাহস,noun
+Course,পথ,noun
+Court,আদালত,noun
+Cousin,চাচাত ভাই,noun
+Cover,আবরণ,verb noun
+Covered,আবৃত,adjective
+Cow,গাভী,noun
+Crash,ক্র্যাশ,noun verb
+Crazy,পাগল,adjective
+Cream,ক্রিম,noun adjective
+Create,সৃষ্টি,verb
+Creation,সৃষ্টি,noun
+Creative,সৃজনী,adjective
+Creature,জীব,noun
+Credit,ধার,noun verb
+Crew,নাবিকদল,noun
+Crime,অপরাধ,noun
+Criminal,অপরাধী,noun adjective
+Crisis,সঙ্কট,noun
+Criterion,নির্ণায়ক,noun
+Critic,সমালোচক,noun
+Critical,সংকটপূর্ণ,adjective
+Criticism,সমালোচনা,noun
+Criticize,সমালোচনা করা,verb
+Crop,ফসল,noun
+Cross,ক্রস,verb noun
+Crowd,ভিড়,noun
+Crowded,ভীড়,adjective
+Crucial,অত্যন্ত গুরুত্বপূর্ণ,adjective
+Cruel,নিষ্ঠুর,adjective
+Cry,কান্না,verb noun
+Cultural,সাংস্কৃতিক,adjective
+Culture,সংস্কৃতি,noun
+Cup,কাপ,noun
+Cupboard,আলমারি,noun
+Cure,আরোগ্য,verb noun
+Curly,কোঁকড়া,adjective
+Currency,মুদ্রা,noun
+Current,বর্তমান,adjective noun
+Currently,এখন,adverb
+Curtain,পরদা,noun
+Curve,বাঁক,noun verb
+Curved,বাঁকা,adjective
+Custom,প্রথা,noun
+Customer,ক্রেতা,noun
+Cut,কাটা,verb noun
+Cycle,সাইকেল,noun verb
+Dad,বাবা,noun
+Daily,দৈনন্দিন,adjective adverb
+Damage,ক্ষতি,noun verb
+Dance,নাচতে,noun verb
+Dancer,নর্তকী,noun
+Dancing,নাট্য,noun
+Danger,ঝুঁকি,noun
+Dangerous,বিপজ্জনক,adjective
+Dark,অন্ধকার,adjective noun
+Data,উপাত্ত,noun
+Date,তারিখ,noun verb
+Daughter,কন্যা,noun
+Day,দিন,noun
+Dead,মৃত,adjective
+Deal,লেনদেন,verb noun
+Dear,প্রিয়,adjective
+Death,মরণ,noun
+Debate,বিতর্ক,noun verb
+Debt,ঋণ,noun
+Decade,দশক,noun
+December,ডিসেম্বর,noun
+Decent,শালীন,adjective
+Decide,সিদ্ধান্ত নেন,verb
+Decision,রায়,noun
+Declare,ঘোষণা,verb
+Decline,পতন,verb noun
+Decorate,সাজাইয়া,verb
+Decoration,প্রসাধন,noun
+Decrease,হ্রাস,verb noun
+Deep,গভীর,adjective adverb
+Deeply,গভীরভাবে,adverb
+Defeat,পরাজয়,verb noun
+Defence,প্রতিরক্ষা,noun
+Defend,রক্ষা করা,verb
+Define,নির্ধারণ করা,verb
+Definite,নির্দিষ্ট,adjective
+Definitely,স্পষ্টভাবে,adverb
+Definition,সংজ্ঞা,noun
+Degree,ডিগ্রী,noun
+Delay,বিলম্ব,verb noun
+Deliberate,স্বেচ্ছাকৃত,adjective
+Deliberately,ভেবেচিন্তে,adverb
+Delicious,সুস্বাদু,adjective
+Delight,আমোদ,verb noun
+Delighted,খুশি,adjective
+Deliver,প্রদান করা,verb
+Delivery,বিলি,noun
+Demand,চাহিদা,noun verb
+Demonstrate,প্রদর্শন,verb
+Dentist,দাঁতের,noun
+Deny,অস্বীকার করা,verb
+Department,বিভাগ,noun
+Departure,দুর্ভিক্ষ,noun
+Depend,নির্ভর,verb
+Depressed,বিষণ্ণ,adjective
+Depressing,দূর্বল,adjective
+Depth,গভীরতা,noun
+Describe,বর্ণনা করা,verb
+Description,বিবরণ,noun
+Desert,মরুভূমি,noun verb
+Deserve,প্রাপ্য,verb
+Design,নকশা,noun verb
+Designer,নকশাকার,noun
+Desire,ইচ্ছা,noun verb
+Desk,ডেস্ক,noun
+Desperate,মরিয়া,adjective
+Despite,সত্ত্বেও,prep
+Destination,গন্তব্য,noun
+Destroy,ধ্বংস,verb
+Detail,বিস্তারিত,noun verb
+Detailed,বিশদ,adjective
+Detect,সনাক্ত,verb
+Detective,গোয়েন্দা,noun
+Determine,নির্ধারণ,verb
+Determined,নির্ধারিত,adjective
+Develop,বিকাশ,verb
+Development,উন্নয়ন,noun
+Device,যন্ত্র,noun
+Diagram,নকশা,noun
+Dialogue,সংলাপ,noun
+Diamond,হীরা,noun
+Diary,দিনলিপি,noun
+Dictionary,অভিধান,noun
+Die,মরা,verb
+Diet,খাদ্য,noun
+Difference,পার্থক্য,noun
+Different,বিভিন্ন,adjective
+Differently,ভিন্নভাবে,adverb
+Difficult,কঠিন,adjective
+Difficulty,অসুবিধা,noun
+Dig,খনন করা,verb
+Digital,ডিজিটাল,adjective
+Dinner,ডিনার,noun
+Direct,সরাসরি,adj. verb adv.
+Direction,অভিমুখ,noun
+Directly,সরাসরি,adverb
+Director,পরিচালক,noun
+Dirt,ময়লা,noun
+Dirty,মলিন,adjective
+Disagree,অসম্মতি,verb
+Disappear,অদৃশ্য,verb
+Disappointed,হতাশ,adjective
+Disappointing,হতাশাজনক,adjective
+Disaster,বিপর্যয়,noun
+Disc,ডিস্ক,noun
+Discipline,শৃঙ্খলা,noun
+Discount,ডিসকাউন্ট,noun verb
+Discover,আবিষ্কার করুন,verb
+Discovery,আবিষ্কার,noun
+Discuss,আলোচনা করা,verb
+Discussion,আলোচনা,noun
+Disease,রোগ,noun
+Dish,থালা,noun
+Dishonest,অসাধু,adjective
+Dislike,অপছন্দ,verb noun
+Dismiss,খারিজ করা,verb
+Display,প্রদর্শন,verb noun
+Distance,দূরত্ব,noun
+Distribute,বিতরণ করা,verb
+Distribution,বিতরণ,noun
+District,জেলা,noun
+Divide,বিভক্ত করা,verb noun
+Division,বিভাগ,noun
+Divorced,তালাকপ্রাপ্ত,adjective
+Do,করা,verb auxiliary verb
+Doctor,ডাক্তার,noun
+Document,দলিল,noun verb
+Documentary,তথ্যচিত্র,noun
+Dog,কুকুর,noun
+Dollar,ডলার,noun
+Domestic,গার্হস্থ্য,adjective
+Dominate,আয়ত্ত করা,verb
+Donate,দান করা,verb
+Door,দরজা,noun
+Double,ডবল,adjective
+Doubt,সন্দেহ,noun verb
+Down,নিচে,adverb preposition
+Download,ডাউনলোড,verb noun
+Downstairs,সিঁড়ি বেয়ে নিচে,adverb adjective
+Downwards,নিম্নাভিমুখে,adverb
+Dozen,ডজন,noun determiner
+Draft,খসড়া,noun verb
+Drag,টানা,verb
+Drama,নাটক,noun
+Dramatic,নাটকীয়,adjective
+Draw,আঁকা,verb
+Drawing,অঙ্কন,noun
+Dream,স্বপ্ন,noun verb
+Dress,পোশাক,noun verb
+Dressed,পরিহিত,adjective
+Drink,পান করা,noun verb
+Drive,ড্রাইভ,verb noun
+Driver,চালক,noun
+Driving,পরিচালনা,noun
+Drop,ঝরা,verb noun
+Drug,ড্রাগ,noun
+Drum,ড্রাম,noun
+Drunk,মাতাল,adjective
+Dry,শুষ্ক,adjective verb
+Due,বাকি,adjective
+During,সময়,prep
+Dust,ধূলিকণা,noun
+Duty,দায়িত্ব,noun
+DVD,ডিভিডি,noun
+Each,প্রতি,pronoun/adverb
+Ear,কান,noun
+Early,গোড়ার দিকে,adj. adverb
+Earn,আয় করা,verb
+Earth,পৃথিবী,noun
+Earthquake,ভূমিকম্প,noun
+Easily,সহজে,adverb
+East,পূর্ব,noun adj. adv.
+Eastern,পূর্ব,adjective
+Easy,সহজ,adjective
+Eat,খাওয়া,verb
+Economic,অর্থনৈতিক,adjective
+Economy,অর্থনীতি,noun
+Edge,প্রান্ত,noun
+Edit,সম্পাদন করা,verb
+Edition,সংস্করণ,noun
+Editor,সম্পাদক,noun
+Educate,শিক্ষিত করা,verb
+Educated,শিক্ষিত,adjective
+Education,শিক্ষা,noun
+Educational,শিক্ষাবিষয়ক,adjective
+Effect,প্রভাব,noun
+Effective,কার্যকর,adjective
+Effectively,কার্যকরীভাবে,adverb
+Efficient,দক্ষ,adjective
+Effort,প্রচেষ্টা,noun
+Egg,ডিম,noun
+Eight,আট,number
+Eighteen,আঠার,number
+Eighty,আশি,number
+Either,পারেন,adverb
+Elderly,বৃদ্ধ,adjective
+Elect,নির্বাচিত,verb
+Election,নির্বাচন,noun
+Electric,বৈদ্যুতিক,adjective
+Electrical,বৈদ্যুতিক,adjective
+Electricity,বিদ্যুৎ,noun
+Electronic,বৈদ্যুতিক,adjective
+Element,উপাদান,noun
+Elephant,হাতি,noun
+Eleven,এগার,number
+Else,আর,adverb
+Elsewhere,অন্যত্র,adverb
+Email,ই-মেইল,noun verb
+Embarrassed,অপ্রস্তুত,adjective
+Embarrassing,হতবুদ্ধিকর,adjective
+Emerge,উত্থান করা,verb
+Emergency,জরুরি অবস্থা,noun
+Emotion,আবেগ,noun
+Emotional,আবেগপ্রবণ,adjective
+Emphasis,জোর,noun
+Emphasize,গুরুত্ব আরোপ করা,verb
+Employ,চাকরী,verb
+Employee,কর্মচারী,noun
+Employer,নিয়োগকর্তা,noun
+Employment,চাকরি,noun
+Empty,খালি,adjective verb
+Enable,সক্ষম করা,verb
+Encounter,সাক্ষাৎ,verb noun
+Encourage,উত্সাহিত করা,verb
+End,শেষ,noun verb
+Ending,শেষ,noun
+Enemy,শত্রু,noun
+Energy,শক্তি,noun
+Engage,চুক্তিবদ্ধ করান,verb
+Engaged,জড়িত,adjective
+Engine,ইঞ্জিন,noun
+Engineer,প্রকৌশলী,noun
+Engineering,প্রকৌশল,noun
+Enhance,বাড়ান,verb
+Enjoy,উপভোগ,verb
+Enormous,প্রচুর,adjective
+Enough,যথেষ্ট,pronoun adverb
+Enquiry,অনুসন্ধান,noun
+Ensure,নিশ্চিত করা,verb
+Enter,প্রবেশ করান,verb
+Entertain,পোষণ করা,verb
+Entertainment,বিনোদন,noun
+Enthusiasm,উদ্যম,noun
+Enthusiastic,উদ্যমী,adjective
+Entire,সমগ্র,adjective
+Entirely,সম্পূর্ণরূপে,adverb
+Entrance,প্রবেশদ্বার,noun
+Entry,প্রবেশ,noun
+Environment,পরিবেশ,noun
+Environmental,পরিবেশগত,adjective
+Episode,উপাখ্যান,noun
+Equal,সমান,adj. verb noun
+Equally,সমানভাবে,adverb
+Equipment,উপকরণ,noun
+Error,ত্রুটি,noun
+Escape,অব্যাহতি,verb noun
+Especially,বিশেষত,adverb
+Essay,প্রবন্ধ,noun
+Essential,অপরিহার্য,adjective
+Establish,স্থাপন করা,verb
+Estate,স্টেট,noun
+Estimate,হিসাব,verb noun
+Ethical,নৈতিক,adjective
+Euro,ইউরো,noun
+Evaluate,মূল্যায়ন,verb
+Even,এমন কি,adverb adjective
+Evening,সন্ধ্যা,noun
+Event,ঘটনা,noun
+Eventually,অবশেষে,adverb
+Ever,চিরকাল,adverb
+Every,প্রতি,det
+Everybody,সবাই,pronoun
+Everyday,প্রতিদিন,adjective
+Everyone,সবাই,pronoun
+Everything,সব,pronoun
+Everywhere,সর্বত্র,adverb
+Evidence,প্রমান,noun
+Evil,মন্দ,adjective noun
+Exact,সঠিক,adjective
+Exactly,ঠিক,adverb
+Exam,পরীক্ষা,noun
+Examination,পরীক্ষা,noun
+Examine,পরীক্ষা করা,verb
+Example,উদাহরণ,noun
+Excellent,চমত্কার,adjective
+Except,ছাড়া,prep conj
+Exchange,বিনিময়,noun verb
+Excited,উত্তেজিত,adjective
+Excitement,হুজুগ,noun
+Exciting,উত্তেজনাপূর্ণ,adjective
+Excuse,ছুতা,noun verb
+Executive,কার্যনির্বাহী,noun adjective
+Exercise,ব্যায়াম,noun verb
+Exhibition,প্রদর্শনী,noun
+Exist,থাকবেই,verb
+Existence,অস্তিত্ব,noun
+Expand,বিস্তৃত করা,verb
+Expect,আশা করা,verb
+Expectation,প্রত্যাশা,noun
+Expected,প্রত্যাশিত,adjective
+Expedition,অভিযান,noun
+Expense,ব্যয়,noun
+Expensive,ব্যয়বহুল,adjective
+Experience,অভিজ্ঞতা,noun verb
+Experienced,অভিজ্ঞ,adjective
+Experiment,পরীক্ষা,noun verb
+Expert,বিশেষজ্ঞ,noun adjective
+Explain,ব্যাখ্যা করা,verb
+Explanation,ব্যাখ্যা,noun
+Explode,বিস্ফোরিত করা,verb
+Exploration,অন্বেষণ,noun
+Explore,অন্বেষণ করা,verb
+Explosion,বিস্ফোরণ,noun
+Export,রপ্তানি,noun verb
+Expose,প্রকাশ করা,verb
+Express,প্রকাশ করা,verb
+Expression,অভিব্যক্তি,noun
+Extend,প্রসারিত করা,verb
+Extent,ব্যাপ্তি,noun
+External,বহিরাগত,adjective
+Extra,অতিরিক্ত,adj. noun adv.
+Extraordinary,অসাধারণ,adjective
+Extreme,চরম,adjective noun
+Extremely,অত্যন্ত,adverb
+Eye,চোখ,noun
+Face,মুখ,noun verb
+Facility,সুবিধা,noun
+Fact,সত্য,noun
+Factor,গুণক,noun
+Factory,কারখানা,noun
+Fail,Fail,verb
+Failure,ব্যর্থতা,noun
+Fair,ন্যায্য,adjective
+Fairly,নিরপেক্ষভাবে,adverb
+Faith,বিশ্বাস,noun
+Fall,পড়া,verb noun
+False,মিথ্যা,adjective
+Familiar,পরিচিত,adjective
+Family,পরিবার,noun adjective
+Famous,বিখ্যাত,adjective
+Fan,পাখা,noun
+Fancy,অভিনব,verb adjective
+Fantastic,চমত্কার,adjective
+Far,এ পর্যন্ত,adverb adjective
+Farm,খামার,noun verb
+Farmer,কৃষক,noun
+Farming,কৃষি,noun
+Fascinating,চটুল,adjective
+Fashion,ফ্যাশন,noun
+Fashionable,কেতাদুরস্ত,adjective
+Fast,দ্রুত,adjective adverb
+Fasten,বন্ধন করা,verb
+Fat,চর্বি,adjective noun
+Father,পিতা,noun
+Fault,দোষ,noun
+Favour,আনুকূল্য,noun verb
+Favourite,প্রিয়,adjective noun
+Fear,ভয়,noun verb
+Feather,পালক,noun
+Feature,বৈশিষ্ট্য,noun verb
+February,ফেব্রুয়ারি,noun
+Fee,ফী,noun
+Feed,ভোজন,verb noun
+Feedback,প্রতিক্রিয়া,noun
+Feel,অনুভব করা,verb noun
+Feeling,অনুভূতি,noun
+Fell, পড়া, verb
+Fellow,সহকর্মী,adjective
+Female,মহিলা,adjective noun
+Fence,বেড়া,noun
+Festival,উৎসব,noun
+Few,কয়েক,adjective pronoun
+Fiction,উপন্যাস,noun
+Field,ক্ষেত্র,noun
+Fifteen,পনের,number
+Fifth,পঞ্চম,number
+Fifty,পঞ্চাশ,number
+Fight,যুদ্ধ,verb noun
+Fighting,যুদ্ধ,noun
+Figure,ব্যক্তিত্ব,noun verb
+File,ফাইল,noun verb
+Fill,ভরাট,verb
+Film,চলচ্চিত্র,noun verb
+Final,চূড়ান্ত,adjective noun
+Finally,পরিশেষে,adverb
+Finance,অর্থায়ন,noun verb
+Financial,আর্থিক,adjective
+Find,অনুসন্ধান,verb
+Finding,আবিষ্কার,noun
+Fine,জরিমানা,adjective
+Finger,আঙ্গুল,noun
+Finish,শেষ,verb noun
+Fire,আগুন,noun verb
+Firm,দৃঢ়,noun
+First,প্রথম,number adverb noun
+Firstly,প্রথমত,adverb
+Fish,মাছ,noun verb
+Fishing,মাছ ধরা,noun
+Fist, মুষ্টি, noun
+Fit,হইয়া,verb adjective
+Fitness,জুত,noun
+Five,পাঁচ,number
+Fix,ফিক্স,verb noun
+Fixed,সংশোধন করা হয়েছে,adjective
+Flag,পতাকা,noun
+Flame,শিখা,noun
+Flash,ফ্ল্যাশ,noun verb
+Flat,সমান,noun adjective
+Flexible,নমনীয়,adjective
+Flight,ফ্লাইট,noun
+Float,ভাসা,verb
+Flood,বন্যা,noun verb
+Floor,মেঝে,noun
+Flour,ময়দা,noun
+Flow,প্রবাহ,verb noun
+Flower,ফুল,noun
+Flu,ফ্লু,noun
+Fly,মাছি,noun verb
+Flying,উড়ন্ত,noun adjective
+Focus,কেন্দ্রবিন্দু,verb noun
+Fog,কুয়াশা,Noun
+Fold,ভাঁজ,verb noun
+Folding,ভাঁজ,adjective
+Folk,লোক,noun adjective
+Follow,অনুসরণ করা,verb
+Following,অনুসরণ,adjective
+Food,খাদ্য,noun
+Foot,পা,noun
+Football,ফুটবল,noun
+For,জন্য,prep.
+Force,বল,noun verb
+Foreign,বিদেশী,adjective
+Forest,বন। জংগল,noun
+Forever,চিরতরে,adverb
+Forget,ভুলবেন,verb
+Forgive,ক্ষমা করা,verb
+Fork,কাঁটাচামচ,noun
+Form,ফর্ম,noun verb
+Formal,আনুষ্ঠানিক,adjective
+Former,সাবেক,adjective
+Fortunately,ভাগ্যক্রমে,adverb
+Fortune,ভাগ্য,noun
+Forty,চল্লিশ,number
+Forward,অগ্রবর্তী,adverb adjective
+Found,পাওয়া,verb
+Four,চার,number
+Fourteen,চতুর্দশ,number
+Fourth,চতুর্থ,number
+Frame,ফ্রেম,noun verb
+Free,বিনামূল্যে,adj. adv. verb
+Freedom,স্বাধীনতা,noun
+Freeze,বরফে পরিণত করা,verb
+Frequency,ফ্রিকোয়েন্সি,noun
+Frequently,ঘনঘন,adverb
+Fresh,তাজা,adjective
+Friday,শুক্রবার,noun
+Fridge,রেফ্রিজারেটর,noun
+Friend,বন্ধু,noun
+Friendly,বন্ধুত্বপূর্ণ,adjective
+Friendship,বন্ধুত্ব,noun
+Frighten,আতঙ্কিত,verb
+Frightened,ভীত,adjective
+Frightening,ভয়ানক,adjective
+Frog,ব্যাঙ,noun
+From,থেকে,prep
+Front,সদর,noun adjective
+Frozen,হিমায়িত,adjective
+Fruit,ফল,noun
+Fry,ভাজা,verb
+Fuel,জ্বালানি,noun verb
+Full,সম্পূর্ণ,adjective
+Fully,সম্পূর্ণরূপে,adverb
+Fun,মজা,noun adjective
+Function,ক্রিয়া,noun verb
+Fund,তহবিল,noun verb
+Fundamental,মৌলিক,adjective
+Funding,তহবিল,noun
+Funny,হাস্যকর,adjective
+Fur,পশম,noun
+Furniture,আসবাবপত্র,noun
+Further,অধিকতর,adjective adverb
+Furthermore,তদ্ব্যতীত,adverb
+Future,ভবিষ্যৎ,noun adjective
+Gain,লাভ করা,verb noun
+Gallery,দরদালান,noun
+Game,খেলা,noun
+Gang,দল,noun
+Gap,ফাঁক,noun
+Garage,গ্যারেজ,noun
+Garden,বাগান,noun
+Gas,গ্যাস,noun
+Gate,গেট,noun
+Gather,সংগ্রহ করা,verb
+General,সাধারণ,adjective
+Generally,সাধারণত,adverb
+Generate,জেনারেট,verb
+Generation,প্রজন্ম,noun
+Generous,উদার,adjective
+Genre,রীতি,noun
+Gentle,মৃদু,adjective
+Gentleman,ভদ্রলোক,noun
+Geography,ভূগোল,noun
+Get,পাওয়া,verb
+Ghost,প্রেতাত্মা,noun
+Giant,দৈত্য,adjective noun
+Gift,উপহার,noun
+Girl,মেয়ে,noun
+Girlfriend,বান্ধবী,noun
+Give,দিতে,verb
+Glad,আনন্দিত,adjective
+Glass,কাচ,noun
+Global,বিশ্বব্যাপী,adjective
+Glove,দস্তানা,noun
+Go,যাওয়া,verb noun
+Goal,লক্ষ্য,noun
+God,সৃষ্টিকর্তা,noun
+Gold,স্বর্ণ,noun adjective
+Golf,গলফ,noun
+Good,ভাল,adjective noun
+Goodbye,বিদায়,exclam. noun
+Goods,পণ্য,noun
+Got, পেয়েছি, verb
+Govern,শাসন ​​করা,verb
+Government,সরকার,noun
+Grab,দখল,verb
+Grade,শ্রেণী,noun verb
+Gradually,ধীরে ধীরে,adverb
+Graduate,স্নাতক,noun verb
+Grain,শস্য,noun
+Grand,মহান,adjective
+Grandfather,পিতামহ,noun
+Grandmother,নানী,noun
+Grandparent,পিতামহ,noun
+Grant,প্রদান,verb noun
+Grass,ঘাস,noun
+Grateful,কৃতজ্ঞ,adjective
+Great,মহান,adjective
+Green,সবুজ,adjective noun
+Greet,অভিবাদন,verb
+Grey,ধূসর,adjective noun
+Ground,স্থল,noun
+Group,গ্রুপ,noun
+Grow,হত্তয়া,verb
+Growth,উন্নতি,noun
+Guarantee,জামিন,verb noun
+Guard,পাহারা,noun verb
+Guest,অতিথি,noun
+Guide,নির্দেশিকা,noun verb
+Guilty,দোষী,adjective
+Guitar,গিটার,noun
+Gun,বন্দুক,noun
+Guy,লোক,noun
+Gym,জিম,noun
+Habit,অভ্যাস,noun
+Hair,চুল,noun
+Half,অর্ধেক,adverb
+Hall,হল,noun
+Hand,হাত,noun verb
+Handle,হাতল,verb noun
+Hang,ফাঁসি দেত্তয়া,verb
+Happen,ঘটা,verb
+Happily,সুখে,adverb
+Happiness,সুখ,noun
+Happy,খুশি,adjective
+Hard,কঠিন,adjective,adverb
+Hardly,কষ্টসহকারে,adverb
+Harm,ক্ষতি,noun verb
+Harmful,ক্ষতিকর,adjective
+Hat,টুপি,noun
+Hate,ঘৃণা,verb noun
+Have,আছে,verb
+Have to,আছে মোডাল,modal verb
+He,তিনি,pronoun
+Head,মাথা,noun verb
+Headache,মাথা ব্যাথা,noun
+Headline,শিরোনাম,noun
+Health,স্বাস্থ্য,noun
+Healthy,সুস্থ,adjective
+Hear,শোনা,verb
+Hearing,শুনানি,noun
+Heart,হৃদয়,noun
+Heat,তাপ,noun verb
+Heating,গরম করার,noun
+Heaven,স্বর্গ,noun
+Heavily,প্রচন্ডভাবে,adverb
+Heavy,ভারী,adjective
+Heel,গোড়ালি,noun
+Height,উচ্চতা,noun
+Helicopter,হেলিকপ্টার,noun
+Hell,জাহান্নাম,noun
+Hello,হ্যালো,exclamation noun
+Help,সাহায্যের,verb noun
+Helpful,সহায়ক,adjective
+Her,তার,pronoun determiner
+Here,এখানে,adverb
+Hero,বীর,noun
+Hers,তার,pronoun
+Herself,নিজেকে,pronoun
+Hesitate,দ্বিধা করা,verb
+Hey,অঁ্যা,exclamation
+Hi,ওহে,exclamation
+Hide,আড়াল,verb
+High,উচ্চ,adj. adverb
+Highlight,লক্ষণীয় করা,verb noun
+Highly,অত্যন্ত,adverb
+Hill,পাহাড়,noun
+Him,তাকে,pronoun
+Himself,নিজে,pronoun
+Hire,ভাড়া,verb noun
+His,তার,pronoun determiner
+Historic,ঐতিহাসিক,adjective
+Historical,ঐতিহাসিক,adjective
+History,ইতিহাস,noun
+Hit,হিট,verb noun
+Hobby,শখ,noun
+Hockey,হকিখেলা,noun
+Hold,রাখা,verb noun
+Hole,গর্ত,noun
+Holiday,ছুটির দিন,noun
+Hollow,ফাঁপা,adjective
+Holy,পবিত্র,adjective
+Home,বাড়ি,noun
+Homework,বাড়ির কাজ,noun
+Honest,সত্,adjective
+Honour,সম্মান,noun verb
+Hope,আশা,verb noun
+Horrible,ভয়ঙ্কর,adjective
+Horror,ভয়,noun
+Horse,ঘোড়া,noun
+Hospital,হাসপাতাল,noun
+Host,নিমন্ত্রণকর্তা,noun verb
+Hot,গরম,adjective
+Hotel,হোটেল,noun
+Hour,ঘন্টা,noun
+House,গৃহ,noun verb
+Household,পরিবার,noun
+Housing,হাউজিং,noun
+How,কিভাবে,adverb
+However,যাহোক,adverb
+Huge,বিশাল,adjective
+Human,মানবীয়,adjective noun
+Humorous,রসাত্মক,adjective
+Humour,মেজাজ,noun
+Hundred,শত,number
+Hungry,ক্ষুধার্ত,adjective
+Hunt,খোজা,verb noun
+Hunting,শিকার,noun
+Hurricane,হ্যারিকেন,noun
+Hurry,ত্বরা,noun verb
+Hurt,আহত,verb
+Husband,স্বামী,noun
+I,আমি,pronoun
+Ice,বরফ,noun
+Ice cream,আইসক্রিম,noun
+Idea,ধারণা,noun
+Ideal,আদর্শ,adjective noun
+Identify,সনাক্ত করা,verb
+Identity,পরিচয়,noun
+If,যদি,conjunction
+Ignore,উপেক্ষা করা,verb
+Ill,অসুস্থ,adjective
+Illegal,অবৈধ,adjective
+Illness,অসুস্থতা,noun
+Illustrate,চিত্রিত করা,verb
+Illustration,চিত্রণ,noun
+Image,ভাবমূর্তি,noun
+Imaginary,কল্পিত,adjective
+Imagination,কল্পনা,noun
+Imagine,কল্পনা করা,verb
+Immediate,আশু,adjective
+Immediately,অবিলম্বে,adverb
+Immigrant,অভিবাসী,noun
+Impact,প্রভাব,noun verb
+Impatient,অধীর,adjective
+Imply,পরোক্ষভাবে প্রকাশ করা,verb
+Import,আমদানি,noun verb
+Importance,গুরুত্ব,noun
+Important,গুরুত্বপূর্ণ,adjective
+Impose,আরোপ করা,verb
+Impossible,অসম্ভব,adjective
+Impress,ইমপ্রেস,verb
+Impressed,অঙ্কিত,adjective
+Impression,ছাপ,noun
+Impressive,চিত্তাকর্ষক,adjective
+Improve,উন্নত করা,verb
+Improvement,উন্নতি,noun
+In,ভিতরে,preposition adverb
+Inch,ইঞ্চি,noun
+Incident,ঘটনা,noun
+Include,অন্তর্ভুক্ত করা,verb
+Included,অন্তর্ভুক্ত,adjective
+Including,সহ,preposition
+Income,আয়,noun
+Increase,বৃদ্ধি,verb noun
+Increasingly,ক্রমবর্ধমানভাবে,adverb
+Incredible,অবিশ্বাস্য,adjective
+Incredibly,অবিশ্বাস্যভাবে,adverb
+Indeed,প্রকৃতপক্ষে,adverb
+Independent,স্বাধীন,adjective
+Indicate,ইঙ্গিত,verb
+Indirect,পরোক্ষ,adjective
+Individual,স্বতন্ত্র,noun, adj
+Indoor,গৃহমধ্যস্থ,adjective
+Indoors,গৃহমধ্যে,adverb
+Industrial,শিল্প,adjective
+Industry,শিল্প,noun
+Infection,সংক্রমণ,noun
+Influence,প্রভাব,noun verb
+Inform,জানান,verb
+Informal,লৌকিকতাবর্জিত,adjective
+Information,তথ্য,noun
+Ingredient,উপাদান,noun
+Initial,প্রাথমিক,adjective
+Initially,প্রাথমিকভাবে,adverb
+Initiative,উদ্যোগ,noun
+Injure,ক্ষত,verb
+Injured,আহত,adjective
+Injury,আঘাত,noun
+Inner,ভিতরের,adjective
+Innocent,নির্দোষ,adjective
+Insect,পোকা,noun
+Inside,ভিতরে,preposition
+Insight,সূক্ষ্মদৃষ্টি,noun
+Insist,জোরাজুরি করা,verb
+Inspire,ইমপ্রেস,verb
+Install,ইনস্টল,verb
+Instance,দৃষ্টান্ত,noun
+Instead,পরিবর্তে,adverb
+Institute,প্রতিষ্ঠান,noun
+Institution,প্রতিষ্ঠান,noun
+Instruction,নির্দেশ,noun
+Instructor,উপাধ্যায়,noun
+Instrument,যন্ত্র,noun
+Insurance,বীমা,noun
+Intelligence,বুদ্ধিমত্তা,noun
+Intelligent,বুদ্ধিমান,adjective
+Intend,মনস্থ করা,verb
+Intended,অভিপ্রেত,adjective
+Intense,তীব্র,adjective
+Intention,উদ্দেশ্য,noun
+Interest,স্বার্থ,noun verb
+Interested,আগ্রহী,adjective
+Interesting,মজাদার,adjective
+Internal,অভ্যন্তরীণ,adjective
+International,আন্তর্জাতিক,adjective
+Internet,ইন্টারনেট,noun
+Interpret,ব্যাখ্যা করা,verb
+Interrupt,বিঘ্ন,verb
+Interview,সাক্ষাত্কার,noun verb
+Into,মধ্যে,preposition
+Introduce,প্রবর্তন করা,verb
+Introduction,ভূমিকা,noun
+Invent,উদ্ভাবন করা,verb
+Invention,উদ্ভাবন,noun
+Invest,ইনভেস্ট,verb
+Investigate,তদন্ত করা,verb
+Investigation,তদন্ত,noun
+Investment,বিনিয়োগ,noun
+Invitation,আমন্ত্রণ,noun
+Invite,আমন্ত্রণ করা,verb
+Involve,জড়িত করা,verb
+Involved,জড়িত,adjective
+Iron,লোহা,noun verb
+Island,দ্বীপ,noun
+Issue,সমস্যা,noun verb
+IT,আইটি,noun
+It,এটা,pronoun
+Item,পদ,noun
+Its,এর,determiner
+Itself,নিজেই,pronoun
+Jacket,জ্যাকেট,noun
+Jam,জ্যাম,noun
+January,জানুয়ারী,noun
+Jazz,জ্যাজ,noun
+Jeans,জিন্স,noun
+Jet, জেট, noun
+Jew, ইউদ, noun
+Jewellery,মণিরত্ন,noun
+Job,কাজ,noun
+Join,যোগদানের,verb
+Joke,রসিকতা,noun verb
+Journal,সাময়িক পত্রিকা,noun
+Journalist,সাংবাদিক,noun
+Journey,যাত্রা,noun
+Joy,আনন্দ,noun
+Judge,বিচারক,noun verb
+Judgement,রায়,noun
+Juice,রস,noun
+July,জুলাই,noun
+Jump,লাফ,verb noun
+June,জুন,noun
+Junior,ছোট,adjective
+Just,মাত্র,adverb
+Justice,বিচার,noun
+Justify,ন্যায্যতা প্রতিপাদন করা,verb
+Keen,উত্সাহী,adjective
+Keep,রাখা,verb
+Key,চাবি,noun adjective verb
+Keyboard,কীবোর্ড,noun
+Kick,পদাঘাত,verb noun
+Kid,ছাগলছানা,noun
+Kill,হত্যা,verb
+Killing,হত্যা,noun
+Kilometre,কিলোমিটার,noun
+Kind(type),ধরনের (টাইপ),noun
+Kind(caring),ধরনের (যত্নশীল),adjective
+King,রাজা,noun
+Kiss,চুম্বন,verb noun
+Kitchen,রান্নাঘর,noun
+Knee,হাঁটু,noun
+Knife,ছুরি,noun
+Knock,ঠক্ঠক্,verb noun
+Know,জানা,verb
+Knowledge,জ্ঞান,noun
+Lab,গবেষণাগার,noun
+Label,লেবেল,noun verb
+Laboratory,পরীক্ষাগার,noun
+Labour,শ্রম,noun
+Lack,অভাব,noun verb
+Lady,ভদ্রমহিলা,noun
+Lake,হ্রদ,noun
+Lamp,বাতি,noun
+Land,জমি,noun verb
+Landscape,ভূদৃশ্য,noun
+Language,ভাষা,noun
+Laptop,ল্যাপটপ,noun
+Large,বড়,adjective
+Largely,মূলত,adverb
+Last(final),চূড়ান্ত,adverb noun
+Last(taking time),সময় গ্রহণ,verb
+Late,বিলম্বে,adjective adverb
+Later,পরে,adverb adjective
+Latest,সর্বশেষ,adjective noun
+Laugh,হাসি,verb noun
+Laughter,হাসি,noun
+Launch,শুরু করা,verb noun
+Law,আইন,noun
+Lawyer,আইনজীবী,noun
+Lay,লে,verb
+Layer,স্তর,noun
+Lazy,অলস,adjective
+Lead,নেতৃত্ব,verb noun
+Leader,নেতা,noun
+Leadership,নেতৃত্ব,noun
+Leading,নেতৃত্ব,adjective
+Leaf,গাছের পাতা,noun
+League,সন্ধি,noun
+Lean,রোগা,verb
+Learn,শেখা,verb
+Learning,শিক্ষা,noun
+Least,অন্তত,det. pron. adverb
+Leather,চামড়া,noun
+Leave,ছুটি,verb noun
+Lecture,বক্তৃতা,noun verb
+Left,বাম,adjective adverb verb
+Leg,পা,noun
+Legal,আইনগত,adjective
+Leisure,অবসর,noun
+Lemon,লেবু,noun
+Lend,ধার,verb
+Length,লম্বা,noun
+Less,কম,pron. adverb
+Lesson,পাঠ,noun
+Let,দিন,verb
+Letter,চিঠি,noun
+Level,উচ্চতা,noun adj. verb
+Library,গ্রন্থাগার,noun
+Licence,লাইসেন্স,noun
+Lie (falsehood),মিথ্যা,verb noun
+Lie (recline),মিথ্যা,verb noun
+Life,জীবন,noun
+Lifestyle,জীবনধারা,noun
+Lift,উত্তোলন,verb noun
+Light,আলো, Noun
+Light (not heavy),হালকা (ভারী নয়),adjective
+Like (similar),মত (অনুরূপ),preposition
+Liked (approved of),বিশেষ্য,adjective
+Likely,সম্ভবত,adjective
+Limit,সীমা,noun verb
+Limited,সীমিত,adjective
+Line,লাইন,noun verb
+Link,লিংক,noun verb
+Lion,সিংহ,noun
+Lip,ঠোঁট,noun
+Liquid,তরল,noun adjective
+List,তালিকা,noun verb
+Listen,শোনা,verb
+Listener,শ্রোতা,noun
+Literature,সাহিত্য,noun
+Little,সামান্য,adjective
+Live1,লাইভ1,verb
+Live2,লাইভ2,adjective adverb
+Lively,জীবন্ত,adjective
+Living,জীবিত,adjective noun
+Load,ভার,noun verb
+Loan,ঋণ,noun
+Local,স্থানীয়,adjective noun
+Locate,সনাক্ত,verb
+Located,অবস্থিত,adjective
+Location,অবস্থান,noun
+Lock,লক,verb noun
+Logical,যৌক্তিক,adjective
+Lonely,একাকী,adjective
+Long,দীর্ঘ,adjective adverb
+Long-term,দীর্ঘ মেয়াদী,adjective adverb
+Look,বর্ণন,verb noun
+Loose,আলগা,adjective
+Lord,প্রভু,noun
+Lorry,লরি,noun
+Lose,হারান,verb
+Loss,ক্ষতি,noun
+Lost,নিখোঁজ,adjective
+Lot,অনেক,pron. det. adverb
+Loud,অট্ট,adjective adverb
+Loudly,উচ্চরবে,adverb
+Love,ভালবাসা,noun verb
+Lovely,সুদৃশ্য,adjective
+Low,কম,adj. adv. noun
+Lower,নিম্ন,verb
+Luck,ভাগ্য,noun
+Lucky,ভাগ্যবান,adjective
+Lunch,মধ্যাহ্নভোজ,noun
+Lung,ফুসফুস,noun
+Luxury,বিলাসিতা,noun
+Machine,মেশিন,noun
+Mad,পাগল,adjective
+Magazine,পত্রিকা,noun
+Magic,জাদু,noun adjective
+Mail,মেইল,noun verb
+Main,প্রধান,adjective
+Mainly,প্রধানত,adverb
+Maintain,বজায় রাখা,verb
+Major,মুখ্য,adjective
+Majority,সংখ্যাগুরু,noun
+Make,করতে,verb
+Male,পুরুষ,adjective noun
+Mall,মুদ্গর,noun
+Man,মানুষ,noun
+Manage,পরিচালনা করা,verb
+Management,ব্যবস্থাপনা,noun
+Manager,ব্যবস্থাপক,noun
+Manner,পদ্ধতি,noun
+Many,অনেক,determiner pronoun
+Map,মানচিত্র,noun verb
+March,মার্চ,noun
+Mark,ছাপ,verb noun
+Market,বাজার,noun verb
+Marketing,মার্কেটিং,noun
+Marriage,বিবাহ,noun
+Married,বিবাহিত,adjective
+Marry,বিবাহ করা,verb
+Mass,ভর,noun adjective
+Massive,বৃহদায়তন,adjective
+Master,মনিব,noun verb
+Match (contest),খেলা (প্রতিযোগিতা ),noun verb
+Matching,ম্যাচিং,adjective
+Mate, সঙ্গী, noun/verb
+Material,উপাদান,noun adjective
+Mathematics,অংক,noun
+Math,গণিতশাস্ত্র,noun
+Matter,ব্যাপার,noun verb
+Maximum,সর্বাধিক,adjective noun
+May,মে,noun
+May modal,মোডাল পারে,verb
+Maybe,হতে পারে,adverb
+Me,আমাকে,pronoun
+Meal,খাবার,noun
+Mean,গড়,verb
+Meaning,অর্থ,noun
+Means,মানে,noun
+Meanwhile,এদিকে,adverb
+Measure,পরিমাপ করা,verb noun
+Measurement,মাপা,noun
+Meat,মাংস,noun
+Media,মিডিয়া,noun
+Medical,চিকিৎসা,adjective
+Medicine,ওষুধ,noun
+Medium,মধ্যম,adjective noun
+Meet,সম্মেলন,verb
+Meeting,সভায়,noun
+Melt,দ্রবীভূত করা,verb
+Member,সদস্য,noun
+Memory,স্মৃতি,noun
+Mental,মানসিক,adjective
+Mention,উল্লেখ,verb noun
+Menu,তালিকা,noun
+Mess,জগাখিচুড়ি,noun verb
+Message,বার্তা,noun
+Metal,ধাতু,noun
+Method,পদ্ধতি,noun
+Metre,মিটার,noun
+Middle,মধ্যম,noun adjective
+Midnight,মধ্যরাত্রি,noun
+Might modal,মোডাল পারে,verb
+Mild,হালকা,adjective
+Mile,মাইল,noun
+Military,সামরিক,adjective noun
+Milk,দুধ,noun
+Million number,মিলিয়ন সংখ্যা,number
+Mind,মন,noun verb
+Mine (belongs),খনি (আমি জন্যে),pronoun
+Mine (ground),খনি (মাটিতে গর্ত),noun
+Mineral,খনিজ,noun
+Minimum,সর্বনিম্ন,adjective noun
+Minister,মন্ত্রী,noun
+Minor,গৌণ,adjective
+Minority,নাবালকত্ব,noun
+Minute,মিনিট,noun
+Mirror,আয়না,noun
+Miss,হারানো,verb
+Missing,অনুপস্থিত,adjective
+Mission,মিশন,noun
+Mistake,ভুল,noun verb
+Mix,মিশ্রণ,verb noun
+Mixed,মিশ্র,adjective
+Mixture,মিশ্রণ,noun
+Mobile,মুঠোফোন,adjective noun
+Model,মডেল,noun verb
+Modern,আধুনিক,adjective
+Modify,পরিবর্তন,verb
+Moment,মুহূর্ত,noun
+Monday,সোমবার,noun
+Money,টাকা,noun
+Monitor,মনিটর,noun verb
+Monkey,বানর,noun
+Month,মাস,noun
+Mood,মেজাজ,noun
+Moon,চাঁদ,noun
+Moral,নৈতিক,adjective noun
+More,অধিক,det. pron. adverb
+Morning,সকাল,noun
+Most,সবচেয়ে,det. pron. adverb
+Mostly,অধিকাংশ ক্ষেত্রে,adverb
+Mother,মা,noun
+Motor,মোটর,noun adjective
+Motorcycle,মোটরসাইকেল,noun
+Mount,পর্বত,verb
+Mountain,পর্বত,noun
+Mouse,মাউস,noun
+Mouth,মুখ,noun
+Move,পদক্ষেপ,verb noun
+Movement,আন্দোলন,noun
+Movie,সিনেমা,noun
+Much,অনেক,det. pron. adverb
+Mud,কাদা,noun
+Multiple,বহু,adjective
+Multiply,সংখ্যাবৃদ্ধি,verb
+Mum,নীরব,noun
+Murder,হত্যা,noun verb
+Muscle,পেশী,noun
+Museum,জাদুঘর,noun
+Music,সঙ্গীত,noun
+Musical,সুরেলা,adjective noun
+Musician,সুরকার,noun
+Must modal,মোডাল আবশ্যক,verb
+My,আমার,determiner
+Myself,নিজেকে,pronoun
+Mysterious,রহস্যময়,adjective
+Mystery,রহস্য,noun
+Nail,পেরেক,noun
+Name,নাম,noun verb
+Narrative,বর্ণনামূলক,noun adjective
+Narrow,সংকীর্ণ,adjective verb
+Nation,জাতি,noun
+National,জাতীয়,adjective noun
+Native,স্থানীয়,adjective noun
+Natural,প্রাকৃতিক,adjective
+Naturally,স্বাভাবিকভাবে,adverb
+Nature,প্রকৃতি,noun
+Near,কাছাকাছি,prep. adj. adverb
+Nearly,প্রায়,adverb
+Neat,ঝরঝরে,adjective
+Necessarily,অগত্যা,adverb
+Necessary,প্রয়োজনীয়,adjective
+Neck,ঘাড়,noun
+Need,প্রয়োজন,modal verb
+Needle,সুই,noun
+Negative,নেতিবাচক,adjective noun
+Neighbour,প্রতিবেশী,noun
+Neighbourhood,আশপাশ,noun
+Neither,তন্ন তন্ন,det. pron. adverb
+Nerve,স্নায়ু,noun
+Nervous,স্নায়বিক,adjective
+Net,নেট,noun
+Network,অন্তর্জাল,noun
+Never,না,adverb
+Nevertheless,তবু,adverb
+New,নতুন,adjective
+News,খবর,noun
+Newspaper,সংবাদপত্র,noun
+Next,পরবর্তী,adj. adverb noun
+Next to,পরবর্তী,preposition
+Nice,চমৎকার,adjective
+Night,রাত,noun
+Nightmare,দুঃস্বপ্ন,noun
+Nine,নয়,number
+Nineteen,উনিশ,number
+Ninety,নব্বুই,number
+No,না,exclamation det.
+No one,কেউ না,pronoun
+Nobody,কেউ কিছু,pronoun
+Noise,গোলমাল,noun
+Noisy,সশব্দ,adjective
+None,না,pronoun
+Nor,না,conjunction adverb
+Normal,সাধারণ,adjective noun
+Normally,স্বাভাবিকভাবে,adverb
+North,উত্তর,noun adj. adverb
+Northern,উত্তর,adjective
+Nose,নাক,noun
+Not,না,adverb
+Note,বিঃদ্রঃ,noun verb
+Nothing,কিছু না,pronoun
+Notice,বিজ্ঞপ্তি,verb noun
+Notion,ধারণা,noun
+Novel,উপন্যাস,noun
+November,নভেম্বর,noun
+Now,এখন,adverb conjunction
+Nowhere,কোথাও,adverb
+Nuclear,পারমাণবিক,adjective
+Number,সংখ্যা,noun verb
+Numerous,অনেক,adjective
+Nurse,নার্স,noun
+Nut,বাদাম,noun
+Obey,মান্য,verb
+Object,উদ্দেশ্য,noun verb
+Objective,উদ্দেশ্য,noun adjective
+Obligation,দায়িত্ব,noun
+Observation,পর্যবেক্ষণ,noun
+Observe,মান্য করা,verb
+Obtain,প্রাপ্ত,verb
+Obvious,সুস্পষ্ট,adjective
+Obviously,স্পষ্টত,adverb
+Occasion,উপলক্ষ,noun
+Occasionally,কদাচিৎ,adverb
+Occur,ঘটা,verb
+Ocean,মহাসাগর,noun
+O’clock,ঘটিকায়,adverb
+October,অক্টোবর,noun
+Odd,অস্বাভাবিক,adjective
+Of,এর,preposition
+Off,বন্ধ,adverb preposition
+Offence,অপরাধ,noun
+Offend,চটান,verb
+Offensive,আক্রমণাত্মক,adjective
+Offer,প্রদান,verb noun
+Office,দপ্তর,noun
+Officer,অফিসার,noun
+Official,দাপ্তরিক,adjective noun
+Often,প্রায়ই,adverb
+Oh,উহু,exclamation
+Oil,তেল,noun
+OK,ঠিক আছে,adjective adverb
+Old,পুরাতন,adjective
+Old-fashioned,সেকেলে,adjective
+On,চালু,preposition adverb
+Once,একদা,adverb conjunction
+One,এক,number-det. pronoun
+Onion,পেঁয়াজ,noun
+Online,অনলাইন,adjective adverb
+Only,কেবল,adjective adverb
+Onto,সম্মুখের দিকে,preposition
+Open,খোলা,adjective verb
+Opening,উদ্বোধন,noun
+Operate,পরিচালনা করা,verb
+Operation,অপারেশন,noun
+Opinion,অভিমত,noun
+Opponent,প্রতিদ্বন্দ্বী,noun
+Opportunity,সুযোগ,noun
+Oppose,বিরোধিতা,verb
+Opposed,বিরোধী,adjective
+Opposite,বিপরীত,adj. adv. prep. noun
+Opposition,বিরোধী দল,noun
+Option,পছন্দ,noun
+Or,অথবা,conjunction
+Orange,কমলা,noun adjective
+Order,ক্রম,noun verb
+Ordinary,সাধারণ,adjective
+Organ,অঙ্গ,noun
+Organization,সংগঠন,noun
+Organize,সংগঠিত করা,verb
+Organized,সংগঠিত,adjective
+Organizer,প্রবর্তক,noun
+Origin,উত্স,noun
+Original,মূল,adjective noun
+Originally,মূলত,adverb
+Other,অন্যান্য,adjective pronoun
+Otherwise,অন্যভাবে,adverb
+Ought,কর্তব্য,modal verb
+Our,আমাদের,determiner
+Ours,আমাদিগের,pronoun
+Ourselves,নিজেদেরকে,pronoun
+Out,আউট,adverb preposition
+Outcome,ফলাফল,noun
+Outdoor,বহিরঙ্গন,adjective
+Outdoors,বিদেশে,adverb
+Outer,বহি: স্থ,adjective
+Outline,রূপরেখা,noun verb
+Outside,বাহিরে,preposition
+Oven,চুলা,noun
+Over,উপর,preposition adverb
+Overall,সামগ্রিক,adjective adverb
+Owe,ঋণগ্রস্ত থাকা,verb
+Own,নিজের,adjective pronoun verb
+Owner,মালিক,noun
+Pace,গতি,noun verb
+Pack,প্যাক,verb noun
+Package,প্যাকেজ,noun verb
+Page,পৃষ্ঠা,noun
+Pain,ব্যথা,noun
+Painful,বেদনাদায়ক,adjective
+Paint,রং,verb noun
+Painter,চিত্রশিল্পী,noun
+Painting,চিত্র,noun
+Pair,যুগল,noun
+Palace,প্রাসাদ,noun
+Pale,ফ্যাকাশে,adjective
+Pan,চাটু,noun
+Panel,প্যানেল,noun
+Pants,প্যান্ট,noun
+Paper,কাগজ,noun
+Paragraph,অনুচ্ছেদ,noun
+Parent,মাতা,noun
+Park,পার্ক,noun verb
+Parking,পার্কিং,noun
+Parliament,সংসদ,noun
+Part,অংশ,noun
+Participant,অংশগ্রাহক,noun
+Participate,অংশগ্রহণ,verb
+Particular,বিশেষ,adjective
+Particularly,বিশেষত,adverb
+Partly,আংশিকভাবে,adverb
+Partner,অংশীদার,noun
+Party,পার্টি,noun
+Pass,পাস,verb noun
+Passage,উত্তরণ,noun
+Passenger,যাত্রী,noun
+Passion,আবেগ,noun
+Passport,পাসপোর্ট,noun
+Past,গত,adj. noun prep. adverb
+Path,পথ,noun
+Patient,রোগী,noun adjective
+Pattern,প্যাটার্ন,noun
+Pay,বেতন,verb noun
+Payment,পারিশ্রমিক,noun
+Peace,শান্তি,noun
+Peaceful,শান্তিপূর্ণ,adjective
+Pen,কলম,noun
+Pencil,পেন্সিল,noun
+Penny,পেনি,noun
+Pension,পেনশন,noun
+People,সম্প্রদায়,noun
+Pepper,মরিচ,noun
+Per,প্রতি,preposition
+Per cent,শতাংশ,noun adj. adverb
+Percentage,শতকরা হার,noun
+Perfect,নির্ভুল,adjective
+Perfectly,ঠিকভাবে,adverb
+Perform,সম্পাদন করা,verb
+Performance,কর্মক্ষমতা,noun
+Perhaps,সম্ভবত,adverb
+Period,কাল,noun
+Permanent,স্থায়ী,adjective
+Permission,অনুমতি,noun
+Permit,অনুমতি,verb noun
+Person,ব্যক্তি,noun
+Personal,ব্যক্তিগত,adjective
+Personality,ব্যক্তিত্ব,noun
+Personally,ব্যক্তিগতভাবে,adverb
+Perspective,পরিপ্রেক্ষিত,noun
+Persuade,পটান,verb
+Pet,পোষা প্রাণী,noun
+Petrol,পেট্রল,noun
+Phase,পর্যায়,noun
+Phenomenon,ঘটমান বিষয়,noun
+Philosophy,দর্শন,noun
+Phone,ফোন,noun verb
+Photo,ছবি,noun
+Photograph,আলোকচিত্র,noun verb
+Photographer,ফটোগ্রাফার,noun
+Photography,ফটোগ্রাফি,noun
+Phrase,ফ্রেজ,noun
+Physical,শারীরিক,adjective
+Physics,পদার্থবিদ্যা,noun
+Piano,পিয়ানো,noun
+Pick,বাছাই,verb noun
+Picture,ছবি,noun verb
+Piece,টুকরা,noun
+Pig,শূকর,noun
+Pile,গাদা,noun verb
+Pilot,বিমান - চালক,noun
+Pin,পিন,noun verb
+Pink,পরাকাষ্ঠা,adjective noun
+Pipe,নল,noun
+Pitch,পিচ,noun
+Place,জায়গা,noun verb
+Plain,সমভূমি,adjective
+Plan,পরিকল্পনা,noun verb
+Plane,সমতল,noun
+Planet,গ্রহ,noun
+Planning,পরিকল্পনা,noun
+Plant,উদ্ভিদ,noun verb
+Plastic,প্লাস্টিক,noun adjective
+Plate,প্লেট,noun
+Platform,মাচা,noun
+Play,খেলা,verb noun
+Player,খেলোয়াড়,noun
+Pleasant,মনোরম,adjective
+Please,অনুগ্রহ,exclamation verb
+Pleased,খুশি,adjective
+Pleasure,পরিতোষ,noun
+Plenty,প্রচুর,pronoun
+Plot,পটভূমি,noun verb
+Plus,যোগ,prep. adj. conj. noun
+Pocket,পকেট,noun
+Poem,কবিতা,noun
+Poet,কবি,noun
+Poetry,কবিতা,noun
+Point,বিন্দু,noun verb
+Pointed,তীক্ষ্ণ,adjective
+Poison,বিষ,noun verb
+Poisonous,বিষাক্ত,adjective
+Police,পুলিশ,noun
+Policeman,পুলিশ,noun
+Policy,নীতি,noun
+Polite,ভদ্র,adjective
+Political,রাজনৈতিক,adjective
+Politician,রাজনীতিজ্ঞ,noun
+Politics,রাজনীতি,noun
+Pollution,দূষণ,noun
+Pool,পুকুর,noun
+Poor,দরিদ্র,adjective
+Pop,পপ,noun adjective
+Popular,জনপ্রিয়,adjective
+Popularity,জনপ্রিয়তা,noun
+Population,জনসংখ্যা,noun
+Port,বন্দর,noun
+Portrait,প্রতিকৃতি,noun
+Pose,অঙ্গবিক্ষেপ,verb
+Position,অবস্থান,noun verb
+Positive,ধনাত্মক,adjective noun
+Possess,ভোগদখল করা,verb
+Possession,দখল,noun
+Possibility,সম্ভাবনা,noun
+Possible,সম্ভব,adjective
+Possibly,সম্ভবত,adverb
+Post,পোস্ট,noun verb
+Poster,পোস্টার,noun
+Pot,পাত্র,noun
+Potato,আলু,noun
+Potential,সম্ভাব্য,adjective noun
+Pound,পাউন্ড,noun
+Pour,ঢালা,verb
+Poverty,দারিদ্র্য,noun
+Powder,গুঁড়া,noun
+Power,ক্ষমতা,noun verb
+Powerful,ক্ষমতাশালী,adjective
+Practical,ব্যবহারিক,adjective
+Practice,অনুশীলন করা,noun
+Practise,অনুশীলন করা,verb
+Praise,প্রশংসা,noun verb
+Pray,প্রার্থনা করা,verb
+Prayer,প্রার্থনা,noun
+Predict,ভবিষ্যদ্বাণী করা,verb
+Prediction,ভবিষ্যদ্বাণী,noun
+Prefer,পছন্দ করা,verb
+Pregnant,গর্ভবতী,adjective
+Preparation,প্রস্তুতি,noun
+Prepare,প্রস্তুত করা,verb
+Prepared,প্রস্তুত,adjective
+Presence,উপস্থিতি,noun
+Present,বর্তমান,adjective noun verb
+Presentation,উপহার,noun
+Preserve,বাঁচাইয়া রাখা,verb
+President,সভাপতি,noun
+Press,প্রেস,verb noun
+Pressure,চাপ,noun
+Pretend,ভান করা,verb
+Pretty,চমত্কার,adjective adverb
+Prevent,প্রতিরোধ,verb
+Previous,আগে,adjective
+Previously,পূর্বে,adverb
+Price,মূল্য,noun verb
+Priest,যাজক,noun
+Primary,প্রাথমিক,adjective
+Prime,প্রধান,adjective
+Prince,রাজপুত্র,noun
+Princess,রাজকুমারী,noun
+Principle,নীতি,noun
+Print,ছাপা,verb noun
+Printer,মুদ্রাকর,noun
+Printing,মুদ্রণ,noun
+Priority,অগ্রাধিকার,noun
+Prison,কারাগার,noun
+Prisoner,বন্দী,noun
+Privacy,গোপনীয়তা,noun
+Private,ব্যক্তিগত,adjective
+Prize,পুরস্কার,noun
+Probably,সম্ভবত,adverb
+Problem,সমস্যা,noun
+Procedure,কার্যপ্রণালী,noun
+Process,প্রক্রিয়া,noun verb
+Produce,উৎপাদন করা,verb verb
+Producer,উত্পাদক,noun
+Product,পণ্য,noun
+Production,উৎপাদন,noun
+Profession,পেশা,noun
+Professional,পেশাদারী,adjective noun
+Professor,অধ্যাপক,noun
+Profile,প্রোফাইল,noun
+Profit,মুনাফা,noun
+Program,কার্যক্রম,noun verb
+Programme,কার্যক্রম,noun
+Progress,উন্নতি,noun verb
+Project,প্রকল্পের,noun verb
+Promise,প্রতিশ্রুতি,verb noun
+Promote,উন্নীত করা,verb
+Pronounce,উচ্চারণ,verb
+Proof,প্রমাণ,noun
+Proper,সঠিক,adjective
+Properly,সঠিকভাবে,adverb
+Property,সম্পত্তি,noun
+Proposal,প্রস্তাব,noun
+Propose,উত্থাপন করা,verb
+Prospect,প্রত্যাশা,noun
+Protect,রক্ষা করা,verb
+Protection,সুরক্ষা,noun
+Protest,আপত্তি,noun verb
+Proud,গর্বিত,adjective
+Prove,প্রমাণ করা,verb
+Provide,প্রদান,verb
+Psychologist,মনস্তত্ত্বিক,noun
+Psychology,মনোবিজ্ঞান,noun
+Pub,মদের দোকান,noun
+Public,প্রকাশ্য,adjective noun
+Publication,প্রকাশন,noun
+Publish,প্রকাশ করা,verb
+Pull,টান,verb noun
+Punish,শাস্তি,verb
+Punishment,শাস্তি,noun
+Pupil,পুতলি,noun
+Purchase,ক্রয়,noun verb
+Pure,বিশুদ্ধ,adjective
+Purple,রক্তবর্ণ,adjective noun
+Purpose,উদ্দেশ্য,noun
+Pursue,অন্বেষণ করা,verb
+Push,ধাক্কা,verb noun
+Put,করা,verb
+Qualification,যোগ্যতা,noun
+Qualified,যোগ্যতাসম্পন্ন,adjective
+Qualify,যোগ্যতা,verb
+Quality,গুণ,noun
+Quantity,পরিমাণ,noun
+Quarter,সিকি,noun
+Queen,রাণী,noun
+Question,প্রশ্ন,noun verb
+Queue,কিউ,noun verb
+Quick,দ্রুত,adjective
+Quickly,দ্রুত,adverb
+Quiet,শান্ত,adjective
+Quietly,শান্তভাবে,adverb
+Quit,অব্যাহতিপ্রাপ্ত,verb
+Quite,পুরোপুরি,adverb
+Quotation,উদ্ধৃতি,noun
+Quote,উদ্ধৃতি,verb noun
+Race (Competition),জাতি (প্রতিযোগীতা),noun verb
+Race (People),জাতি (মানুষ),noun
+Racing,ধাবমান,noun
+Radio,রেডিও,noun
+Railway,রেলপথ,noun
+Rain,বৃষ্টি,noun verb
+Raise,বাড়াতে,verb
+Range,পরিসর,noun verb
+Rank,মর্যাদাক্রম,noun verb
+Rapid,দ্রুত,adjective
+Rapidly,দ্রুত,adverb
+Rare,বিরল,adjective
+Rarely,কদাচিৎ,adverb
+Rate,হার,noun verb
+Rather,বরং,adverb
+Raw,কাঁচা,adjective
+Reach,পৌঁছানো,verb noun
+React,প্রতিক্রিয়া,verb
+Reaction,প্রতিক্রিয়া,noun
+Read,পড়া,verb
+Reader,পাঠক,noun
+Reading,পড়া,noun
+Ready,প্রস্তুত,adjective
+Real,বাস্তব,adjective
+Realistic,বাস্তবানুগ,adjective
+Reality,বাস্তবতা,noun
+Realize,অনুভব,verb
+Really,সত্যিই,adverb
+Reason,কারণ,noun
+Reasonable,যৌক্তিক,adjective
+Recall,প্রত্যাহার,verb
+Receipt,প্রাপ্তি,noun
+Receive,গ্রহণ করা,verb
+Recent,সাম্প্রতিক,adjective
+Recently,সম্প্রতি,adverb
+Reception,অভ্যর্থনা,noun
+Recipe,প্রণালী,noun
+Recognize,চেনা,verb
+Recommend,সুপারিশ করা,verb
+Recommendation,সুপারিশ,noun
+Record,নথি,noun verb
+Recording,রেকর্ডিং,noun
+Recover,পুনরুদ্ধার,verb
+Recycle,রিসাইকেল,verb
+Red,লাল,adjective noun
+Reduce,হ্রাস করা,verb
+Reduction,হ্রাস,noun
+Refer,পড়ুন,verb
+Reference,উল্লেখ,noun
+Reflect,প্রতিফলিত করা,verb
+Refuse,প্রত্যাখ্যান,verb
+Regard,বিবেচনা,verb noun
+Region,অঞ্চল,noun
+Regional,আঞ্চলিক,adjective
+Register,নিবন্ধন,verb noun
+Regret,খেদ,verb noun
+Regular,নিয়মিত,adjective
+Regularly,নিয়মিতভাবে,adverb
+Regulation,প্রবিধান,noun
+Reject,প্রত্যাখ্যান,verb
+Relate,বলা,verb
+Related,সংশ্লিষ্ট,adjective
+Relation,সম্পর্ক,noun
+Relationship,সম্পর্ক,noun
+Relative,আপেক্ষিক,adjective noun
+Relatively,অপেক্ষাকৃতভাবে,adverb
+Relax,শিথিল করা,verb
+Relaxed,নিরুদ্বেগ,adjective
+Relaxing,আরামদায়ক,adjective
+Release,মুক্তি,verb noun
+Relevant,প্রাসঙ্গিক,adjective
+Reliable,বিশ্বাসযোগ্য,adjective
+Relief,মুক্তি,noun
+Religion,ধর্ম,noun
+Religious,ধার্মিক,adjective
+Rely,নির্ভর করা,verb
+Remain,থাকা,verb
+Remark,মন্তব্য,noun verb
+Remember,মনে রাখা,verb
+Remind,মনে করিয়ে,verb
+Remote,দূরবর্তী,adjective
+Remove,অপসারণ,verb
+Rent,ভাড়া,noun verb
+Repair,মেরামত,verb noun
+Repeat,পুনরাবৃত্তি,verb noun
+Repeated,পুনরাবৃত্ত,adjective
+Replace,প্রতিস্থাপন করা,verb
+Reply,উত্তর,verb noun
+Report,প্রতিবেদন,noun verb
+Reporter,সংবাদদাতা,noun
+Represent,চিত্রিত করা,verb
+Representative,প্রতিনিধি,noun adjective
+Reputation,খ্যাতি,noun
+Request,অনুরোধ,noun verb
+Require,প্রয়োজন,verb
+Requirement,প্রয়োজন,noun
+Rescue,উদ্ধার,verb noun
+Research,গবেষণা,noun verb
+Researcher,গবেষক,noun
+Reservation,সংরক্ষণ,noun
+Reserve,সংচিতি,noun verb
+Resident,বাসিন্দা,noun adjective
+Resist,প্রতিহত করা,verb
+Resolve,সমাধান,verb
+Resort,অবলম্বন,noun
+Resource,সংস্থান,noun
+Respect,সম্মান,noun verb
+Respond,সাড়া,verb
+Response,প্রতিক্রিয়া,noun
+Responsibility,দায়িত্ব,noun
+Responsible,দায়ী,adjective
+Rest (Remaining Part),বিশ্রাম (অবশিষ্ট অংশ),noun
+Rest (Sleep/Relax),বাকি (ঘুম / শিথিল),noun verb
+Restaurant,রেঁস্তোরা,noun
+Result,ফলাফল,noun verb
+Retain,রাখা,verb
+Retire,অপসৃত করা,verb
+Retired,অবসরপ্রাপ্ত,adjective
+Return,প্রত্যাবর্তন,verb noun
+Reveal,প্রকাশ করা,verb
+Review,পুনঃমূল্যায়ন,noun verb
+Revise,পুন: পরিক্ষা,verb
+Revolution,বিপ্লব,noun
+Reward,পুরস্কার,noun verb
+Rhythm,তাল,noun
+Rice,ধান,noun
+Rich,সমৃদ্ধ,adjective
+Rid,পরিত্রাণ,verb
+Ride,অশ্বারোহণ,verb noun
+Right,অধিকার,adj. adverb noun
+Ring,রিং,noun
+Ring,রিং,verb noun
+Rise,ওঠা,verb noun
+Risk,ঝুঁকি,noun verb
+River,নদী,noun
+Road,রাস্তা,noun
+Roar, গর্জন, verb noun
+Robot,রোবট,noun
+Rock (Stone),শিলা পাথর,noun
+Rock (Music),রক সঙ্গীত,noun
+Role,ভূমিকা,noun
+Roll,রোল,verb noun
+Romantic,রোমান্টিক,adjective
+Roof,ছাদ,noun
+Room,ঘর,noun
+Root,মূল,noun
+Rope,দড়ি,noun
+Rough,মোটামুটি,adjective
+Round,বৃত্তাকার,noun
+Route,রুট,noun
+Routine,দৈনন্দিন,noun adjective
+Row,সারি,noun
+Royal,রাজকীয়,adjective
+Rub,ঘষা,verb
+Rubber,রবার,noun adjective
+Rubbish,আবর্জনা,noun
+Rude,অভদ্র,adjective
+Rugby,রাগবিখেলা,noun
+Rule,নিয়ম,noun verb
+Run,চালান,verb noun
+Runner,চর,noun
+Running,চলমান,noun
+Rural,গ্রামীণ,adjective
+Rush,ভিড়,verb noun
+Sad,দু: খিত,adjective
+Sadly,দুঃখিতভাবে,adverb
+Safe,নিরাপদ,adjective
+Safety,নিরাপত্তা,noun
+Said, বলল, verb
+Sail,পাল,verb noun
+Sailing,পালতোলা,noun
+Sailor,নাবিক,noun
+Salad,সালাদ,noun
+Salary,বেতন,noun
+Sale,বিক্রয়,noun
+Salt,লবণ,noun
+Same,একই,adj. pronoun adverb
+Sample,নমুনা,noun verb
+Sand,বালি,noun
+Sandwich,স্যান্ডউইচ,noun
+Satellite,উপগ্রহ,noun
+Satisfied,সন্তুষ্ট,adjective
+Satisfy,পরিতৃপ্ত করা,verb
+Saturday,শনিবার,noun
+Sauce,সস,noun
+Save,সংরক্ষণ,verb
+Saving,সংরক্ষণ,noun
+Say,বলে,verb
+Scale,স্কেল,noun
+Scan,স্ক্যান,verb
+Scared,ভীত,adjective
+Scary,ভীতিকর,adjective
+Scene,দৃশ্য,noun
+Schedule,তফসিল,noun verb
+Scheme,পরিকল্পনা,noun
+School,বিদ্যালয়,noun
+Science,বিজ্ঞান,noun
+Scientific,বৈজ্ঞানিক,adjective
+Scientist,বিজ্ঞানী,noun
+Score,স্কোর,verb noun
+Scream,আর্তনাদ,verb noun
+Screen,পর্দা,noun verb
+Script,লিপি,noun
+Sculpture,ভাস্কর্য,noun
+Sea,সমুদ্র,noun
+Search,অনুসন্ধান,noun verb
+Season,মৌসম,noun
+Seat,আসন,noun verb
+Second,দ্বিতীয়,noun adjective adverb
+Secondary,মাধ্যমিক,adjective
+Secondly,দ্বিতীয়ত,adverb
+Secret,গোপন,adjective noun
+Secretary,সম্পাদক,noun
+Section,অধ্যায়,noun
+Sector,সেক্টর,noun
+Secure,নিরাপদ,verb adjective
+Security,নিরাপত্তা,noun
+See,দেখা,verb
+Seed,বীজ,noun
+Seek,চাইতে,verb
+Seem,মনে,verb
+Select,নির্বাচন করা,verb
+Selection,নির্বাচন,noun
+Self,স্ব,noun
+Sell,বিক্রয়,verb
+Send,পাঠান,verb
+Senior,ঊর্ধ্বতন,adjective
+Sense,ইন্দ্রিয়,noun verb
+Sensible,বিচক্ষণ,adjective
+Sensitive,সংবেদনশীল,adjective
+Sentence,বাক্য,noun verb
+Separate,আলাদা,adjective verb
+September,সেপ্টেম্বর,noun
+Sequence,ক্রম,noun
+Series,ক্রম,noun
+Serious,গুরুতর,adjective
+Seriously,গম্ভীরভাবে,adverb
+Servant,দাস,noun
+Serve,পরিবেশন করা,verb
+Service,সেবা,noun
+Session,সেশন,noun
+Set (Put),সেট (করা),verb
+Set (Group),সেট (গ্রুপ),noun
+Setting,বিন্যাস,noun
+Settle,সেটল,verb
+Seven,সাত,number
+Seventeen,সতের,number
+Seventy,সত্তর,number
+Several,বিভিন্ন,det./pronoun
+Severe,তীব্র,adjective
+Sex,লিঙ্গ,noun
+Sexual,যৌন,adjective
+Shade,ছায়া,noun
+Shadow,ছায়া,noun
+Shake,ঝাঁকি,verb noun
+Shall,হইবে,modal verb
+Shallow,অগভীর,adjective
+Shame,লজ্জা,noun
+Shape,আকৃতি,noun verb
+Share,ভাগ,verb noun
+Sharp,তীব্র,adjective
+She,সে,pronoun
+Sheep,মেষ,noun
+Sheet,চাদর,noun
+Shelf,বালুচর,noun
+Shell,খোল,noun
+Shelter,আশ্রয়,noun verb
+Shift,পরিবর্তন,noun verb
+Shine,চকমক,verb
+Shiny,চকচকে,adjective
+Ship,জাহাজ,noun verb
+Shirt,শার্ট,noun
+Shock,অভিঘাত,noun verb
+Shocked,বিস্মিত,adjective
+Shoe,জুতা,noun
+Shoot,অঙ্কুর,verb
+Shooting,শুটিং,noun
+Shop,দোকান,noun verb
+Shopping,কেনাকাটা,noun
+Short,সংক্ষিপ্ত,adjective
+Shot,শট,noun
+Should,উচিত,modal verb
+Shoulder,অংস,noun
+Shout,চিত্কার,verb noun
+Show,প্রদর্শনী,verb noun
+Shower,ঝরনা,noun
+Shut,বন্ধ,verb adjective
+Shy,লাজুক,adjective
+Sick,অসুস্থ,adjective
+Side,পাশ,noun
+Sight,দৃষ্টিশক্তি,noun
+Sign,চিহ্ন,noun verb
+Signal,সংকেত,noun verb
+Significant,গুরুত্বপূর্ণ,adjective
+Significantly,উল্লেখযোগ্যভাবে,adverb
+Silence,নীরবতা,noun
+Silent,নীরব,adjective
+Silk,সিল্ক,noun
+Silly,নিরীহ,adjective
+Silver,রূপা,noun adjective
+Similar,অনুরূপ,adjective
+Similarity,আদল,noun
+Similarly,একভাবে,adverb
+Simple,সহজ,adjective
+Simply,কেবল,adverb
+Since,থেকে,prep. conj., adverb
+Sincere,আন্তরিক,adjective
+Sing,Sing,verb
+Singer,গায়ক,noun
+Singing,উদ্গাতা,noun
+Single,একক,adjective noun
+Sink,ডুবা,verb
+Sir,জনাব,noun
+Sister,বোন,noun
+Sit,বসা,verb
+Site,সাইট,noun
+Situation,অবস্থা,noun
+Six,ছয়,number
+Sixteen,ষোল,number
+Sixty,ষাট,number
+Size,আয়তন,noun
+Ski,স্কী,verb noun
+Skiing,স্কিইং,noun
+Skill,দক্ষতা,noun
+Skin,চামড়া,noun
+Skirt,স্কার্ট,noun
+Sky,আকাশ,noun
+Slave,ক্রীতদাস,noun
+Sleep,ঘুম,verb noun
+Slice,ফালি,noun verb
+Slid, প্রসরণ, verb
+Slide,স্লাইড্,verb noun
+Slight,অসম্মান,adjective
+Slightly,সামান্য,adverb
+Slim, সুবর্ণ, adjective
+Slip,চিলতা,verb
+Slope,ঢাল,noun verb
+Slow,ধীর,adjective verb
+Slowly,ধীরে ধীরে,adverb
+Small,ছোট,adjective
+Smart,স্মার্ট,adjective
+Smartphone,স্মার্টফোন,noun
+Smell,গন্ধ,verb noun
+Smile,হাসা,verb noun
+Smoke,ধোঁয়া,noun verb
+Smoking,ধূমপান,noun
+Smooth,মসৃণ,adjective
+Snake,সাপ,noun
+Snow,তুষার,noun verb
+So,সুতরাং,adverb conj.
+Soap,সাবান,noun
+Soccer,ফুটবল খেলা,noun
+Social,সামাজিক,adjective
+Society,সমাজ,noun
+Sock,মোজা,noun
+Soft,নরম,adjective
+Software,সফটওয়্যার,noun
+Soil,মাটি,noun
+Solar,সৌর,adjective
+Soldier,সৈনিক,noun
+Solid,কঠিন,adjective noun
+Solution,সমাধান,noun
+Solve,সমাধান,verb
+Some,কিছু,det. pronoun
+Somebody,কারো,pronoun
+Someone,কেউ,pronoun
+Something,কিছু,pronoun
+Sometimes,কখনও কখনও,adverb
+Somewhat,কিছুটা,adverb
+Somewhere,কোথাও,adverb pronoun
+Son,পুত্র,noun
+Song,গান,noun
+Soon,শীঘ্রই,adverb
+Sorry,দুঃখিত,adjective exclam.
+Sort,সাজান,noun verb
+Soul,আত্মা,noun
+Sound,শব্দ,noun verb
+Soup,সুপ,noun
+Source,উৎস,noun
+South,দক্ষিণ,noun adjective adverb
+Southern,দক্ষিণ,adjective
+Space,স্থান,noun
+Speak,কথা বলা,verb
+Speaker,বক্তা,noun
+Special,বিশেষ,adjective
+Specialist,বিশেষজ্ঞ,noun adjective
+Species,প্রজাতি,noun
+Specific,নির্দিষ্ট,adjective
+Specifically,বিশেষভাবে,adverb
+Speech,বক্তৃতা,noun
+Speed,গতি,noun verb
+Spell,বানান করা,verb
+Spelling,বানান,noun
+Spend,ব্যয় করা,verb
+Spending,খরচ,noun
+Spicy,মসলাযুক্ত,adjective
+Spider,মাকড়সা,noun
+Spirit,আত্মা,noun
+Spiritual,আধ্যাত্মিক,adjective
+Split,বিভক্ত করা,verb noun
+Spoken,উচ্চারিত,adjective
+Sponsor,জামিন,verb noun
+Spoon,চামচ,noun
+Sport,খেলা,noun
+Spot,অকুস্থল,noun verb
+Spread,ছড়িয়ে পড়া,verb noun
+Spring,বসন্ত,noun verb
+Square,বর্গক্ষেত্র,adjective noun
+Stable,স্থিতিশীল,adjective
+Stadium,স্টেডিয়াম,noun
+Staff,কর্মী,noun
+Stage,পর্যায়,noun verb
+Stair,সিঁড়ি,noun
+Stamp,ছাপ,noun
+Stand,থাকা,verb noun
+Standard,মান,noun adjective
+Star,তারকা,noun verb
+Stare,তাকান,verb
+Start,শুরু,verb noun
+State,অবস্থা,noun adjective verb
+Statement,বিবৃতি,noun
+Station,স্টেশান,noun
+Statistic,পরিসংখ্যাত,noun
+Statue,ভাস্কর্য,noun
+Status,অবস্থা,noun
+Stay,থাকা,verb noun
+Steady,অবিচলিত,adjective
+Steal,চুরি করা,verb
+Steel,ইস্পাত,noun
+Steep,খাড়া,adjective
+Step,ধাপ,noun verb
+Stick (attach),ঠেলে আটকান ,verb
+Stick (piece of wood),লাঠি (কাঠের টুকরা),noun
+Sticky,আঠাল,adjective
+Stiff,শক্ত,adjective
+Still,এখনো,adverb adjective
+Stock,স্টক,noun
+Stomach,পেট,noun
+Stone,পাথর,noun
+Stop,স্টপ,verb noun
+Store,দোকান,noun verb
+Storm,ঝড়,noun
+Story,গল্প,noun
+Straight,সোজা,adverb adjective
+Strange,অদ্ভুত,adjective
+Stranger,নবজাতক,noun
+Strategy,কৌশল,noun
+Stream,প্রবাহ,noun
+Street,রাস্তা,noun
+Strength,শক্তি,noun
+Stress,জোর,noun verb
+Stretch,প্রসারণ,verb noun
+Strict,যথাযথ,adjective
+Strike,ধর্মঘট,verb noun
+String,দড়ি,noun
+Strong,শক্তিশালী,adjective
+Strongly,প্রবলভাবে,adverb
+Structure,গঠন,noun verb
+Struggle,সংগ্রাম,verb noun
+Student,ছাত্র,noun
+Studio,চিত্রশালা,noun
+Study,অধ্যয়ন,noun verb
+Stuff,জিনিসপত্র,noun verb
+Stupid,মূঢ়,adjective
+Style,শৈলী,noun
+Subject,বিষয়,noun adjective
+Submit,জমা দিন,verb
+Substance,পদার্থ,noun
+Succeed,সফল,verb
+Success,সাফল্য,noun
+Successful,সফল,adjective
+Successfully,সফলভাবে,adverb
+Such,এমন,det./pronoun
+Sudden,আকস্মিক,adjective
+Suddenly,হঠাৎ,adverb
+Suffer,ভোগা,verb
+Sugar,চিনি,noun
+Suggest,সুপারিশ,verb
+Suggestion,পরামর্শ,noun
+Suit,মামলা,noun verb
+Suitable,উপযুক্ত,adjective
+Sum,সমষ্টি,noun verb
+Summarize,সংক্ষিপ্ত করা,verb
+Summary,সারসংক্ষেপ,noun
+Summer,গ্রীষ্ম,noun
+Sun,সূর্য,noun
+Sunday,রবিবার,noun
+Supermarket,সুপারমার্কেট,noun
+Supply,সরবরাহ,noun verb
+Support,সমর্থন,verb noun
+Supporter,পৃষ্ঠপোষক,noun
+Suppose,অনুমান করা,verb
+Sure,নিশ্চিত,adjective adverb
+Surely,নিশ্চয়,adverb
+Surface,পৃষ্ঠতল,noun
+Surgery,সার্জারি,noun
+Surprise,আশ্চর্য,noun verb
+Surprised,বিস্মিত,adjective
+Surprising,বিস্ময়কর,adjective
+Surround,ঘিরা,verb
+Surrounding,পার্শ্ববর্তী,adjective
+Survey,জরিপ,noun verb
+Survive,টেকা,verb
+Suspect,সন্দেহভাজন,verb noun
+Swear,শপথ,verb
+Sweater,সোয়েটার,noun
+Sweep,পরিষ্কার করা,verb
+Sweet,মিষ্টি,adjective noun
+Swim,সন্তরণ,verb noun
+Swimming,সাঁতার,noun
+Switch,সুইচ,verb noun
+Symbol,প্রতীক,noun
+Sympathy,সহানুভূতি,noun
+Symptom,উপসর্গ,noun
+System,পদ্ধতি,noun
+Table,টেবিল,noun
+Tablet,ট্যাবলেট,noun
+Tail,লেজ,noun
+Take,গ্রহণ করা,verb
+Tale,গল্প,noun
+Talent,প্রতিভা,noun
+Talented,প্রতিভাশালী,adjective
+Talk,আলাপ,verb noun
+Tall,লম্বা,adjective
+Tank,ট্যাংক,noun
+Tape,ফিতা,noun
+Target,লক্ষ্য,noun verb
+Task,কাজের,noun
+Taste,স্বাদ,noun verb
+Tax,কর,noun verb
+Taxi,ট্যাক্সি,noun
+Tea,চা,noun
+Teach,শিক্ষা,verb
+Teacher,শিক্ষক,noun
+Teaching,শিক্ষাদান,noun
+Team,টীম,noun
+Tear1,tear1,verb noun
+Tear2,tear2,noun
+Technical,প্রযুক্তিগত,adjective
+Technique,প্রযুক্তি,noun
+Technology,প্রযুক্তি,noun
+Teenage,কিশোর,adjective
+Teenager,কিশোর,noun
+Telephone,টেলিফোন,noun verb
+Television,টিভি,noun
+Tell,বলা,verb
+Temperature,তাপমাত্রা,noun
+Temporary,অস্থায়ী,adjective
+Ten,দশ,number
+Tend,ঝোঁক,verb
+Tennis,টেনিস,noun
+Tent,তাঁবু,noun
+Term,মেয়াদ,noun verb
+Terrible,ভয়ানক,adjective
+Test,পরীক্ষা,noun verb
+Text,পাঠ,noun verb
+Than,চেয়ে,conj.
+Thank,ধন্যবাদ,verb
+Thanks,ধন্যবাদ,exclam. noun
+That,যে,adverb
+The,দ্য,definite article
+Theatre,থিয়েটার,noun
+Their,তাদের,det.
+Theirs,তাহাদেরই,pronoun
+Them,তাহাদিগকে,pronoun
+Theme,বিষয়,noun
+Themselves,নিজেদের,pronoun
+Then,তারপর,adverb
+Theory,তত্ত্ব,noun
+Therapy,থেরাপি,noun
+There,সেখানে,adverb
+Therefore,অতএব,adverb
+They,তারা,proNoun
+Thick,পুরু,adjective
+Thief,চোর,noun
+Thin,পাতলা,adjective
+Thing,জিনিস,noun
+Think,মনে,verb
+Thinking,চিন্তা,noun
+Third,তৃতীয়,number noun
+Thirsty,তৃষ্ণার্ত,adjective
+Thirteen,তের,number
+Thirty,ত্রিশ,number
+This,এই,det./pronoun adverb
+Though,যদিও,conj. adverb
+Thought,চিন্তার,noun
+Thousand,হাজার,number
+Threat,হুমকি,noun
+Threaten,শাসান,verb
+Three,তিন,number
+Throat,গলা,noun
+Through,মাধ্যম,prep. adverb
+Throughout,সর্বত্র,prep./adverb
+Throw,নিক্ষেপ,verb
+Thursday,বৃহস্পতিবার,noun
+Thus,এইভাবে,adverb
+Ticket,টিকেট,noun
+Tidy,পরিপাটি,adjective verb
+Tie,টাই,verb noun
+Tight,আঁট,adjective
+Till,পর্যন্ত,conj./prep.
+Time,সময়,noun verb
+Tin,টিন,noun
+Tiny,অতি ক্ষুদ্র,adjective
+Tip,ডগা,noun verb
+Tired,ক্লান্ত,adjective
+Title,শিরোনাম,noun
+To,প্রতি,prep.
+Toad, বুটবিলাস, noun
+Today,আজ,adverb noun
+Toe,পদাঙ্গুলি,noun
+Together,একসঙ্গে,adverb
+Toilet,টয়লেট,noun
+Told, বলেছিল, verb
+Tomato,টমেটো,noun
+Tomorrow,আগামীকাল,adverb noun
+Tone,স্বন,noun
+Tongue,জিহ্বা,noun
+Tonight,অদ্য রজনীতে,adverb noun
+Too,অত্যধিক,adverb
+Tool,টুল,noun
+Tooth,দাঁত,noun
+Top,শীর্ষ,noun adjective
+Topic,বিষয়,noun
+Total,মোট,adjective noun
+Totally,সম্পূর্ণভাবে,adverb
+Touch,স্পর্শ,verb noun
+Tough,শক্ত,adjective
+Tour,সফর,noun verb
+Tourism,ভ্রমণব্যবস্থা,noun
+Tourist,পর্যটক,noun
+Towards,প্রতি,prep.
+Towel,গামছা,noun
+Tower,মিনার,noun
+Town,শহর,noun
+Toy,খেলনা,noun adjective
+Track,ট্র্যাক,noun verb
+Trade,বাণিজ্য,noun verb
+Tradition,ঐতিহ্য,noun
+Traditional,ঐতিহ্যগত,adjective
+Traffic,ট্রাফিক,noun
+Train,রেলগাড়ি,noun verb
+Trainer,শিক্ষক,noun
+Training,প্রশিক্ষণ,noun
+Transfer,হস্তান্তর,verb noun
+Transform,রুপান্তর,verb
+Transition,রূপান্তরটি,noun
+Translate,অনুবাদ করা,verb
+Translation,অনুবাদ,noun
+Transport,পরিবহন,noun verb
+Travel,ভ্রমণ,verb noun
+Traveller,পান্থ,noun
+Treat,আচরণ,verb
+Treatment,চিকিৎসা,noun
+Tree,গাছ,noun
+Trend,প্রবণতা,noun
+Trial,পরীক্ষা,noun
+Trick,কৌতুক,noun verb
+Trip,যাত্রা,noun verb
+Tropical,গ্রীষ্মপ্রধান,adjective
+Trouble,কষ্ট,noun verb
+Trousers,ট্রাউজার্স,noun
+Truck,ট্রাক,noun
+True,'সত্য',adjective
+Truly,প্রকৃতপক্ষে,adverb
+Trust,আস্থা,noun verb
+Truth,সত্য,noun
+Try,চেষ্টা,verb
+T-shirt,টি-শার্ট,noun
+Tube,নল,noun
+Tuesday,মঙ্গলবার,noun
+Tune,সুর,noun
+Tunnel,সুড়ঙ্গ,noun
+Turn,চালু,verb noun
+TV,টেলিভিশন,noun
+Twelve,বার,number
+Twenty,বিশ,number
+Twice,দ্বিগুণ,adverb
+Twin,যমজ,noun adjective
+Two,দুই,number
+Type,আদর্শ,noun verb
+Typical,টিপিক্যাল,adjective
+Typically,সাধারণত,adverb
+Tyre,পাগড়ি,noun
+Ugly,অরুপ,adjective
+Ultimately,পরিণামে,adverb
+Umbrella,ছাতা,noun
+Unable,অক্ষম,adjective
+Uncle,চাচা,noun
+Uncomfortable,অস্বচ্ছন্দ,adjective
+Unconscious,অজ্ঞান,adjective
+Under,অধীনে,prep. adj
+Underground,ভূগর্ভস্থ,adjective adverb
+Understand,বোঝা,verb
+Understanding,বোধশক্তি,noun
+Underwear,আন্ডারওয়্যার,noun
+Unemployed,বেকার,adjective
+Unemployment,বেকারি,noun
+Unexpected,অপ্রত্যাশিত,adjective
+Unfair,অন্যায্য,adjective
+Unfortunately,দুর্ভাগ্যবশত,adverb
+Unhappy,অসুখী,adjective
+Uniform,অভিন্ন,noun
+Union,মিলন,noun
+Unique,অনন্য,adjective
+Unit,একক,noun
+United,একজোট,adjective
+Universe,বিশ্ব,noun
+University,বিশ্ববিদ্যালয়,noun
+Unknown,অজানা,adjective
+Unless,যদি না,conj.
+Unlike,অসদৃশ,prep.
+Unlikely,অসম্ভাব্য,adjective
+Unnecessary,অপ্রয়োজনীয়,adjective
+Unpleasant,অপ্রীতিকর,adjective
+Until,পর্যন্ত,conj./prep.
+Unusual,অস্বাভাবিক,adjective
+Up,আপ,adverb pronoun
+Update,হালনাগাদ,verb noun
+Upon,উপরে,prep.
+Upper,উচ্চতর,adjective
+Upset,মর্মাহত,adjective verb
+Upstairs,উপরে,adverb
+Upwards,ঊর্ধ্বে,adverb
+Urban,শহুরে,adjective
+Urge,তাড়ন,verb
+Us,আমাদের,pronoun
+Use,ব্যবহার,verb noun
+Used,ব্যবহৃত,adjective
+Used to,অভ্যস্ত,modal verb
+Useful,দরকারী,adjective
+User,ব্যবহারকারী,noun
+Usual,চলিত,adjective
+Usually,সাধারণত,adverb
+Vacation,অবকাশ,noun
+Valley,উপত্যকা,noun
+Valuable,দামি,adjective
+Value,মান,noun verb
+Van,অগ্রদূত,noun
+Variety,বৈচিত্র্য,noun
+Various,বিভিন্ন,adjective
+Vary,বিভিন্ন করা,verb
+Vast,সুবিশাল,adjective
+Vegetable,শাকসবজি,noun
+Vehicle,বাহন,noun
+Venue,ঘটনাস্থল,noun
+Version,সংস্করণ,noun
+Very,খুব,adverb
+Via,মাধ্যমে,prep.
+Victim,শিকার,noun
+Victory,বিজয়,noun
+Video,ভিডিও,noun
+View,দৃশ্য,noun verb
+Viewer,দর্শক,noun
+Village,গ্রাম,noun
+Violence,হিংস্রতা,noun
+Violent,হিংসাত্মক,adjective
+Virtual,অপার্থিব,adjective
+Virus,ভাইরাস,noun
+Vision,দৃষ্টি,noun
+Visit,দর্শন,verb noun
+Visitor,দর্শনার্থী,noun
+Visual,চাক্ষুষ,adjective
+Vital,অত্যাবশ্যক,adjective
+Vitamin,ভিটামিন,noun
+Voice,কণ্ঠস্বর,noun
+Volume,আয়তন,noun
+Volunteer,স্বেচ্ছাসেবক,noun verb
+Vote,ভোট,noun verb
+Wage,বেতন,noun
+Wait,অপেক্ষার,verb noun
+Waiter,ওয়েটার,noun
+Wake,প্রাক্কালে,verb
+Walk,পদব্রজে ভ্রমণ,verb noun
+Wall,প্রাচীর,noun
+Want,প্রয়োজন,verb
+War,যুদ্ধ,noun
+Warm,উষ্ণ,adjective, verb
+Warn,সতর্ক,verb
+Warning,সাবধানবাণী,noun
+Wash,ধোয়া,verb noun
+Washing,ধোলাই,noun
+Waste,অপচয়,noun verb
+Watch,ঘড়ি,verb noun
+Water,পানি,noun, verb
+Wave,তরঙ্গ,noun
+Way,পথ,noun
+We,আমরা,pronoun
+Weak,দুর্বল,adjective
+Weakness,দুর্বলতা,noun
+Wealth,ধন,noun
+Wealthy,ধনী,adjective
+Weapon,অস্ত্র,noun
+Wear,পরিধান,verb
+Weather,আবহাওয়া,noun
+Web,ওয়েব,noun
+Website,ওয়েবসাইট,noun
+Wedding,বিবাহ,noun
+Wednesday,বুধবার,noun
+Week,সপ্তাহ,noun
+Weekend,সপ্তাহান্তিক কাল,noun
+Weigh,তৌল করা,verb
+Weight,ওজন,noun
+Welcome,স্বাগত,verb adj. noun
+Well,আমরা হব,adverb adj.
+West,পশ্চিম,noun adjective adverb
+Western,পশ্চিম,adjective
+Wet,ভিজা,adjective
+What,কি,pronoun/determiner
+Whatever,যাই হোক,pronoun
+Wheel,চাকা,noun
+When,কখন,adv. pron. conj.
+Whenever,যখনই,conjunction
+Where,কোথায়,adverb conjunction
+Whereas,যেহেতু,conjunction
+Wherever,যেখানেই,conjunction
+Whether,কিনা,conjunction
+Which,যেটি,pronoun
+While,যখন,conjunction noun
+Whisper,ফিস্ ফিস্ শব্দ,verb noun
+White,সাদা,adjective noun
+Who,WHO,pronoun
+Whole,গোটা,adjective noun
+Whom,যাদের,pronoun
+Whose,যাহার,pronoun
+Why,কেন,adverb
+Wide,প্রশস্ত,adjective
+Widely,ব্যাপকভাবে,adverb
+Wife,স্ত্রী,noun
+Wild,বন্য,adjective
+Wildlife,বন্যপ্রাণী,noun
+Will,ইচ্ছাশক্তি,modal noun verb
+Willing,রাজী,adjective
+Win,জয়,verb noun
+Wind1,wind1,noun
+Wind2,wind2,verb
+Window,জানলা,noun
+Wine,মদ,noun
+Wing,গরূৎ,noun
+Winner,বিজয়ী,noun
+Winter,শীতকালীন,noun
+Wire,টেলিগ্রাম,noun
+Wise,জ্ঞানী,adjective
+Wish,ইচ্ছা,verb noun
+With,সঙ্গে,prep.
+Within,মধ্যে,prep.
+Without,ছাড়া,prep.
+Witness,সাক্ষী,noun verb
+Woman,নারী,noun
+Wonder,আশ্চর্যের কিছু নেই,verb noun
+Wonderful,বিস্ময়কর,adjective
+Wood,কাঠ,noun
+Wooden,কাঠের,adjective
+Wool,উল,noun
+Word,শব্দ,noun
+Work,কাজ,verb noun
+Worker,কর্মী,noun
+Working,পরিশ্রমী,adjective
+World,বিশ্ব,noun
+Worldwide,বিশ্বব্যাপী,adjective adverb
+Worried,চিন্তিত,adjective
+Worry,চিন্তা করবেন না,verb noun
+Worse,খারাপ,adj. adv. noun
+Worst,খারাপ,adjective adverb
+Worth,মূল্য,adjective noun
+Would,হায়,modal verb
+Wound,ক্ষত,noun verb
+Wow,কি দারুন,exclamation
+Wrap,মোড়ানো,verb
+Write,লেখার,verb
+Writer,লেখক,noun
+Writing,লেখা,noun
+Written,লিখিত,adjective
+Wrong,ভুল,adj. adv. noun
+Yard,গজ,noun
+Yeah,হাঁ,exclamation
+Year,বছর,noun
+Yellow,হলুদ,adjective noun
+Yes,হ্যাঁ,exclamation
+Yesterday,গতকাল,adverb noun
+Yet,এখনো,adverb conjunction
+You,আপনি,pronoun
+Young,তরুণ,adjective noun
+Your,তোমার,determiner
+Yours,আপনার,pronoun
+Yourself,নিজেকে,pronoun
+Youth,যৌবন,noun
+Zero,শূন্য,number
+Zone,মণ্ডল,noun

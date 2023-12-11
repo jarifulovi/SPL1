@@ -27,20 +27,20 @@ void enterPress() {
     cin.ignore(); // Ignore any previous newline character
     cin.get();    // Wait for Enter key
 }
-void display_card(const vector<string>& eng,const vector<string>& ban,const int& curr_eng,const int& curr_ban){
+void display_card(const vector<string>& eng,const vector<string>& ban,const int& curr_eng,const int& curr_ban,short int loop){
     clearScreen();
     int ban_len = ban[curr_ban].size();
     int eng_len = eng[curr_eng].size();
     cout << " _________________     _________________\n";
     cout << "|                 |   |                 |\n";
-    cout << "|     CARD A      |   |     CARD B      |\n";
+    cout << "|     CARD A      |   |     CARD B      |                       loops remaining : "<< 1-loop << "\n";
     cout << "|                 |   |                 |\n";
     cout << "|                 |   |                 |\n";
     cout << "|                 |   |                 |\n";
     cout << "|   "<< eng[curr_eng];
     for(int i=0;i<14-eng_len;i++) cout << " "; cout << "|   ";
     cout << "|   "<< ban[curr_ban];
-    for(int i=0;i<14-ban_len;i++) cout << " "; cout << "|\n";
+    for(int i=0;i<14-ban_len;i++) cout << " "; cout << "\n";
     cout << "|                 |   |                 |\n";
     cout << "|_________________|   |_________________|\n";
     cout << "..........................................\n";
@@ -49,14 +49,14 @@ void display_card(const vector<string>& eng,const vector<string>& ban,const int&
     cout << "when match press s\n";
     cout << "press A/a for next eng card or B/b for next ban card\n";
 }
-void display_card3(const vector<string>& eng,const vector<string>& ban,const vector<string>& pot,const int& curr_eng,const int& curr_ban,const int& curr_pot){
+void display_card3(const vector<string>& eng,const vector<string>& ban,const vector<string>& pot,const int& curr_eng,const int& curr_ban,const int& curr_pot,short int 		   loop){
     clearScreen();
     int ban_len = ban[curr_ban].size();
     int eng_len = eng[curr_eng].size();
     int pot_len = pot[curr_pot].size();
     cout << " _________________     _________________     _________________\n";
     cout << "|                 |   |                 |   |                 |\n";
-    cout << "|     CARD A      |   |     CARD B      |   |     CARD  C     |\n";
+    cout << "|     CARD A      |   |     CARD B      |   |     CARD  C     |                    loops remaining : "<< 2-loop <<"\n";
     cout << "|                 |   |                 |   |                 |\n";
     cout << "|                 |   |                 |   |                 |\n";
     cout << "|                 |   |                 |   |                 |\n";
@@ -99,7 +99,23 @@ void display_puzzle(char puzzle[row][col]) {
         cout << "|\n";
     }
     cout << " **************************************************\n";
+
+    cout << "Find the word in the puzzle(word length should be more than 2)\n\n";
 }
+
+void display_wordLadder(string startWord,string endWord,short int iteration){
+
+    cout << "{**********Word***Ladder***********}\n";
+    cout << "***********************************\n";
+    cout << "***********************************\n\n";
+    cout << "**{Start Word}--To-->{End Word}****\n";
+    cout << "*********************************\n\n";
+    cout << "current word : (" << iteration << ") "<< startWord << "  to  " << endWord << "\n";
+
+
+}
+
+
 void display_hangman_steps(Word selectedWord,short int i,string& dash,short int trial) {
     string answer = selectedWord.getWord();
     cout << "Hint for step " << i+1 << " :\n";
@@ -314,7 +330,7 @@ bool Words:: flashcard(Profile& myprofile) const {
     auto start = std::chrono::high_resolution_clock::now();
     while(!engWord.empty() && !banWord.empty()){
         clearScreen();
-        display_card(engWord,banWord,curr_eng,curr_ban);    // doesn't need now
+        display_card(engWord,banWord,curr_eng,curr_ban,loop);    // doesn't need now
         cin >> input;
 
         if(input=="A"||input=="a"){
@@ -403,7 +419,7 @@ bool Words::flashcard3(Profile& myprofile) const {
     auto start = std::chrono::high_resolution_clock::now();
     while(!engWord.empty() && !banWord.empty() && !part_of_speech.empty()){
         clearScreen();
-        display_card3(engWord,banWord,part_of_speech,curr_eng,curr_ban,curr_pot);
+        display_card3(engWord,banWord,part_of_speech,curr_eng,curr_ban,curr_pot,loop);
 	cout << "\neng : " << mappedlist[curr_eng].a << " ban : " << mappedlist[curr_eng].b << " pot : " << mappedlist[curr_eng].c << "\n";
         cout << "Enter your answer : ";
         cin >> input;
@@ -593,8 +609,8 @@ bool Words::wordpuzzle(Profile& myprofile) const{
         puzzle[startRow + i][startCol + i] = ans[i];  // Place diagonally
     }
     display_puzzle(puzzle);
-    cout << "The meaning : " << placed_word.getMeaning() << "\n";
-    cout << "Find the word in the puzzle(word length should be more than 2)\n\n";
+    
+   
     string input;
     auto start = std::chrono::high_resolution_clock::now();
     cout << "Enter you answer : ";
@@ -606,11 +622,11 @@ bool Words::wordpuzzle(Profile& myprofile) const{
     else if(isWordList(input)){
         vector<vector<char>> vec = convertCharArrayToVector(puzzle);
         if(doesWordExist(vec,input,row,col)){
-            cout << "Wow! you found the other word\n";
+            cout << "Wow! you found the word\n";
             enterPress();
         }
         else{
-            cout << "Sorry wrong answer with valid word\n";
+            cout << "Sorry wrong answer\n";
             result = false;
             enterPress();
         }
@@ -695,25 +711,40 @@ bool Words::wordLadder(Profile& myprofile) const {
     vector<string> path;
     vector<pair<string,string>> wordPair = readWordPairsFromFile();
     fisherYatesShuffle(wordPair);
-    start_word = wordPair[0].first;
-    end_word = wordPair[0].second;
-    cout << "Start word : " << start_word << "\n";
-    cout << "End word : " << end_word << "\n";
+
+    string nextIteration;
+    int i = 0;
+ 
     char character;
     short int position;
-
-    path = findPathWords(start_word,end_word);  
-    cout << "********Word Ladder********\n";
-    cout << "***************************\n";
-    cout << "***************************\n\n";
-//    cout << "Change " << start_word << " to " << end_word << "\n";
-    enterPress();
     auto start = std::chrono::high_resolution_clock::now();
+    start_word = wordPair[i].first;
+
     do {
+        
+        if(i==wordPair.size()){
+            i = 0;
+            start_word = wordPair[i].first;
+        }
         clearScreen();
-        std::cout << "Current word: " << start_word << "  -->  Target word : " << end_word;
+
+        
+        end_word = wordPair[i].second;
+        path = findPathWords(start_word,end_word);
+        display_wordLadder(start_word,end_word,i+1);
+        for(string s : path) cout << s;
+        string input;
         std::cout << "\n\nEnter character: ";
-        std::cin >> character;
+        std::cin >> input;
+
+        if(input.length()>1){
+            cout << "Invalid input please use single character\n";
+            enterPress();
+            continue;
+        }
+        character = input[0];
+
+
         std::cout << "Enter position (1 to " << start_word.length() << "): ";
         std::cin >> position;
 
@@ -722,9 +753,11 @@ bool Words::wordLadder(Profile& myprofile) const {
             enterPress();
             continue;
         }
+    
 
         // Update the word based on user input
         start_word[position - 1] = character;
+        
 
         // Check if the updated word matches any word in the path
         bool matched = false;
@@ -748,10 +781,18 @@ bool Words::wordLadder(Profile& myprofile) const {
             if(myprofile.getTime5()==0 || myprofile.getTime5()>(static_cast<short int>(duration.count()))){
                 myprofile.setTime5(static_cast<short int>(duration.count()));
             }
+
             enterPress();
-            return true;
+            cout << "\n\nDo you want to continue ?(Y/N)\n";
+            cin >> nextIteration;
+            if(nextIteration=="N"||nextIteration=="n")  return true;
+            i++;
+            start = std::chrono::high_resolution_clock::now();
+            start_word = wordPair[i].first;
         }
     } while (true);
+
+
     return true;
 }
 // hangman game part
