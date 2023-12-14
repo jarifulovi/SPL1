@@ -248,7 +248,7 @@ void Words::vocabularyTest(Profile& myprofile) const {
     do {
         if(!iteration){
             clearScreen();
-            cout << "Congratulation you won!\n";
+            cout << "Congratulation you completed the game!\n";
             enterPress();
             break;
         }

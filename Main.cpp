@@ -26,6 +26,8 @@ int main() {
         Words myWords;
         Profile myprofile;
         myprofile.promptAndStore();
+        if(!myprofile.isFileEmpty()) myprofile.loginProfile();
+        
         while(true){
             clearMainScreen();
             // first menu

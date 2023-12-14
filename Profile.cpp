@@ -276,10 +276,10 @@ void Profile::displayProfile() const {
     cout << "\nWord Ladder : \n";
     achievement5(getTime5());
     cout << "Best score : Time : " << getTime5() << "\n";
-    enterPressedProfile();
     cout << "\nHangman : \n";
     achievement6(getTrial6(),getTime6());
     cout << "Best score : Trial : " << getTrial6() << " | Time : " << getTime6() << "\n";
+    enterPressedProfile();
 }
 void Profile::howToPlay() const {
     std::ifstream file("instruction.txt");
@@ -348,8 +348,11 @@ void Profile::achievement1(short int correct,short int time) const {
     else if(time>0 && time<15) cout << "III\n"; 
 }
 void Profile::achievement2(short int time,short int loop) const {
-    if(time==0) cout << "RANK : NULL\n";
-    if(time>=20)    cout << "RANK : Bronze\n";
+    if(time==0){
+        cout << "RANK : NULL\n";
+        return;
+    }
+    if(time>=20)    cout << "RANK : Bronze ";
     else if(time>=15 && time<20)    cout << "RANK : Silver ";
     else if(time>=10 && time<15)    cout << "RANK : Platinum ";
     else if(time>=5 && time<10)     cout << "RANK : Diamond ";
