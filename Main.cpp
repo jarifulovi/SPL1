@@ -34,8 +34,7 @@ int main() {
             cout << "1.Word Games\n";
             cout << "2.Display Profile\n";
             cout << "3.Change Password\n";
-            cout << "4.Connect Server\n";
-            cout << "5.How to play\n";
+            cout << "4.How to play\n";
             cout << "q to Exit\n";
             cin >> input;
             // second menu
@@ -59,7 +58,7 @@ int main() {
                     else if(input=="6") myWords.hangman(myprofile);
                     else if(input=="q") break;
                     else{
-                        cout << "Invalid input.Please use numbers (1-5) or q to back\n";
+                        cout << "Invalid input.Please use numbers (1-6) or q to back\n";
                         cout << "\nPress Enter to continue...";
                         cin.ignore(); // Ignore any previous newline character
                         cin.get();    // Wait for Enter key
@@ -76,10 +75,6 @@ int main() {
                 continue;
             }
             else if(input=="4"){
-                // connect server
-                continue;
-            }
-            else if(input=="5"){
                 myprofile.howToPlay();
                 continue;
             }
@@ -87,7 +82,7 @@ int main() {
                 break;
             }
             else{
-                cout << "Invaild input.Try numbers(1-5) or q to exit\n";
+                cout << "Invaild input.Try numbers(1-4) or q to exit\n";
                 cout << "\nPress Enter to continue...";
                 cin.ignore(); // Ignore any previous newline character
                 cin.get();    // Wait for Enter key

@@ -65,7 +65,7 @@ void display_card3(const vector<string>& eng,const vector<string>& ban,const vec
     cout << "|   "<< pot[curr_pot];
     for(int i=0;i<14-pot_len;i++) cout << " "; cout << "|   ";
     cout << "|   "<< ban[curr_ban];
-    for(int i=0;i<14-ban_len;i++) cout << " "; cout << "|\n";
+    for(int i=0;i<14-ban_len;i++) cout << " "; cout << "\n";
     cout << "|                 |   |                 |   |                 |\n";
     cout << "|_________________|   |_________________|   |_________________|\n";
    
@@ -420,7 +420,7 @@ bool Words::flashcard3(Profile& myprofile) const {
     while(!engWord.empty() && !banWord.empty() && !part_of_speech.empty()){
         clearScreen();
         display_card3(engWord,banWord,part_of_speech,curr_eng,curr_ban,curr_pot,loop);
-	cout << "\neng : " << mappedlist[curr_eng].a << " ban : " << mappedlist[curr_eng].b << " pot : " << mappedlist[curr_eng].c << "\n";
+	//cout << "\neng : " << mappedlist[curr_eng].a << " ban : " << mappedlist[curr_eng].b << " pot : " << mappedlist[curr_eng].c << "\n";
         cout << "Enter your answer : ";
         cin >> input;
         if(input=="A"||input=="a"){
