@@ -136,7 +136,7 @@ void display_hangman_steps(Word selectedWord,short int i,string& dash,short int 
     }
     cout << "The hidden word : " << dash << "\n";
     cout << "Trial remaining : " << trial+1 << "\n";
-    cout << "\nThe hidden word is : " << answer << "\n";
+    //cout << "\nThe hidden word is : " << answer << "\n";
 }
 
 vector<vector<char>> convertCharArrayToVector(char grid[row][col]) {
@@ -153,7 +153,7 @@ vector<vector<char>> convertCharArrayToVector(char grid[row][col]) {
 Words::Words() {} // Constructor
 
 bool Words::loadFromFile() {
-    ifstream inputFile("input.text"); // Hardcoded filename
+    ifstream inputFile("Vocabulary.text"); // Hardcoded filename
     if (!inputFile.is_open()) {
         return false; // Failed to open the file.
     }
@@ -732,7 +732,7 @@ bool Words::wordLadder(Profile& myprofile) const {
         end_word = wordPair[i].second;
         path = findPathWords(start_word,end_word);
         display_wordLadder(start_word,end_word,i+1);
-        for(string s : path) cout << s;
+        
         string input;
         std::cout << "\n\nEnter character: ";
         std::cin >> input;
